@@ -19,7 +19,6 @@
   border-radius: 25px;
   margin-top: 10dvh;
   width: fit-content;
-  border-color: var(--light-gray);
   box-shadow: 0 0px 5px var(--light-cyan);
 }
 .nav li {
