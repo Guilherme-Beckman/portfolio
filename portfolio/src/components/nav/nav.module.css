@@ -1,0 +1,32 @@
+:root {
+  --light-gray: #373739;
+  --dark-gray: #19191a;
+  --dark-cyan: #60d4ea;
+  --light-cyan: #9ae5f3;
+  --black: #020202;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+}
+.nav ul {
+  background-color: var(--dark-gray);
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  margin-top: 10dvh;
+  width: fit-content;
+  border-color: var(--light-gray);
+  box-shadow: 0 0px 5px var(--light-cyan);
+}
+.nav li {
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  transition: background-color 0.3s ease-in-out;
+}
+.nav li:hover {
+  background-color: var(--light-gray);
+}

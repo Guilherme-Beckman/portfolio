@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Average_Sans, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import { Nav } from "../components/nav/nav";
 const averageSans = Average_Sans({
   variable: "--font-main",
   weight: "400",
@@ -19,7 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={averageSans.variable}>{children}</body>
+      <body className={averageSans.variable}>
+        <Nav />
+        {children}
+      </body>
     </html>
   );
 }
