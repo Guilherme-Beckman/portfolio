@@ -2,13 +2,9 @@
 import { Typewriter } from "react-simple-typewriter";
 export function TypingText() {
   return (
-    <div style={{ fontSize: "2rem", color: "#fff" }}>
+    <div style={{ fontSize: "3rem", color: "#fff" }}>
       <Typewriter
-        words={[
-          "Bem-vindo ao meu site!",
-          "Desenvolvedor Full Stack.",
-          "Vamos criar algo incrível.",
-        ]}
+        words={["Bem-vindo ao meu portfolio!", "Welcome to my portfolio!"]}
         loop={0}
         cursor
         cursorStyle="_"

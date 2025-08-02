@@ -1,8 +1,11 @@
 import { TypingText } from "./components/typing-text/typing-text";
+import styles from "./page.module.css";
 export default function Page() {
   return (
-    <main>
-      <TypingText />
-    </main>
+    <div className={styles.page}>
+      <h1>
+        <TypingText />
+      </h1>
+    </div>
   );
 }

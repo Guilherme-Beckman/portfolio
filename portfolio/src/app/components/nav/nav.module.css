@@ -18,6 +18,7 @@
   padding: 0.5rem 1rem;
   border-radius: 25px;
   transition: background-color 0.3s ease-in-out;
+  user-select: none;
 }
 .nav li:hover {
   background-color: var(--light-gray);
