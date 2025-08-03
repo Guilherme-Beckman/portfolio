@@ -1,8 +1,5 @@
 .input {
   display: flex;
-}
-.input {
-  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -14,7 +11,7 @@
   background-color: white;
   border-radius: 50px;
   padding: 0.5rem 2rem;
-  width: 50%;
+  width: 30%;
   position: relative;
 }
 .input button {
@@ -39,4 +36,10 @@
   outline: none;
   font-size: 1rem;
   color: var(--dark-gray);
+}
+
+@media screen and (max-height: 768px) {
+  .container {
+    width: 60%;
+  }
 }
