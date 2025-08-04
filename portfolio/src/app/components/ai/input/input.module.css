@@ -11,7 +11,8 @@
   background-color: white;
   border-radius: 50px;
   padding: 0.5rem 2rem;
-  width: 30%;
+  width: 60%;
+  max-width: 35rem;
   position: relative;
 }
 .input button {
