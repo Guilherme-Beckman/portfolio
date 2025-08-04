@@ -2,7 +2,7 @@
 import { Typewriter } from "react-simple-typewriter";
 export function TypingText() {
   return (
-    <div style={{ fontSize: "3rem", color: "#fff" }}>
+    <div style={{ fontSize: "2rem", color: "#fff" }}>
       <Typewriter
         words={["Bem-vindo ao meu portfolio!", "Welcome to my portfolio!"]}
         loop={0}
