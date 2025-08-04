@@ -3,8 +3,14 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  height: 50dvh;
 }
 .page h1 {
   text-align: center;
+  margin-top: 20dvh;
+}
+
+@media screen and (max-height: 768px) {
+  .page h1 {
+    margin-top: 10dvh;
+  }
 }
