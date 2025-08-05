@@ -6,6 +6,9 @@ export default function Page() {
   return (
     <div className={styles.page}>
       <h1>
+        <span>AI Portfolio</span>
+        <br />
+        <br />
         <TypingText />
       </h1>
       <AiInput />
