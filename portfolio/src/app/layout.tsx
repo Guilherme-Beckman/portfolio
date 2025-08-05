@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={averageSans.variable}>
-        <FadeIn>
+        <FadeIn fromY={-20}>
           <Nav />
         </FadeIn>
         {children}
