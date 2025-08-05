@@ -1,0 +1,26 @@
+.nav {
+  display: flex;
+  justify-content: center;
+}
+.nav ul {
+  background-color: var(--dark-gray);
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  margin-top: 10dvh;
+  width: fit-content;
+  box-shadow: 0 0px 5px var(--light-cyan);
+}
+.nav li {
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  transition: 0.3s ease-in-out;
+  user-select: none;
+}
+.nav li:hover {
+  background-color: var(--light-gray);
+  transform: scale(1.1);
+}

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Average_Sans, Geist, Geist_Mono } from "next/font/google";
+import { Average_Sans } from "next/font/google";
 import "./globals.css";
-
+import { Nav } from "./components/nav/nav";
+import { FadeIn } from "./components/animations/fade-in";
 const averageSans = Average_Sans({
   variable: "--font-main",
   weight: "400",
@@ -19,7 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={averageSans.variable}>{children}</body>
+      <body className={averageSans.variable}>
+        <FadeIn fromY={-20}>
+          <Nav />
+        </FadeIn>
+        {children}
+      </body>
     </html>
   );
 }
