@@ -1,4 +1,4 @@
-import { Bio } from "../components/bio/bio";
+import { Bio } from "../components/about-me/bio/bio";
 import styles from "./page.module.css";
 import { SlideIn } from "../components/animations/slide-in";
 export default function AboutMe() {
