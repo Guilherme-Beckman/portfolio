@@ -1,4 +1,10 @@
 .aboutMe {
   width: clamp(200px, 100%, 1000px);
   margin: 0 auto;
+  padding: 1rem;
+}
+@media screen and (max-width: 412) {
+  .aboutMe {
+  padding: 0rem;
+}
 }
