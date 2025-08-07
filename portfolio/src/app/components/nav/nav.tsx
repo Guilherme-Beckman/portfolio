@@ -14,7 +14,7 @@ export function Nav() {
         </li>
         <li className={pathName === "/about-me" ? styles.active : ""}>
           <Link className={styles.link} href={"/about-me"}>
-            About me
+            About
           </Link>
         </li>
         <li className={pathName === "/projects" ? styles.active : ""}>

@@ -35,3 +35,12 @@
   user-select: none;
   overflow: hidden;
 }
+
+@media screen and (max-width: 360px) {
+  .nav ul {
+    padding: 0.25rem 0.5rem;
+  }
+  .link {
+    padding: 0.25rem 0.5rem;
+  }
+}
