@@ -3,8 +3,19 @@
   margin: 0 auto;
   padding: 1rem;
 }
-@media screen and (max-width: 412) {
-  .aboutMe {
-  padding: 0rem;
+.bioExperiencesWrapper {
+  margin-top: 10dvh;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-around;
+    flex-wrap: wrap; /* opcional para quebrar se precisar */
 }
+@media screen and (max-width: 412px) {
+  .aboutMe {
+    padding: 0rem;
+  }
+  .bioExperiencesWrapper {
+    display: block;
+    flex-direction: column;
+  }
 }
