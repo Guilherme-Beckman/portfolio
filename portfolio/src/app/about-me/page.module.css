@@ -2,20 +2,21 @@
   width: clamp(200px, 100%, 1000px);
   margin: 0 auto;
   padding: 1rem;
+  background-color: blueviolet;
 }
 .bioExperiencesWrapper {
   margin-top: 10dvh;
   background-color: aqua;
   display: flex;
-  justify-content: space-around;
-    flex-wrap: wrap; /* opcional para quebrar se precisar */
+  gap: 1rem;
 }
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 500px) {
   .aboutMe {
     padding: 0rem;
   }
   .bioExperiencesWrapper {
     display: block;
     flex-direction: column;
+    flex-wrap: wrap;
   }
 }
