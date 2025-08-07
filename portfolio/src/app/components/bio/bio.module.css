@@ -11,8 +11,7 @@
   animation: pulseBg 8s ease infinite;
   padding: 1rem;
   border-radius: 25px;
-  width: clamp(300px, 50%, 800px);
-  margin: 2.5%;
+  width: clamp(300px, 50%, 500px);
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(4px);
   color: white;
@@ -32,8 +31,8 @@
 }
 
 .imageWrapper {
-  width: clamp(200px, 40%, 300px);
-  height: clamp(200px, 10%, 300px);
+  width: clamp(100px, 40%, 300px);
+  height: clamp(150px, 40%, 300px);
   flex-shrink: 0;
   border-radius: 50%;
   overflow: hidden;
@@ -42,8 +41,8 @@
 }
 
 .mainImage {
-  width: clamp(200px, 40%, 300px);
-  height: clamp(200px, 40%, 300px);
+width: 100%;
+height: 100%;
 
   border-radius: 50%;
   object-fit: cover;
