@@ -1,4 +1,5 @@
 .workInfo {
+  
   text-align: left;
   min-width: 45%;
   display: flex;
@@ -30,4 +31,12 @@
 
   font-size: 0.95rem;
   font-weight: 400;
+}
+.workInfo img{
+  width: 20px;
+  height: 20px;
+  padding-right: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
