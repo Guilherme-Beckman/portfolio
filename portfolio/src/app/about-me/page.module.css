@@ -8,6 +8,9 @@
   display: flex;
   gap: 1rem;
 }
+.bioExperiencesWrapper > * {
+  flex: 1;
+}
 @media screen and (max-width: 500px) {
   .aboutMe {
     padding: 0rem;
