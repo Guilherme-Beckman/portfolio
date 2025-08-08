@@ -31,6 +31,7 @@ export function Experiences() {
       usedSkills: [
         { name: "React", pathIcon: reactIcon },
         { name: "TypeScript", pathIcon: typescriptIcon },
+        
       ],
     },
     {
@@ -43,7 +44,7 @@ export function Experiences() {
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut necessitatibus veritatis facilis tempore, magnam vel ullam dicta distinctio facere repellat iusto minus eius. Ullam facilis asperiores repellendus laborum dicta dolores!",
       usedSkills: [
-        { name: "React", pathIcon: "/icons/skills/skills/react.svg" },
+        { name: "React", pathIcon: reactIcon },
         { name: "TypeScript", pathIcon: typescriptIcon },
       ],
     },

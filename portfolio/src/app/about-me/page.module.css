@@ -1,5 +1,5 @@
 .aboutMe {
-  width: clamp(200px, 90%, 1000px);
+  width: clamp(200px, 90%, 1200px);
   margin: 0 auto;
   padding: 1rem;
 }
