@@ -20,8 +20,6 @@ export function JobDescription(props: JobDescriptionProps) {
             <Image
               src={skill.pathIcon}
               alt={skill.name}
-              width={24}
-              height={24}
               loading="lazy"
             />
             {skill.name}
