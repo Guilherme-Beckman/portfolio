@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./job-description.module.css";
 interface SkillsProps {
   name: string;
@@ -16,7 +17,13 @@ export function JobDescription(props: JobDescriptionProps) {
       <ul>
         {props.usedSkills.map((skill, index) => (
           <li key={index}>
-            <img src={skill.pathIcon} alt={skill.name} />
+            <Image
+              src={skill.pathIcon}
+              alt={skill.name}
+              width={24}
+              height={24}
+              loading="lazy"
+            />
             {skill.name}
           </li>
         ))}

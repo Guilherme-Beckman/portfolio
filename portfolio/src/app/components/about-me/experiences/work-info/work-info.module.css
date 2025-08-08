@@ -1,2 +1,30 @@
-.workInfo{
+.workInfo {
+  min-width: 45%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.period {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.companieName {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.local {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.model {
+  font-size: 0.95rem;
+  font-weight: 400;
 }

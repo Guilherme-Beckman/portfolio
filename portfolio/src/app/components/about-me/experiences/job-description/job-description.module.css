@@ -1,38 +1,37 @@
-.timelineContainer {
-  padding: 1rem;
-  height: 100dvh;
-  color: #fff;
-  font-family: sans-serif;
+.jobDescription {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  min-width: 45%;
 }
 
-.timelineLine {
-  top: 2rem;
-  left: 20px;
-  width: 4px;
-  height: inherit;
-  background-color: #333;
+.role {
+  font-size: 1.75rem;
+  font-weight: bold;
 }
 
-.timelineProgress {
-  top: 0;
-  left: 0;
-  width: 4px;
-  background: linear-gradient(to bottom, red, blue);
+.description {
+  font-size: 1rem;
+  color: gray;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
 }
 
-/* .avatar {
-  position: absolute;
-  left: -10px;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-image: url("/avatar.jpg");
-  background-size: cover;
-  border: 2px solid #fff;
-  z-index: 10;
-  transition: top 0.1s ease-out;
-} */
+.jobDescription ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-.timelineContent {
-  margin-top: 150vh;
+.jobDescription li {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+}
+
+.jobDescription li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+  object-fit: contain;
 }
