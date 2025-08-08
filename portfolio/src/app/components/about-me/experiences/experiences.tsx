@@ -1,5 +1,6 @@
 import styles from "./experiences.module.css";
 import { WorkInfo } from "./work-info/work-info";
+import Timeline from "./timeline/timeline";
 export function Experiences() {
   return (
     <div className={styles.experiences}>
@@ -9,7 +10,7 @@ export function Experiences() {
         period={"JAN 2025 - Present"}
         local={"Corumbá - MS"}
       />
-      
+      <Timeline/>
     </div>
   );
 }

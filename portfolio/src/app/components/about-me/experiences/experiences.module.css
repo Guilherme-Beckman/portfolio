@@ -1,6 +1,5 @@
 .experiences {
   display: flex;
-  align-items: center;
   background: linear-gradient(
     135deg,
     var(--light-gray),

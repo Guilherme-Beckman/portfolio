@@ -6,9 +6,9 @@ export default function AboutMe() {
   return (
     <div className={styles.aboutMe}>
       <div className={styles.bioExperiencesWrapper}>
-        <SlideIn>
-          <Bio />
-        </SlideIn>
+        {/* <SlideIn> */}
+          {/* <Bio /> */}
+        {/* </SlideIn> */}
         <SlideIn fromX={50}>
           <Experiences />
         </SlideIn>
