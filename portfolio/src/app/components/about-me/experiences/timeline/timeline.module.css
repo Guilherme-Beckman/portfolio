@@ -1,38 +1,21 @@
 .timelineContainer {
-  padding: 1rem;
-  height: 100dvh;
-  color: #fff;
+  height: 98%; /* relativo ao pai */
   font-family: sans-serif;
+  position: absolute;
+  left: 50%;
 }
 
 .timelineLine {
-  top: 2rem;
-  left: 20px;
+  border-radius: 50px;
   width: 4px;
-  height: inherit;
+  height: inherit; /* relativo ao pai */
   background-color: #333;
 }
 
+
 .timelineProgress {
-  top: 0;
-  left: 0;
-  width: 4px;
-  background: linear-gradient(to bottom, red, blue);
-}
+    border-radius: inherit;
 
-/* .avatar {
-  position: absolute;
-  left: -10px;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-image: url("/avatar.jpg");
-  background-size: cover;
-  border: 2px solid #fff;
-  z-index: 10;
-  transition: top 0.1s ease-out;
-} */
-
-.timelineContent {
-  margin-top: 150vh;
+  width: inherit;
+  background: linear-gradient(to bottom, var(--light-cyan), var(--dark-cyan));
 }

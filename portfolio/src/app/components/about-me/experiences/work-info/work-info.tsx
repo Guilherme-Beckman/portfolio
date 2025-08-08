@@ -1,10 +1,10 @@
 import styles from "./work-info.module.css";
 
 interface WorkInfoProps{
-  period: String;
-  companieName: String;
-  local: String;
-  model: String;
+  period: string;
+  companieName: string;
+  local: string;
+  model: string;
 }
 export function WorkInfo(workInfoProps: WorkInfoProps ) {
   return (

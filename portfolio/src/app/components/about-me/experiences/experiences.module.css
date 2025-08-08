@@ -1,4 +1,4 @@
-.experiences {
+.experiencesContainer {
   display: flex;
   background: linear-gradient(
     135deg,
@@ -10,10 +10,15 @@
   animation: pulseBg 8s ease infinite;
   padding: 1rem;
   border-radius: 25px;
-
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(4px);
   color: white;
+  position: relative;
+}
+
+.workInfoContainer {
+  display: flex;
+  gap: 40%;
 }
 
 @keyframes pulseBg {
