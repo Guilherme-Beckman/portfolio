@@ -3,19 +3,20 @@
   margin: 0 auto;
   padding: 1rem;
 }
-.bioExperiencesWrapper {
+.aboutMeWrapper {
   margin-top: 10dvh;
   display: flex;
   gap: 1rem;
 }
-.bioExperiencesWrapper > * {
+.aboutMeWrapper > * {
   flex: 1;
 }
+
 @media screen and (max-width: 500px) {
   .aboutMe {
     padding: 0rem;
   }
-  .bioExperiencesWrapper {
+  .aboutMeWrapper {
     display: block;
     flex-direction: column;
     flex-wrap: wrap;
