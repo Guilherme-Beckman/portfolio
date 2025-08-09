@@ -1,6 +1,41 @@
+.education {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  color: #ddd;
+  overflow-y: auto;
+}
 
-.education{
-    margin-top: 1rem;    margin-bottom: 1rem;
+.title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #bbb;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
 
-    height: 50dvh;
+.section {
+  margin-bottom: 1.2rem;
+}
+
+.cert {
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 0.2rem;
+}
+
+.course {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #eee;
+  margin-bottom: 0.2rem;
+}
+
+.school {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #777;
+  font-style: normal;
 }

@@ -3,6 +3,19 @@ import styles from "./page.module.css";
 import { SlideIn } from "../components/animations/slide-in";
 import { Experiences } from "../components/about-me/experiences/experiences";
 import { Education } from "../components/about-me/education/education";
+const exampleEducationData = [
+  {
+    cert: "Bachelor's Degree",
+    course: "Computer Science",
+    school: "University of XYZ",
+  },
+  {
+    cert: "Master's Degree",
+    course: "Software Engineering",
+    school: "Institute of ABC",
+  },
+];
+
 export default function AboutMe() {
   return (
     <div className={styles.aboutMe}>
@@ -12,7 +25,7 @@ export default function AboutMe() {
             <Bio />
           </SlideIn>
           <SlideIn>
-            <Education/>
+            <Education educationProps={exampleEducationData}/>
           </SlideIn>
         </div>
 
