@@ -1,5 +1,5 @@
 .timelineContainer {
-  height: 98%; /* relativo ao pai */
+  height: 98%;
   font-family: sans-serif;
   position: absolute;
   left: 50%;
@@ -8,14 +8,17 @@
 .timelineLine {
   border-radius: 50px;
   width: 4px;
-  height: inherit; /* relativo ao pai */
+  height: inherit;
   background-color: #333;
 }
 
-
 .timelineProgress {
-    border-radius: inherit;
-
+  border-radius: inherit;
+  transition: height 0.4s ease-out;
   width: inherit;
-  background: linear-gradient(to bottom, var(--light-cyan), var(--dark-cyan));
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 255, 255, 0),
+    var(--dark-cyan)
+  );
 }

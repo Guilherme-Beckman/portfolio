@@ -27,10 +27,6 @@ export default function Timeline() {
           style={{ height: `${progress}%` }}
           ref={progressRef}
         />
-        <div
-          className={styles.avatar}
-          style={{ top: `calc(${progress}% - 12px)` }}
-        />
       </div>
     </div>
   );
