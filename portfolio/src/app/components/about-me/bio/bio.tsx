@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Profile from "public/images/pic.jpeg";
 import styles from "./bio.module.css";
-
 export function Bio() {
   return (
-    <div className={styles.bio}>
+    <div className={`${styles.bio} animatedBg`}>
       <div className={styles.imageWrapper}>
         <Image
           src={Profile}

@@ -7,7 +7,7 @@ export function Experiences() {
   
 
   return (
-    <div className={styles.experiencesContainer}>
+    <div className={`${styles.experiencesContainer} animatedBg`}>
       <div className={styles.experiences}>
         {experiencesData.map((exp, index) => (
           <div key={index} className={styles.workInfoContainer}>

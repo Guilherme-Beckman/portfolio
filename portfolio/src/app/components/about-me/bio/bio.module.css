@@ -1,32 +1,6 @@
 .bio {
   display: flex;
   align-items: center;
-  background: linear-gradient(
-    135deg,
-    var(--light-gray),
-    var(--dark-gray),
-    var(--black)
-  );
-  background-size: 500% 500%;
-  animation: pulseBg 8s ease infinite;
-  padding: 1rem;
-  border-radius: 25px;
-
-  box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(4px);
-  color: white;
-}
-
-@keyframes pulseBg {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 .imageWrapper {
