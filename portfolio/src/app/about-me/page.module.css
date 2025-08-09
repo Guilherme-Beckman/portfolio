@@ -12,7 +12,7 @@
   flex: 1;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .aboutMe {
     padding: 0rem;
   }
