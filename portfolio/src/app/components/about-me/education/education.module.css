@@ -18,7 +18,9 @@
 .section {
   margin-bottom: 1.2rem;
 }
-
+.educationItem{
+  margin-top: 1.5rem;
+}
 .cert {
   font-weight: 500;
   font-size: 0.8rem;
@@ -38,4 +40,11 @@
   font-size: 1rem;
   color: #777;
   font-style: normal;
+}
+.date {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 0.3rem;
+  font-style: italic;
 }
