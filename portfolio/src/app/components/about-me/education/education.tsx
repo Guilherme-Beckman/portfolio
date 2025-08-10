@@ -4,7 +4,7 @@ interface EducationProps {
   cert: string;
   course: string;
   school: string;
-  date: string; // novo campo para a data (ex: "2020 - 2022", "Jan 2019", etc)
+  date: string;
 }
 
 interface Props {
