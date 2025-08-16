@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { useEffect, useMemo, useRef, useState } from "react";
-
+import styles from "./skills-graph.module.css";
 const ForceGraph2D = dynamic(() => import("react-force-graph-2d"), {
   ssr: false,
 });
@@ -99,14 +99,15 @@ export function SkillsGraph() {
   };
 
   return (
-    <div style={{ width: "100%", height: "100vh" }}>
+    <div className={`${styles.skillsGraph} animatedBg`}>
       <ForceGraph2D
+      
         graphData={data}
-        minZoom={1}
+        minZoom={10}
         maxZoom={1}
         nodeCanvasObject={(node: any, ctx, globalScale) => {
           const img = imagesRef.current[node.id];
-          const size = 20 / globalScale;
+          const size = 40 / globalScale;
 
           // Desenha a imagem ou fallback
           if (img && img.complete) {
