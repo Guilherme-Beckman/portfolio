@@ -1,24 +1,49 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useEffect, useMemo, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 const ForceGraph2D = dynamic(() => import("react-force-graph-2d"), {
   ssr: false,
 });
-
+interface SkillNode {
+  id: number;
+  name: string;
+  img: string;
+  neighbors?: SkillNode[]; // opcional
+  links?: any[]; // opcional, pode melhorar o tipo
+}
+interface SkillLink {
+  source: SkillNode;
+  target: SkillNode;
+}
+// Gera nodes e links
 export function genSkillGraph() {
-  // nodes com id, nome e imagem
-  const nodes = [
-    { id: 2, name: "TypeScript", img: "/icons/skills/typescript.svg" },
+  const nodes: SkillNode[] = [
     { id: 0, name: "TypeScript", img: "/icons/skills/typescript.svg" },
+    { id: 1, name: "Angular", img: "/icons/skills/typescript.svg" },
+    { id: 2, name: "React", img: "/icons/skills/react.svg" },
   ];
 
-  // links que conectam skills específicas
-  const links = [
-    { source: 0, target: 2 }, // Java -> Spring
-    { source: 2, target: 0 }, // TypeScript -> Angular
+  // Inicializa neighbors e links
+  nodes.forEach((node) => {
+    node.neighbors = [];
+    node.links = [];
+  });
+
+  // Cria links tipados
+  const links: SkillLink[] = [
+    { source: nodes[0], target: nodes[1] },
+    { source: nodes[1], target: nodes[2] },
   ];
+
+  // Preenche neighbors e links em cada node
+  links.forEach((link) => {
+    link.source.neighbors!.push(link.target);
+    link.target.neighbors!.push(link.source);
+    link.source.links!.push(link);
+    link.target.links!.push(link);
+  });
 
   return { nodes, links };
 }
@@ -26,6 +51,8 @@ export function genSkillGraph() {
 export function SkillsGraph() {
   const data = useMemo(() => genSkillGraph(), []);
   const imagesRef = useRef<Record<string, HTMLImageElement>>({});
+
+  // Carrega imagens dos nodes
   useEffect(() => {
     const imgMap: Record<string, HTMLImageElement> = {};
     data.nodes.forEach((node) => {
@@ -35,15 +62,54 @@ export function SkillsGraph() {
     });
     imagesRef.current = imgMap;
   }, [data.nodes]);
+
+  // Estados de highlight
+  const [hoverNode, setHoverNode] = useState<any>(null);
+  const [highlightNodes, setHighlightNodes] = useState<Set<any>>(new Set());
+  const [highlightLinks, setHighlightLinks] = useState<Set<any>>(new Set());
+
+  // Atualiza nodes e links destacados
+  const handleNodeHover = (node: any) => {
+    const newHighlightNodes = new Set<any>();
+    const newHighlightLinks = new Set<any>();
+
+    if (node) {
+      newHighlightNodes.add(node);
+      node.neighbors.forEach((n: any) => newHighlightNodes.add(n));
+      node.links.forEach((l: any) => newHighlightLinks.add(l));
+    }
+
+    setHoverNode(node || null);
+    setHighlightNodes(newHighlightNodes);
+    setHighlightLinks(newHighlightLinks);
+  };
+
+  const handleLinkHover = (link: any) => {
+    const newHighlightNodes = new Set<any>();
+    const newHighlightLinks = new Set<any>();
+
+    if (link) {
+      newHighlightLinks.add(link);
+      newHighlightNodes.add(link.source);
+      newHighlightNodes.add(link.target);
+    }
+
+    setHighlightNodes(newHighlightNodes);
+    setHighlightLinks(newHighlightLinks);
+  };
+
   return (
     <div style={{ width: "100%", height: "100vh" }}>
       <ForceGraph2D
         graphData={data}
+        minZoom={1}
+        maxZoom={1}
         nodeCanvasObject={(node: any, ctx, globalScale) => {
           const img = imagesRef.current[node.id];
+          const size = 20 / globalScale;
+
+          // Desenha a imagem ou fallback
           if (img && img.complete) {
-            // só desenha se já carregou
-            const size = 20 / globalScale;
             ctx.drawImage(
               img,
               node.x! - size / 2,
@@ -52,12 +118,19 @@ export function SkillsGraph() {
               size
             );
           } else {
-            // fallback: desenha círculo enquanto a imagem carrega
-            const size = 20 / globalScale;
             ctx.fillStyle = "gray";
             ctx.beginPath();
-            ctx.arc(node.x!, node.y!, size / 2, 0, 2 * Math.PI, false);
+            ctx.arc(node.x!, node.y!, size / 2, 0, 2 * Math.PI);
             ctx.fill();
+          }
+
+          // Highlight ring
+          if (highlightNodes.has(node)) {
+            ctx.beginPath();
+            ctx.arc(node.x!, node.y!, size / 1.5, 0, 2 * Math.PI);
+            ctx.strokeStyle = node === hoverNode ? "red" : "orange";
+            ctx.lineWidth = 3 / globalScale;
+            ctx.stroke();
           }
         }}
         nodePointerAreaPaint={(node, color, ctx) => {
@@ -67,9 +140,15 @@ export function SkillsGraph() {
           ctx.arc(node.x!, node.y!, size, 0, 2 * Math.PI, false);
           ctx.fill();
         }}
-        maxZoom={2}
-        minZoom={2}
-        linkWidth={5}
+        linkWidth={(link) => (highlightLinks.has(link) ? 4 : 1)}
+        onNodeHover={handleNodeHover}
+        onLinkHover={handleLinkHover}
+        autoPauseRedraw={false}
+        linkDirectionalParticleWidth={(link) =>
+          highlightLinks.has(link) ? 4 : 0
+        }
+        linkDirectionalParticles={4}
+        nodeRelSize={4}
       />
     </div>
   );
