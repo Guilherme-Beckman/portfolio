@@ -18,91 +18,109 @@ interface SkillLink {
 
 export function genSkillGraph() {
   const nodes: SkillNode[] = [
-  { id: 0, name: "TypeScript", img: "/icons/skills/typescript.svg" },
-  { id: 1, name: "JavaScript", img: "/icons/skills/js-svgrepo-com.svg" },
-  { id: 2, name: "Angular", img: "/icons/skills/angular-svgrepo-com.svg" },
-  { id: 3, name: "React", img: "/icons/skills/react-svgrepo-com.svg" },
-  { id: 4, name: "Ionic", img: "/icons/skills/ionic-svgrepo-com.svg" },
-  { id: 5, name: "Next.js", img: "/icons/skills/nextjs-fill-svgrepo-com.svg" },
-  { id: 6, name: "HTML", img: "/icons/skills/html-5-svgrepo-com.svg" },
-  { id: 7, name: "CSS", img: "/icons/skills/css-3-svgrepo-com.svg" },
-  { id: 8, name: "Java", img: "/icons/skills/java-svgrepo-com.svg" },
-  { id: 9, name: "Spring", img: "/icons/skills/spring-svgrepo-com.svg" },
-  { id: 10, name: "PHP", img: "/icons/skills/php-svgrepo-com.svg" },
-  { id: 11, name: "Laravel", img: "/icons/skills/laravel-svgrepo-com.svg" },
-  { id: 12, name: "Python", img: "/icons/skills/python-svgrepo-com.svg" },
-  { id: 13, name: "MySQL", img: "/icons/skills/mysql-svgrepo-com.svg" },
-  { id: 14, name: "PostgreSQL", img: "/icons/skills/postgresql-svgrepo-com.svg" },
-  { id: 15, name: "MongoDB", img: "/icons/skills/mongodb-svgrepo-com.svg" },
-  { id: 16, name: "Docker", img: "/icons/skills/docker-svgrepo-com.svg" },
-  { id: 17, name: "Kong", img: "/icons/skills/kong-icon-svgrepo-com.svg" },
-  { id: 18, name: "Consul", img: "/icons/skills/consul-svgrepo-com.svg" },
-  { id: 19, name: "AWS", img: "/icons/skills/aws-svgrepo-com.svg" },
-  { id: 20, name: "EC2", img: "/icons/skills/aws-ec2-svgrepo-com.svg" },
-  { id: 21, name: "S3", img: "/icons/skills/aws-s3-svgrepo-com.svg" },
-  { id: 22, name: "Route53", img: "/icons/skills/aws-route53-svgrepo-com.svg" },
-  { id: 23, name: "Nginx", img: "/icons/skills/nginx-svgrepo-com.svg" },
-  { id: 24, name: "RabbitMQ", img: "/icons/skills/rabbitmq-icon-svgrepo-com.svg" },
-  { id: 25, name: "Git", img: "/icons/skills/git-svgrepo-com.svg" },
-  { id: 26, name: "GitHub", img: "/icons/skills/github-142-svgrepo-com.svg" },
-  { id: 27, name: "Postman", img: "/icons/skills/postman-icon-svgrepo-com.svg" },
-];
+    // Frontend
+    { id: 0, name: "TypeScript", img: "/icons/skills/typescript.svg" },
+    { id: 1, name: "JavaScript", img: "/icons/skills/js-svgrepo-com.svg" },
+    { id: 2, name: "Angular", img: "/icons/skills/angular-svgrepo-com.svg" },
+    { id: 3, name: "React", img: "/icons/skills/react-svgrepo-com.svg" },
+    { id: 4, name: "Ionic", img: "/icons/skills/ionic-svgrepo-com.svg" },
+    {
+      id: 5,
+      name: "Next.js",
+      img: "/icons/skills/nextjs-fill-svgrepo-com.svg",
+    },
+    { id: 6, name: "HTML", img: "/icons/skills/html-5-svgrepo-com.svg" },
+    { id: 7, name: "CSS", img: "/icons/skills/css-3-svgrepo-com.svg" },
 
-nodes.forEach((node) => {
-  node.neighbors = [];
-  node.links = [];
-});
+    // Backend
+    { id: 8, name: "Java", img: "/icons/skills/java-svgrepo-com.svg" },
+    { id: 9, name: "Spring", img: "/icons/skills/spring-svgrepo-com.svg" },
+    { id: 10, name: "PHP", img: "/icons/skills/php-svgrepo-com.svg" },
+    { id: 11, name: "Laravel", img: "/icons/skills/laravel-svgrepo-com.svg" },
+    { id: 12, name: "Python", img: "/icons/skills/python-svgrepo-com.svg" },
+    { id: 28, name: "FastApi", img: "/icons/skills/fastapi-svgrepo-com.svg" },
 
-// Mantém as conexões lógicas que você já definiu
-// Conexões principais (como você já tinha feito)
-const baseLinks: SkillLink[] = [
-  // Frontend core
-  { source: nodes[0], target: nodes[1] }, // TS -> JS
-  { source: nodes[0], target: nodes[2] }, // TS -> Angular
-  { source: nodes[0], target: nodes[3] }, // TS -> React
-  { source: nodes[3], target: nodes[4] }, // React -> Ionic
-  { source: nodes[3], target: nodes[5] }, // React -> Next.js
-  { source: nodes[1], target: nodes[6] }, // JS -> HTML
-  { source: nodes[1], target: nodes[7] }, // JS -> CSS
+    // Databases
+    { id: 13, name: "MySQL", img: "/icons/skills/mysql-svgrepo-com.svg" },
+    {
+      id: 14,
+      name: "PostgreSQL",
+      img: "/icons/skills/postgresql-svgrepo-com.svg",
+    },
+    { id: 15, name: "MongoDB", img: "/icons/skills/mongodb-svgrepo-com.svg" },
 
-  // Backend Java
-  { source: nodes[8], target: nodes[9] }, // Java -> Spring
+    // Infra/DevOps
+    { id: 16, name: "Docker", img: "/icons/skills/docker-svgrepo-com.svg" },
+    { id: 17, name: "Kong", img: "/icons/skills/kong-icon-svgrepo-com.svg" },
+    { id: 18, name: "Consul", img: "/icons/skills/consul-svgrepo-com.svg" },
+    { id: 19, name: "AWS", img: "/icons/skills/aws-svgrepo-com.svg" },
+    { id: 20, name: "EC2", img: "/icons/skills/aws-ec2-svgrepo-com.svg" },
+    { id: 21, name: "S3", img: "/icons/skills/aws-s3-svgrepo-com.svg" },
+    {
+      id: 22,
+      name: "Route53",
+      img: "/icons/skills/aws-route53-svgrepo-com.svg",
+    },
+    { id: 23, name: "Nginx", img: "/icons/skills/nginx-svgrepo-com.svg" },
+    {
+      id: 24,
+      name: "RabbitMQ",
+      img: "/icons/skills/rabbitmq-icon-svgrepo-com.svg",
+    },
 
-  // Backend PHP
-  { source: nodes[10], target: nodes[11] }, // PHP -> Laravel
+    // Tools
+    { id: 25, name: "Git", img: "/icons/skills/git-svgrepo-com.svg" },
+    { id: 26, name: "GitHub", img: "/icons/skills/github-142-svgrepo-com.svg" },
+    {
+      id: 27,
+      name: "Postman",
+      img: "/icons/skills/postman-icon-svgrepo-com.svg",
+    },
+  ];
 
-  // Databases
-  { source: nodes[13], target: nodes[9] },  // MySQL -> Spring
-  { source: nodes[14], target: nodes[9] },  // PostgreSQL -> Spring
-  { source: nodes[15], target: nodes[12] }, // MongoDB -> Python
+  nodes.forEach((node) => {
+    node.neighbors = [];
+    node.links = [];
+  });
 
-  // Infra
-  { source: nodes[16], target: nodes[17] }, // Docker -> Kong
-  { source: nodes[16], target: nodes[18] }, // Docker -> Consul
-  { source: nodes[16], target: nodes[23] }, // Docker -> Nginx
-  { source: nodes[17], target: nodes[18] }, // Kong -> Consul
+  const links: SkillLink[] = [
+    // Frontend
+    { source: nodes[0], target: nodes[1] },
+    { source: nodes[0], target: nodes[2] },
+    { source: nodes[0], target: nodes[3] },
+    { source: nodes[3], target: nodes[4] },
+    { source: nodes[3], target: nodes[5] },
+    { source: nodes[1], target: nodes[6] },
+    { source: nodes[1], target: nodes[7] },
 
-  // AWS
-  { source: nodes[19], target: nodes[20] }, // AWS -> EC2
-  { source: nodes[19], target: nodes[21] }, // AWS -> S3
-  { source: nodes[19], target: nodes[22] }, // AWS -> Route53
+    // Backend
+    { source: nodes[8], target: nodes[9] },
+    { source: nodes[10], target: nodes[11] },
+    { source: nodes[28], target: nodes[12] },
 
-  // Tools
-  { source: nodes[25], target: nodes[26] }, // Git -> GitHub
-  { source: nodes[25], target: nodes[27] }, // Git -> Postman
-];
+    // Databases
+    { source: nodes[13], target: nodes[9] },
+    { source: nodes[14], target: nodes[9] },
+    { source: nodes[15], target: nodes[12] },
 
-// --- garante que TODO mundo fique conectado ---
-// vamos percorrer os nodes e ligar em "cadeia"
-for (let i = 0; i < nodes.length - 1; i++) {
-  baseLinks.push({ source: nodes[i], target: nodes[i + 1] });
-}
+    // Infra/DevOps
+    { source: nodes[16], target: nodes[17] },
+    { source: nodes[16], target: nodes[18] },
+    { source: nodes[16], target: nodes[23] },
+    { source: nodes[17], target: nodes[18] },
+    { source: nodes[19], target: nodes[20] },
+    { source: nodes[19], target: nodes[21] },
+    { source: nodes[19], target: nodes[22] },
 
+    // Tools
+    { source: nodes[25], target: nodes[26] },
+    { source: nodes[25], target: nodes[27] },
+  ];
 
-
-// Junta as conexões lógicas + todas as possíveis
-const links: SkillLink[] = [...baseLinks, ...baseLinks];
-
+  // Garante que todo mundo fique conectado (liga clusters)
+  for (let i = 0; i < nodes.length - 1; i++) {
+    links.push({ source: nodes[i], target: nodes[i + 1] });
+  }
 
   links.forEach((link) => {
     link.source.neighbors!.push(link.target);
@@ -187,6 +205,13 @@ export function SkillsGraph() {
           const img = imagesRef.current[node.id];
           const size = 40 / globalScale;
 
+          // --- Fundo colorido do node ---
+          ctx.beginPath();
+          ctx.arc(node.x!, node.y!, size / 1.5, 0, 2 * Math.PI);
+          ctx.fillStyle = "#222"; // cor do background
+          ctx.fill();
+
+          // --- Desenha a imagem por cima ---
           if (img && img.complete) {
             ctx.drawImage(
               img,
@@ -202,6 +227,7 @@ export function SkillsGraph() {
             ctx.fill();
           }
 
+          // --- Destaca nodes quando hover ---
           if (highlightNodes.has(node)) {
             ctx.beginPath();
             ctx.arc(node.x!, node.y!, size / 1.5, 0, 2 * Math.PI);
@@ -225,13 +251,9 @@ export function SkillsGraph() {
           highlightLinks.has(link) ? 4 : 0
         }
         linkDirectionalParticles={4}
+        nodeColor="black"
         nodeRelSize={4}
         linkColor={(link) => (highlightLinks.has(link) ? "cyan" : "white")}
-        onNodeDrag={() => {
-          if (graphRef.current) {
-            graphRef.current.centerAt(0, 0, 0);
-          }
-        }}
       />
     </div>
   );
