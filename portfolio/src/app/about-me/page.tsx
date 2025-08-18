@@ -21,10 +21,12 @@ export default function AboutMe() {
         <SlideIn fromX={50}>
           <Experiences />
         </SlideIn>
-
       </div>
-
-        <SkillsGraph/>
+      <div className={styles.skills}>
+        <SlideIn fromX={50}>
+          <SkillsGraph />
+        </SlideIn>
+      </div>
     </div>
   );
 }

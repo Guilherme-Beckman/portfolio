@@ -11,6 +11,9 @@
 .aboutMeWrapper > * {
   flex: 1;
 }
+.skills {
+  margin-top: 1rem;
+}
 
 @media screen and (max-width: 768px) {
   .aboutMe {
