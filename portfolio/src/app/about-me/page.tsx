@@ -5,6 +5,7 @@ import { Experiences } from "../components/about-me/experiences/experiences";
 import { Education } from "../components/about-me/education/education";
 import educationData from "../data/educationData";
 import { SkillsGraph } from "../components/about-me/skills/skills-graph/skills-graph";
+import SkillsTable from "../components/about-me/skills/skills-table/skills-table";
 export default function AboutMe() {
   return (
     <div className={styles.aboutMe}>
@@ -25,6 +26,9 @@ export default function AboutMe() {
       <div className={styles.skills}>
         <SlideIn fromX={50}>
           <SkillsGraph />
+        </SlideIn>
+        <SlideIn fromX={50}>
+          <SkillsTable />
         </SlideIn>
       </div>
     </div>

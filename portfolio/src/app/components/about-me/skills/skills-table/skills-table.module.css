@@ -1,0 +1,30 @@
+.skillsTable {
+  margin-top: 1rem;
+}
+.title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #bbb;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.subtitle {
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.categoriesContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.categoriesItem{
+    text-align: center;
+    align-items: center ;
+    justify-content: center;
+    
+}
