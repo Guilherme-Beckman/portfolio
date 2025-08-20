@@ -195,7 +195,7 @@ export default function SkillsTable() {
             onClick={() => setSelectedCategory(c.id)}
           >
             <div>{c.icon}</div>
-            <div>{c.name}</div>
+            <div className={styles.categorieName}>{c.name}</div>
           </div>
         ))}
       </div>
