@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useRef, useState } from "react";
 import styles from "./timeline.module.css";
 
@@ -9,9 +8,11 @@ export default function Timeline() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const totalHeight = document.body.scrollHeight - window.innerHeight;
+      // OPÇÃO 1: Baseado na posição atual da janela (0-100% da viewport)
       const scrollY = window.scrollY;
-      const percent = (scrollY / totalHeight) * 100;
+      const windowHeight = window.innerHeight;
+      const percent = Math.min((scrollY / windowHeight) *120, 100);
+
       setProgress(percent);
     };
 
