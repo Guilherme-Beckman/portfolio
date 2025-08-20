@@ -1,6 +1,8 @@
+"use client";
 import { Cloud, Code, Database, Globe, Wrench } from "lucide-react";
 import styles from "./skills-table.module.css";
 import { h1 } from "motion/react-client";
+import { useState } from "react";
 interface TechItem {
   name: string;
   projects: number;
@@ -27,18 +29,60 @@ const categories = [
     icon: <Wrench className="w-4 h-4" />,
   },
 ];
+const skills: TechItem[] = [
+  {
+    name: "React",
+    projects: 5,
+    proficiency: 80,
+    category: "frontend",
+    description: "UI library",
+  },
+  {
+    name: "Spring Boot",
+    projects: 3,
+    proficiency: 70,
+    category: "backend",
+    description: "Java backend framework",
+  },
+  {
+    name: "Docker",
+    projects: 4,
+    proficiency: 75,
+    category: "cloud",
+    description: "Containerization tool",
+  },
+];
 export default function SkillsTable() {
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(
+    "frontend"
+  );
+  const filteredSkills = skills.filter((s) => s.category === selectedCategory);
   return (
     <div className={`${styles.skillsTable} animatedBg`}>
       <h1 className={styles.title}>Technical Stack</h1>
       <h2 className={styles.subtitle}>
         Technologies and tools I use to build innovative solutions
       </h2>
+      <br />
       <div className={styles.categoriesContainer}>
         {categories.map((c) => (
-          <div className={styles.categoriesItem} key={c.id}>
-            {c.icon}
-            {c.name}
+          <div
+            className={`${styles.categoriesItem} ${
+              selectedCategory === c.id ? styles.selected : ""
+            }`}
+            key={c.id}
+            onClick={() => setSelectedCategory(c.id)}
+          >
+            <div>{c.icon}</div>
+            <div>{c.name}</div>
+          </div>
+        ))}
+      </div>
+      <div className={styles.skills}>
+        {filteredSkills.map((skill) => (
+          <div key={skill.name}>
+            <p>{skill.name}</p>
+            
           </div>
         ))}
       </div>
