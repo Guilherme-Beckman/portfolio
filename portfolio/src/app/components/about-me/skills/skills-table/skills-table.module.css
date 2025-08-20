@@ -80,6 +80,19 @@
   justify-content: space-between;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.skillItem img{
+  height: 2rem;
+  width: 2rem;
+}
+.iconName{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.iconName h1{
+  margin-top: 0.5rem;
+}
 
 .skillItem:hover {
   transform: translateY(-5px);
