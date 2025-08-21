@@ -27,7 +27,6 @@
   text-transform: uppercase;
   align-items: center;
   text-align: center;
-
 }
 .subtitle {
   font-weight: 700;
@@ -40,7 +39,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
   .aboutMe {
     padding: 0rem;
   }
@@ -49,4 +48,8 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
+  .projectCard {
+    width: 1000%;
+  }
+
 }
