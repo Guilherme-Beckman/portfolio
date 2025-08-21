@@ -7,6 +7,7 @@ import educationData from "../data/educationData";
 import { SkillsGraph } from "../components/about-me/skills/skills-graph/skills-graph";
 import SkillsTable from "../components/about-me/skills/skills-table/skills-table";
 import { GitHubStats } from "../components/about-me/github-cont/github-stats";
+import ContactCard from "../components/about-me/contacts/contacs";
 export default function AboutMe() {
   return (
     <div className={styles.aboutMe}>
@@ -34,7 +35,12 @@ export default function AboutMe() {
       </div>
       <div className={styles.skills}>
         <SlideIn fromX={50}>
-          <GitHubStats/>
+          <GitHubStats />
+        </SlideIn>
+      </div>
+      <div className={styles.skills}>
+        <SlideIn fromX={50}>
+          <ContactCard />
         </SlideIn>
       </div>
     </div>
