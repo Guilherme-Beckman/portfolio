@@ -1,0 +1,35 @@
+.jobDescription {
+  min-width: 45%;
+}
+
+.role {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1rem;
+  color: gray;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  text-align: justify;
+}
+
+.jobDescription ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jobDescription li {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+}
+
+.jobDescription li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+  object-fit: contain;
+}

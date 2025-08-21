@@ -1,0 +1,345 @@
+.contactContainer {
+  position: relative;
+  padding: 2rem;
+  color: white;
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0 1rem;
+}
+
+.externalHeader {
+  margin-top: 2.5rem;
+}
+
+.sectionDivider {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--dark-cyan),
+    transparent
+  );
+  opacity: 0.6;
+}
+
+.sectionTitle {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #bbb;
+  margin-bottom: 0 1;
+  text-transform: uppercase;
+}
+
+.contactItems {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.contactItem:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.iconWrapper {
+  position: relative;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, var(--dark-cyan), var(--light-cyan));
+  box-shadow: 0 4px 15px rgba(100, 255, 218, 0.3);
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #1a1a2e;
+}
+
+.iconGlow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, var(--dark-cyan), var(--light-cyan));
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+  filter: blur(8px);
+  z-index: -1;
+  animation: pulse 2s infinite;
+}
+
+.itemContent {
+  flex: 1;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #a0aec0;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.link {
+  display: block;
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.primaryLink:hover {
+  color: #64ffda;
+  transform: translateX(5px);
+}
+
+.secondaryLink {
+  opacity: 0.8;
+}
+
+.secondaryLink:hover {
+  color: #81e6d9;
+  transform: translateX(5px);
+  opacity: 1;
+}
+
+.calendlyLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.calendlyText {
+  flex: 1;
+}
+
+.calendlyBadge {
+  padding: 0.25rem 0.5rem;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.locationText {
+  font-size: 0.9rem;
+  color: #e2e8f0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.locationDot {
+  width: 8px;
+  height: 8px;
+  background: #f56565;
+  border-radius: 50%;
+  animation: blink 1.5s infinite;
+}
+
+.socials {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.socialBtn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+}
+
+.socialBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.socialBtn:hover::before {
+  left: 100%;
+}
+
+.socialIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.socialLabel {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.socialRipple {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+
+.githubHover {
+  background: linear-gradient(135deg, #333, #24292e);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.linkedin:hover {
+  background: linear-gradient(135deg, #0077b5, #005885);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 119, 181, 0.3);
+}
+
+.instagram:hover {
+  background: linear-gradient(135deg, #e4405f, #833ab4, #fcb045);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(228, 64, 95, 0.3);
+}
+
+.socialBtn:hover .social-icon {
+  transform: scale(1.1);
+}
+
+.socialBtn:hover .social-label {
+  opacity: 1;
+}
+
+.socialBtn:hover .social-ripple {
+  width: 100px;
+  height: 100px;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.1) rotate(5deg);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactContainer {
+    padding: 1.5rem;
+  }
+
+  .socials {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .socialBtn {
+    flex-direction: row;
+    justify-content: center;
+    width: 200px;
+  }
+}
