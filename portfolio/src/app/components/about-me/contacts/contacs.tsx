@@ -39,23 +39,7 @@ export default function ContactCard() {
             </div>
           </div>
 
-          <div className={styles.contactItem}>
-            <div className={styles.iconWrapper}>
-              <Phone className={styles.icon} />
-              <div className={styles.iconGlow}></div>
-            </div>
-            <div className={styles.itemContent}>
-              <p className={styles.label}>CONTACT</p>
-              <a
-                href="https://calendly.com"
-                target="_blank"
-                className={`${styles.link} ${styles.calendlyLink}`}
-              >
-                <span className={styles.calendlyText}>Schedule a Call</span>
-                <span className={styles.calendlyBadge}>Calendly</span>
-              </a>
-            </div>
-          </div>
+
 
           <div className={styles.contactItem}>
             <div className={styles.iconWrapper}>
@@ -97,15 +81,7 @@ export default function ContactCard() {
             <span className={styles.socialLabel}>LinkedIn</span>
             <div className={styles.socialRipple}></div>
           </a>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            className={`${styles.socialBtn} ${styles.instagram}`}
-          >
-            <Instagram className={styles.socialIcon} />
-            <span className={styles.socialLabel}>Instagram</span>
-            <div className={styles.socialRipple}></div>
-          </a>
+
         </div>
       </div>
     </div>
