@@ -1,13 +1,9 @@
 .contactContainer {
   position: relative;
   padding: 2rem;
-  border-radius: 1.5rem;
   color: white;
   overflow: hidden;
-
 }
-
-
 
 .content {
   position: relative;
@@ -27,7 +23,12 @@
 .sectionDivider {
   flex: 1;
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--dark-cyan), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--dark-cyan),
+    transparent
+  );
   opacity: 0.6;
 }
 

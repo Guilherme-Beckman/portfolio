@@ -40,7 +40,8 @@
   justify-content: center;
   cursor: pointer;
   color: var(--light-cyan);
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .categoriesItem div:first-child {
@@ -61,7 +62,8 @@
   border: 2px solid var(--light-cyan);
   font-weight: bold;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .skillsContainer {
@@ -159,5 +161,9 @@
     border: 2px solid var(--light-cyan);
     font-weight: bold;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+  .skillItem {
+    height: 10rem;
+    width: 100%;
   }
 }
