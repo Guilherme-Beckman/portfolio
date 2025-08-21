@@ -1,0 +1,52 @@
+.projects {
+  width: clamp(200px, 90%, 1200px);
+  margin: 0 auto;
+  padding: 1rem;
+  margin-top: 10dvh;
+}
+.projectsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.projectCard {
+  width: 49%;
+}
+.projectsContainer .projectCard:last-child:nth-child(odd) {
+  width: 100%;
+}
+.title {
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: #bbb;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+
+}
+.subtitle {
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #bbb;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutMe {
+    padding: 0rem;
+  }
+  .aboutMeWrapper {
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}

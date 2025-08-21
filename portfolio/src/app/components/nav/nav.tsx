@@ -18,7 +18,7 @@ export function Nav() {
           </Link>
         </li>
         <li className={pathName === "/projects" ? styles.active : ""}>
-          <Link className={styles.link} href={"/projetcs"}>
+          <Link className={styles.link} href={"/projects"}>
             Projects
           </Link>
         </li>
