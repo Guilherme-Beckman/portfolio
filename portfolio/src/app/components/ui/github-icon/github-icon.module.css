@@ -1,0 +1,13 @@
+.gitHub {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 10px;
+  border: 2px solid var(--light-gray);
+  padding: 0.7rem;
+  height: auto;
+  width: fit-content;
+}
+.gitHub h1 {
+  font-size: 1rem;
+}
