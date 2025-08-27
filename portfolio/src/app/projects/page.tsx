@@ -1,5 +1,5 @@
 import styles from "./page.module.css";
-import { ProjectCard } from "../components/projects/project-card";
+import { ProjectCard } from "../components/projects/project-card/project-card";
 import { SlideIn } from "../components/animations/slide-in";
 export default function Projects() {
   return (
