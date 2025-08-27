@@ -1,8 +1,41 @@
-.backArrow{
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+.backArrow {
+  display: flex;
+  align-items: center;
 }
-.backArrow h1{
-    font-size: 1rem;
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: white;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+
+  transition: color 0.2s ease, transform 0.2s ease;
 }
+
+.link:hover {
+  color: var(--dark-cyan);
+  transform: translateX(-3px);
+}
+
+.link:active {
+  transform: translateX(-1px) scale(0.97);
+}
+
+.backArrow h1 {
+  font-size: 1rem;
+  margin: 0;
+
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+
+  transition: color 0.2s ease;
+}
+
+.link:hover h1 {
+  color: var(--dark-cyan);
+}
+
+
