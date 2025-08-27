@@ -1,10 +1,10 @@
-import { NavProject } from "./nav-project/nav-project";
+import { NavProject, NavProjectProps } from "./nav-project/nav-project";
 import styles from "./more-about.module.css";
-export function MoreAbout() {
+
+export function MoreAbout({ gitHubUrl, liveDemoUrl }: NavProjectProps) {
   return (
     <div className={`${styles.moreAbout} animatedBg`}>
-      <NavProject  />
-      
+      <NavProject gitHubUrl={gitHubUrl} liveDemoUrl={liveDemoUrl} />
     </div>
   );
 }
