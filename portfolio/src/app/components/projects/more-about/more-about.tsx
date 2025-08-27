@@ -4,6 +4,7 @@ export function MoreAbout() {
   return (
     <div className={`${styles.moreAbout} animatedBg`}>
       <NavProject  />
+      
     </div>
   );
 }
