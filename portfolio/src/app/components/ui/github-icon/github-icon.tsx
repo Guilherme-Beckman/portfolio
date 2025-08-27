@@ -1,11 +1,12 @@
-import styles from "./github-icon.module.css";
+"use client"
+import { SocialButton } from "@/app/components/ui/social-button/social-button";
 import { Github } from "lucide-react";
 export function GitHubIcon() {
   return (
-    <div className={`${styles.socialBtn} ${styles.gitHub}`}>
-      <Github className={styles.socialIcon} />
-      <h1 className={styles.socialLabel}>GitHub</h1>
-      <div className={styles.socialRipple}></div>
-    </div>
+    <SocialButton
+      icon={< Github/>}
+      label="Git Hub"
+      onClick={() => window.open("https://seu-link-demo.com", "_blank")}
+    />
   );
 }
