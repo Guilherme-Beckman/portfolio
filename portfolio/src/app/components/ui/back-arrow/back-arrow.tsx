@@ -1,9 +1,13 @@
 import { ChevronLeft } from "lucide-react";
-
-export function BackArrow() {
+import styles from "./back-arrow.module.css"
+interface BackArrowProps{
+  mainText?: string;
+}
+export function BackArrow({mainText}: BackArrowProps) {
   return (
-    <div>
+    <div className={styles.backArrow}>
       <ChevronLeft />
+      <h1>{mainText}</h1>
     </div>
   );
 }

@@ -1,0 +1,8 @@
+.backArrow{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.backArrow h1{
+    font-size: 1rem;
+}
