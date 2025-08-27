@@ -9,10 +9,10 @@ interface SocialButtonProps {
 
 export function SocialButton({ icon, label, onClick }: SocialButtonProps) {
   return (
-    <div className={styles.socialBtn} onClick={onClick}>
+    <button className={styles.socialBtn} onClick={onClick}>
       <span className={styles.socialIcon}>{icon}</span>
       {label && <h1 className={styles.socialLabel}>{label}</h1>}
       <div className={styles.socialRipple}></div>
-    </div>
+    </button>
   );
 }
