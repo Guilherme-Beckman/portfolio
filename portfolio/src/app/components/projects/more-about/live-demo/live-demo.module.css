@@ -1,4 +1,4 @@
-.gitHub {
+.liveDemo {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -8,11 +8,11 @@
   height: auto;
   width: fit-content;
 }
-.gitHub h1 {
+.liveDemo h1 {
   font-size: 1rem;
 }
 @media screen and (max-width: 768px) {
-  .gitHub h1 {
+  .liveDemo h1 {
     display: none;
   }
 }
