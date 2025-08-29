@@ -3,7 +3,7 @@ import styles from "./more-about.module.css";
 import Image from "next/image";
 import { Badge, BadgeProps } from "./badge/badge";
 import { Code } from "lucide-react";
-import { KeyFeatures } from "../key-features/key-features";
+import { KeyFeatures } from "./key-features/key-features";
 interface MoreAboutProps {
   navProps?: NavProjectProps;
   mainImageProps?: MainImageProjectProps;
