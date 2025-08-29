@@ -19,6 +19,13 @@ export default function ProjectExample() {
       deleniti eligendi asperiores corrupti impedit minima commodi harum facere,
       voluptatum distinctio nemo! Aliquid fuga qui eaque eius. Harum, temporibus
       nostrum?"
+        features={[
+          "Member Management",
+          "System Attendance",
+          "Tracking Financial",
+          "Tracking Financial",
+          "Tracking Financial",
+        ]}
       ></MoreAbout>
     </div>
   );
