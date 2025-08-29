@@ -85,6 +85,14 @@ export default function ProjectExample() {
             { name: "Horizontal Scaling", iconUrl: "" },
           ],
         }}
+        projectStatistics={{
+          statistics: [
+            { label: "Active Users", value: "500+" },
+            { label: "Churches Served", value: "25+" },
+            { label: "Uptime", value: "99.9%" },
+            { label: "Performance Score", value: "95/100" },
+          ],
+        }}
       ></MoreAbout>
     </div>
   );

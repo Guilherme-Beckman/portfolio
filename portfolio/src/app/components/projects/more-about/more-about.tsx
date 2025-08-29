@@ -8,6 +8,7 @@ import {
   TechnicalSpecifications,
   TechnicalSpecificationsProps,
 } from "./technical-specifications/technical-specifications";
+import { ProjectStatistics, ProjectStatisticsProps } from "./project-statistics/project-statistics";
 interface MoreAboutProps {
   navProps?: NavProjectProps;
   mainImageProps?: MainImageProjectProps;
@@ -17,6 +18,7 @@ interface MoreAboutProps {
   description: string;
   features: string[];
   technicalSpecifications: TechnicalSpecificationsProps;
+  projectStatistics: ProjectStatisticsProps
 }
 export interface MainImageProjectProps {
   url?: string;
@@ -31,6 +33,7 @@ export function MoreAbout({
   description,
   features,
   technicalSpecifications,
+  projectStatistics,
 }: MoreAboutProps) {
   return (
     <div className={`${styles.moreAbout} animatedBg`}>
@@ -55,18 +58,24 @@ export function MoreAbout({
         ))}
       </div>
       <div className={styles.content}>
-        <div className={styles.projectOverviewContainer}>
-          <div className={styles.projectOverviewTitle}>
-            <Code color="#9ae5f3" />
-            <h3>Project Overview</h3>
+        <div className={styles.mainContent}>
+          <div className={styles.projectOverviewContainer}>
+            <div className={styles.projectOverviewTitle}>
+              <Code color="#9ae5f3" />
+              <h3>Project Overview</h3>
+            </div>
+            <p className={styles.description}>{description}</p>
           </div>
-          <p className={styles.description}>{description}</p>
+          <div className={styles.keyFeaturesContainer}>
+            <KeyFeatures features={features} />
+          </div>
+          <div className={styles.technicalSpecificationsContainer}>
+            <TechnicalSpecifications {...technicalSpecifications} />
+          </div>
         </div>
-        <div className={styles.keyFeaturesContainer}>
-          <KeyFeatures features={features} />
-        </div>
-        <div className={styles.technicalSpecificationsContainer}>
-          <TechnicalSpecifications {...technicalSpecifications} />
+
+        <div className={styles.sideContent}>
+          <ProjectStatistics statistics={projectStatistics.statistics}/>
         </div>
       </div>
     </div>
