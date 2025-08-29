@@ -4,9 +4,17 @@ export default function ProjectExample() {
     <div>
       <MoreAbout
         navProps={{ gitHubUrl: "url", liveDemoUrl: "url" }}
-        mainImageProps={{url: "/icons/skills/angular-svgrepo-com.svg", alt:"Angular Project"}}
+        mainImageProps={{
+          url: "/icons/skills/angular-svgrepo-com.svg",
+          alt: "Angular Project",
+        }}
         title="Angular Project"
         subtitle="Comprehensive Church Management Platform"
+        badges={[
+          { name: "Live", color: "gray" },
+          { name: "Live", color: "cyan" },
+          { name: "Live", color: "pink" },
+        ]}
       ></MoreAbout>
     </div>
   );
