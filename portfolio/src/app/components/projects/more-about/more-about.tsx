@@ -4,6 +4,10 @@ import Image from "next/image";
 import { Badge, BadgeProps } from "./badge/badge";
 import { Code } from "lucide-react";
 import { KeyFeatures } from "./key-features/key-features";
+import {
+  TechnicalSpecifications,
+  TechnicalSpecificationsProps,
+} from "./technical-specifications/technical-specifications";
 interface MoreAboutProps {
   navProps?: NavProjectProps;
   mainImageProps?: MainImageProjectProps;
@@ -12,6 +16,7 @@ interface MoreAboutProps {
   badges: BadgeProps[];
   description: string;
   features: string[];
+  technicalSpecifications: TechnicalSpecificationsProps;
 }
 export interface MainImageProjectProps {
   url?: string;
@@ -25,6 +30,7 @@ export function MoreAbout({
   badges,
   description,
   features,
+  technicalSpecifications,
 }: MoreAboutProps) {
   return (
     <div className={`${styles.moreAbout} animatedBg`}>
@@ -58,6 +64,9 @@ export function MoreAbout({
         </div>
         <div className={styles.keyFeaturesContainer}>
           <KeyFeatures features={features} />
+        </div>
+        <div className={styles.technicalSpecificationsContainer}>
+          <TechnicalSpecifications {...technicalSpecifications} />
         </div>
       </div>
     </div>

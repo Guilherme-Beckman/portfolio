@@ -26,6 +26,65 @@ export default function ProjectExample() {
           "Tracking Financial",
           "Tracking Financial",
         ]}
+        technicalSpecifications={{
+          frontend: [
+            { name: "React", iconUrl: "/icons/skills/react.svg" },
+            {
+              name: "Angular",
+              iconUrl: "/icons/skills/angular-svgrepo-com.svg",
+            },
+            { name: "TypeScript", iconUrl: "/icons/skills/typescript.svg" },
+            {
+              name: "Tailwind CSS",
+              iconUrl: "/icons/skills/css-3-svgrepo-com.svg",
+            },
+          ],
+          backend: [
+            {
+              name: "Java Spring Boot",
+              iconUrl: "/icons/skills/spring-svgrepo-com.svg",
+            },
+            { name: "Node.js", iconUrl: "/icons/skills/js-svgrepo-com.svg" },
+            {
+              name: "Python FastAPI",
+              iconUrl: "/icons/skills/fastapi-svgrepo-com.svg",
+            },
+            { name: "Go", iconUrl: "" }, // sem ícone disponível, pode adicionar depois
+          ],
+          database: [
+            {
+              name: "PostgreSQL",
+              iconUrl: "/icons/skills/postgresql-svgrepo-com.svg",
+            },
+            {
+              name: "MongoDB",
+              iconUrl: "/icons/skills/mongodb-svgrepo-com.svg",
+            },
+            { name: "Redis", iconUrl: "" }, // sem ícone disponível
+            { name: "MySQL", iconUrl: "/icons/skills/mysql-svgrepo-com.svg" },
+          ],
+          authentication: [
+            { name: "JWT", iconUrl: "" },
+            { name: "OAuth2", iconUrl: "" },
+            { name: "Firebase Auth", iconUrl: "" },
+            {
+              name: "Spring Security",
+              iconUrl: "/icons/skills/spring-svgrepo-com.svg",
+            },
+          ],
+          hosting: [
+            { name: "AWS", iconUrl: "/icons/skills/aws-svgrepo-com.svg" },
+            { name: "Google Cloud", iconUrl: "" },
+            { name: "Vercel", iconUrl: "" },
+            { name: "Netlify", iconUrl: "" },
+          ],
+          performance: [
+            { name: "Caching", iconUrl: "" },
+            { name: "Load Balancing", iconUrl: "" },
+            { name: "CDN", iconUrl: "" },
+            { name: "Horizontal Scaling", iconUrl: "" },
+          ],
+        }}
       ></MoreAbout>
     </div>
   );
