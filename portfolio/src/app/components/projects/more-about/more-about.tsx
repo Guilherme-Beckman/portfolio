@@ -2,12 +2,14 @@ import { NavProject, NavProjectProps } from "./nav-project/nav-project";
 import styles from "./more-about.module.css";
 import Image from "next/image";
 import { Badge, BadgeProps } from "./badge/badge";
+import { Code } from "lucide-react";
 interface MoreAboutProps {
   navProps?: NavProjectProps;
   mainImageProps?: MainImageProjectProps;
   title: string;
   subtitle: string;
   badges: BadgeProps[];
+  description: string;
 }
 export interface MainImageProjectProps {
   url?: string;
@@ -19,6 +21,7 @@ export function MoreAbout({
   title,
   subtitle,
   badges,
+  description,
 }: MoreAboutProps) {
   return (
     <div className={`${styles.moreAbout} animatedBg`}>
@@ -41,6 +44,15 @@ export function MoreAbout({
         {badges.map((badge, index) => (
           <Badge key={index} name={badge.name} color={badge.color} />
         ))}
+      </div>
+      <div className={styles.content}>
+        <div className={styles.projectOverviewContainer}>
+          <div className={styles.projectOverview}>
+            <Code color="#9ae5f3"/>
+            <h3>Project Overview</h3>
+          </div>
+          <p className={styles.description}>{description}</p>
+        </div>
       </div>
     </div>
   );

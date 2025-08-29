@@ -15,6 +15,10 @@ export default function ProjectExample() {
           { name: "Live", color: "cyan" },
           { name: "Live", color: "pink" },
         ]}
+        description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus at
+      deleniti eligendi asperiores corrupti impedit minima commodi harum facere,
+      voluptatum distinctio nemo! Aliquid fuga qui eaque eius. Harum, temporibus
+      nostrum?"
       ></MoreAbout>
     </div>
   );
