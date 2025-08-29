@@ -4,12 +4,14 @@ import Image from "next/image";
 interface MoreAboutProps {
   navProps?: NavProjectProps;
   mainImageProps?: MainImageProjectProps;
+  title: string;
+  subtitle: string;
 }
 export interface MainImageProjectProps {
   url?: string;
   alt?: string;
 }
-export function MoreAbout({ navProps, mainImageProps }: MoreAboutProps) {
+export function MoreAbout({ navProps, mainImageProps, title, subtitle }: MoreAboutProps) {
   return (
     <div className={`${styles.moreAbout} animatedBg`}>
       <NavProject
@@ -25,6 +27,9 @@ export function MoreAbout({ navProps, mainImageProps }: MoreAboutProps) {
           className={styles.mainImage}
         />
       </div>
+      <h1 className={styles.title}>{title}</h1>
+      <h2 className={styles.subtitle}>{subtitle}</h2>
+      
     </div>
   );
 }

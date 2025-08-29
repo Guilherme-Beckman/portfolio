@@ -5,6 +5,8 @@ export default function ProjectExample() {
       <MoreAbout
         navProps={{ gitHubUrl: "url", liveDemoUrl: "url" }}
         mainImageProps={{url: "/icons/skills/angular-svgrepo-com.svg", alt:"Angular Project"}}
+        title="Angular Project"
+        subtitle="Comprehensive Church Management Platform"
       ></MoreAbout>
     </div>
   );
