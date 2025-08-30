@@ -8,9 +8,16 @@ import {
   usePrevNextButtons,
 } from "../embla-arrow-buttons/embla-arrow-buttons";
 import useEmblaCarousel from "embla-carousel-react";
-
+import Video from "next-video";
+import Image from "next/image";
+type Slide = {
+  title: string
+  type: "image" | "video";
+  src: string;
+  alt?: string;
+};
 type PropType = {
-  slides: number[];
+  slides: Slide[];
   options?: EmblaOptionsType;
 };
 
@@ -32,9 +39,21 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     <section className={styles.embla}>
       <div className={styles.emblaViewport} ref={emblaRef}>
         <div className={styles.emblaContainer}>
-          {slides.map((index) => (
+          {slides.map((slide, index) => (
             <div className={styles.emblaSlide} key={index}>
-              <div className={styles.emblaSlideNumber}>{index + 1}</div>
+              <h2>{slide.title}</h2>
+              <div className={styles.emblaSlideContent}>
+                {slide.type === "image" ? (
+                  <Image
+                    src={slide.src}
+                    alt={slide.alt || `Slide ${index}`}
+                    width={200}
+                    height={200}
+                  />
+                ) : (
+                  <Video src={slide.src} />
+                )}
+              </div>
             </div>
           ))}
         </div>

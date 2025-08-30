@@ -23,7 +23,7 @@
   padding-left: var(--slide-spacing);
 }
 
-.emblaSlideNumber {
+.emblaSlideContent {
   box-shadow: inset 0 0 0 0.2rem var(--dark-gray);
   border-radius: 1.8rem;
   font-size: 4rem;
