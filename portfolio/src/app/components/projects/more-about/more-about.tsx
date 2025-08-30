@@ -16,7 +16,7 @@ import {
   DevelopmentTimeline,
   DevelopmentTimelineProps,
 } from "./development-timeline/development-timeline";
-import { Demo } from "./demo/demo";
+import { Demo, DemoProps } from "./demo/demo";
 interface MoreAboutProps {
   navProps?: NavProjectProps;
   mainImageProps?: MainImageProjectProps;
@@ -28,6 +28,7 @@ interface MoreAboutProps {
   technicalSpecifications: TechnicalSpecificationsProps;
   projectStatistics: ProjectStatisticsProps;
   developmentTimeline: DevelopmentTimelineProps;
+  demo: DemoProps;
 }
 export interface MainImageProjectProps {
   url?: string;
@@ -44,6 +45,7 @@ export function MoreAbout({
   technicalSpecifications,
   projectStatistics,
   developmentTimeline,
+  demo,
 }: MoreAboutProps) {
   return (
     <div className={`${styles.moreAbout} animatedBg`}>
@@ -68,7 +70,7 @@ export function MoreAbout({
         ))}
       </div>
       <div className={styles.demo}>
-        <Demo/>
+        <Demo slides={demo.slides} />
       </div>
       <div className={styles.content}>
         <div className={styles.mainContent}>

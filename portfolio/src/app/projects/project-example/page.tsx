@@ -93,23 +93,50 @@ export default function ProjectExample() {
             { label: "Performance Score", value: "95/100" },
           ],
         }}
-        developmentTimeline={{events:[
-          {
-            date: "Jan 2025",
-            title: "Início do projeto",
-            description: "Planejamento inicial",
-          },
-          {
-            date: "Mar 2025",
-            title: "Primeira versão",
-            description: "Versão beta lançada",
-          },
-          {
-            date: "Ago 2025",
-            title: "Versão final",
-            description: "Lançamento oficial",
-          },
-        ]}}
+        developmentTimeline={{
+          events: [
+            {
+              date: "Jan 2025",
+              title: "Início do projeto",
+              description: "Planejamento inicial",
+            },
+            {
+              date: "Mar 2025",
+              title: "Primeira versão",
+              description: "Versão beta lançada",
+            },
+            {
+              date: "Ago 2025",
+              title: "Versão final",
+              description: "Lançamento oficial",
+            },
+          ],
+        }}
+        demo={{
+          slides: [
+            {
+              title: "Title",
+              type: "image",
+              src: "/icons/skills/angular-svgrepo-com.svg",
+              alt: "Foto 1",
+            },
+            {
+              title: "Title",
+              type: "video",
+              src: "https://cdn.pixabay.com/video/2025/08/20/298643_large.mp4",
+            },
+            {
+              title: "Title",
+              type: "video",
+              src: "https://cdn.pixabay.com/video/2021/09/11/88242-602915695_large.mp4",
+            },
+            {
+              title: "Title",
+              type: "video",
+              src: "https://cdn.pixabay.com/video/2020/02/24/32767-394004551_large.mp4",
+            },
+          ],
+        }}
       ></MoreAbout>
     </div>
   );
