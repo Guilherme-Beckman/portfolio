@@ -13,13 +13,21 @@ import {
 } from "./EmblaCarouselArrowButtons";
 import { DotButton, useDotButton } from "./EmblaCarouselDotButton";
 import styles from "./embla.module.css";
+import Image from "next/image";
+import Video from "next-video";
 const TWEEN_FACTOR_BASE = 0.52;
 
 const numberWithinRange = (number: number, min: number, max: number): number =>
   Math.min(Math.max(number, min), max);
+type Slide = {
+  title?: string;
+  type: "image" | "video";
+  src: string;
+  alt?: string;
+};
 
 type PropType = {
-  slides: number[];
+  slides: Slide[];
   options?: EmblaOptionsType;
 };
 
@@ -109,12 +117,21 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     <div className={styles.embla}>
       <div className={styles.embla__viewport} ref={emblaRef}>
         <div className={styles.embla__container}>
-          {slides.map((index) => (
+          {slides.map((slide, index) => (
             <div className={styles.embla__slide} key={index}>
               <div
                 className={`${styles.embla__slide__number} embla__slide__number`}
               >
-                {index}
+                {slide.type === "image" ? (
+                  <Image
+                    src={slide.src}
+                    alt={slide.alt || `slide-${index}`}
+                    width={200}
+                    height={200}
+                  />
+                ) : (
+                  <Video src={slide.src} controls />
+                )}
               </div>
             </div>
           ))}
