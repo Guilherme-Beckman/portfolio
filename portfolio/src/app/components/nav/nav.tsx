@@ -22,11 +22,11 @@ export function Nav() {
             Projects
           </Link>
         </li>
-        <li className={pathName === "/blog" ? styles.active : ""}>
+        {/* <li className={pathName === "/blog" ? styles.active : ""}>
           <Link className={styles.link} href={"/blog"}>
             Blog
           </Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

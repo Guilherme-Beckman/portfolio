@@ -1,8 +1,11 @@
-.moreAbout, .contact {
-  width: clamp(200px, 90%, 1200px);
+.moreAboutContainer {
+  width: clamp(200px, 90%, 1000px);
   margin: 0 auto;
   padding: 1rem;
   margin-top: 5dvh;
+}
+.contact{
+  margin-top: 2rem;
 }
 .mainImageContainer {
   padding: 1rem;
@@ -70,7 +73,7 @@
 .sideContent > * {
   margin-top: 2rem;
 }
-.demo{
+.demo {
   margin: 2rem;
 }
 @media screen and (max-width: 768px) {
