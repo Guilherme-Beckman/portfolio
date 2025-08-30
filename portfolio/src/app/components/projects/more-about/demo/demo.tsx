@@ -1,9 +1,13 @@
+import EmblaCarousel from "@/app/components/embla/carousel/EmblaCarousel";
 import styles from "./demo.module.css";
-import EmblaCarousel from "@/app/components/embla/carousel/embla-carousel";
+import { EmblaOptionsType } from "embla-carousel";
+
 export function Demo() {
+  const OPTIONS: EmblaOptionsType = { loop: true };
+
   return (
     <div className={styles.demo}>
-      <EmblaCarousel
+      {/* <EmblaCarousel
         slides={[
           {
             title: "Title",
@@ -17,7 +21,8 @@ export function Demo() {
             src: "https://cdn.pixabay.com/video/xyz.mp4",
           },
         ]}
-      />
+      /> */}
+      <EmblaCarousel slides={[1, 2, 3]} options={OPTIONS} />
     </div>
   );
 }
