@@ -49,7 +49,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 
   const setTweenNodes = useCallback((emblaApi: EmblaCarouselType): void => {
     tweenNodes.current = emblaApi.slideNodes().map((slideNode) => {
-      return slideNode.querySelector(".embla__slide__number") as HTMLElement;
+      return slideNode.querySelector(".embla__slide__content") as HTMLElement;
     });
   }, []);
 
@@ -120,8 +120,9 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
           {slides.map((slide, index) => (
             <div className={styles.embla__slide} key={index}>
               <div
-                className={`${styles.embla__slide__number} embla__slide__number`}
+                className={`${styles.embla__slide__content} embla__slide__content`}
               >
+                <h2>{slide.title}</h2>
                 {slide.type === "image" ? (
                   <Image
                     src={slide.src}

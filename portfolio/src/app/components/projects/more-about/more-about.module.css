@@ -70,9 +70,9 @@
 .sideContent > * {
   margin-top: 2rem;
 }
-/* Layout padrão já definido acima */
-
-/* Responsividade */
+.demo{
+  margin: 2rem;
+}
 @media screen and (max-width: 768px) {
   .title {
     font-size: 3rem;

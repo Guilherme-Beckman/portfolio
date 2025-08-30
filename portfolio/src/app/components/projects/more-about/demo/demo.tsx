@@ -24,7 +24,12 @@ export function Demo() {
             {
               title: "Title",
               type: "video",
-              src: "https://cdn.pixabay.com/video/2025/08/20/298643_large.mp4",
+              src: "https://cdn.pixabay.com/video/2021/09/11/88242-602915695_large.mp4",
+            },
+            {
+              title: "Title",
+              type: "video",
+              src: "https://cdn.pixabay.com/video/2020/02/24/32767-394004551_large.mp4",
             },
           ]}
           options={OPTIONS}
