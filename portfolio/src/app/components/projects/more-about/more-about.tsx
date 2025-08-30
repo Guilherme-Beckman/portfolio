@@ -66,6 +66,9 @@ export function MoreAbout({
           <Badge key={index} name={badge.name} color={badge.color} />
         ))}
       </div>
+      <div className={styles.demo}>
+        
+      </div>
       <div className={styles.content}>
         <div className={styles.mainContent}>
           <div className={styles.projectOverviewContainer}>
