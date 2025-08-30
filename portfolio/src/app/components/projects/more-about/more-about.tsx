@@ -16,6 +16,7 @@ import {
   DevelopmentTimeline,
   DevelopmentTimelineProps,
 } from "./development-timeline/development-timeline";
+import { Demo } from "./demo/demo";
 interface MoreAboutProps {
   navProps?: NavProjectProps;
   mainImageProps?: MainImageProjectProps;
@@ -67,7 +68,7 @@ export function MoreAbout({
         ))}
       </div>
       <div className={styles.demo}>
-        
+        <Demo/>
       </div>
       <div className={styles.content}>
         <div className={styles.mainContent}>
