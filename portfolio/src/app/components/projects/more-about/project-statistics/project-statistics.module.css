@@ -1,8 +1,26 @@
 .projectStatistics {
-  background: #0a0a0a;
+  background: rgba(10, 10, 10, 0.7); /* fundo levemente transparente */
   border-radius: 8px;
   padding: 1.5rem;
   color: white;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px); /* blur do fundo */
+}
+
+.projectStatistics::before {
+  content: "";
+  position: absolute;
+  top: -80%;
+  left: -80%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at top left,
+    rgba(255, 255, 255, 0.2),
+    transparent 100%
+  );
+  pointer-events: none; /* não interfere em cliques */
 }
 
 .projectStatisticsTitle {
@@ -29,6 +47,6 @@
 }
 
 .statValue {
-  color: #00e0ff;
+  color: var(--dark-cyan);
   font-weight: bold;
 }

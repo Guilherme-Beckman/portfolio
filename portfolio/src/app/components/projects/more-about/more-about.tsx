@@ -8,7 +8,14 @@ import {
   TechnicalSpecifications,
   TechnicalSpecificationsProps,
 } from "./technical-specifications/technical-specifications";
-import { ProjectStatistics, ProjectStatisticsProps } from "./project-statistics/project-statistics";
+import {
+  ProjectStatistics,
+  ProjectStatisticsProps,
+} from "./project-statistics/project-statistics";
+import {
+  DevelopmentTimeline,
+  DevelopmentTimelineProps,
+} from "./development-timeline/development-timeline";
 interface MoreAboutProps {
   navProps?: NavProjectProps;
   mainImageProps?: MainImageProjectProps;
@@ -18,7 +25,8 @@ interface MoreAboutProps {
   description: string;
   features: string[];
   technicalSpecifications: TechnicalSpecificationsProps;
-  projectStatistics: ProjectStatisticsProps
+  projectStatistics: ProjectStatisticsProps;
+  developmentTimeline: DevelopmentTimelineProps;
 }
 export interface MainImageProjectProps {
   url?: string;
@@ -34,6 +42,7 @@ export function MoreAbout({
   features,
   technicalSpecifications,
   projectStatistics,
+  developmentTimeline,
 }: MoreAboutProps) {
   return (
     <div className={`${styles.moreAbout} animatedBg`}>
@@ -75,7 +84,8 @@ export function MoreAbout({
         </div>
 
         <div className={styles.sideContent}>
-          <ProjectStatistics statistics={projectStatistics.statistics}/>
+          <ProjectStatistics statistics={projectStatistics.statistics} />
+          <DevelopmentTimeline events={developmentTimeline.events} />
         </div>
       </div>
     </div>

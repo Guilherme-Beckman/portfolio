@@ -93,6 +93,23 @@ export default function ProjectExample() {
             { label: "Performance Score", value: "95/100" },
           ],
         }}
+        developmentTimeline={{events:[
+          {
+            date: "Jan 2025",
+            title: "Início do projeto",
+            description: "Planejamento inicial",
+          },
+          {
+            date: "Mar 2025",
+            title: "Primeira versão",
+            description: "Versão beta lançada",
+          },
+          {
+            date: "Ago 2025",
+            title: "Versão final",
+            description: "Lançamento oficial",
+          },
+        ]}}
       ></MoreAbout>
     </div>
   );
