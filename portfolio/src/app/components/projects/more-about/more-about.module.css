@@ -70,3 +70,27 @@
 .sideContent > * {
   margin-top: 2rem;
 }
+/* Layout padrão já definido acima */
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+  .subtitle {
+    font-size: 1.3rem;
+  }
+  .content {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 1.5rem;
+  }
+  .mainContent,
+  .sideContent {
+    flex: 1;
+  }
+  .mainContent > *,
+  .sideContent > * {
+    margin-top: 1.5rem;
+  }
+}
