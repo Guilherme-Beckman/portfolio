@@ -20,14 +20,21 @@
   padding-left: var(--slide-spacing);
 }
 .embla__slide__content {
+  flex-direction: column; /* mantém o título em cima e a mídia embaixo */
   align-items: center;
   justify-content: center;
   height: var(--slide-height);
   user-select: none;
   width: 100%;
+  text-align: center;
+}
+.embla__slide__content h2 {
+  font-size: 2rem;
+  padding: 1rem;
+  text-transform: uppercase;
 }
 .embla__slide__content img,
-.embla__slide__content video {
+.embla__slide__content .video {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover; /* preenche mantendo proporção */
