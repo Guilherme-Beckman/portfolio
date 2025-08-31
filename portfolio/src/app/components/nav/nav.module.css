@@ -30,7 +30,6 @@
 .link {
   position: relative;
   display: block;
-  padding: 0.6rem 1.2rem;
   border-radius: 12px;
   color: var(--light-cyan);
   font-weight: 500;
@@ -39,7 +38,18 @@
   transition: color 0.3s ease;
   font-size: 0.9rem;
 }
-
+.link button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background: transparent;
+  position: relative;
+  color: inherit;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: inherit;
+}
 .link::after {
   content: "";
   position: absolute;
