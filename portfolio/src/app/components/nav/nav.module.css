@@ -1,46 +1,75 @@
 .nav {
   display: flex;
   justify-content: center;
-}
-.nav ul {
-  background-color: var(--dark-gray);
-  display: flex;
-  list-style: none;
-  gap: 1rem;
-  justify-content: center;
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
-  margin-top: 10dvh;
-  width: fit-content;
-  box-shadow: 0 0px 5px var(--light-cyan);
-}
-.nav li {
-  border-radius: 25px;
-  transition: 0.3s ease-in-out;
-  user-select: none;
-  overflow: hidden;
-}
-.nav li:hover,
-.nav .active {
-  background-color: var(--light-gray);
-  transform: scale(1.1);
-}
-.link {
-  display: block;
-  color: inherit;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
-  transition: 0.3s ease-in-out;
-  user-select: none;
-  overflow: hidden;
+  margin-top: 8dvh;
 }
 
-@media screen and (max-width: 360px) {
+.nav ul {
+  background: rgba(25, 25, 26, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(154, 229, 243, 0.3);
+  display: flex;
+  list-style: none;
+  gap: 1.2rem;
+  justify-content: center;
+  padding: 0.7rem 1.4rem;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(154, 229, 243, 0.15);
+}
+
+.nav li {
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+.nav li:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+
+.link {
+  position: relative;
+  display: block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+  color: var(--light-cyan);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 4px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--dark-cyan), var(--light-cyan));
+  border-radius: 4px;
+  transition: width 0.3s ease, left 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav li:hover .link,
+.nav .active .link {
+  color: white;
+}
+
+.nav li:hover .link::after,
+.nav .active .link::after {
+  width: 80%;
+}
+
+@media screen and (max-width: 480px) {
   .nav ul {
-    padding: 0.25rem 0.5rem;
+    gap: 0.6rem;
+    padding: 0.4rem 0.6rem;
   }
   .link {
-    padding: 0.25rem 0.5rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
   }
 }

@@ -1,0 +1,41 @@
+.featuresContainer {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem;
+}
+.keyFeaturesTitle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.keyFeaturesTitle h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: #0f1115;
+  height: 2rem;
+}
+
+.featureItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.checkIcon {
+  margin-right: 0.75rem;
+}
+
+.featureText {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
