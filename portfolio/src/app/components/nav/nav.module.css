@@ -80,7 +80,7 @@
 .translate {
   position: absolute;
   top: 25%;
-  right: 2rem; 
+  right: 2rem;
   width: 100px;
   z-index: 20;
 }
@@ -164,5 +164,9 @@
   .link {
     padding: 0.4rem 0.8rem;
     font-size: 0.9rem;
+  }
+  .translate {
+    right: 1rem;
+    top: 120%;
   }
 }
