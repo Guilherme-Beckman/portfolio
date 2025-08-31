@@ -1,0 +1,24 @@
+/* template.module.css */
+.banner-1,
+.banner-2,
+.banner-3,
+.banner-4 {
+  min-height: 100vh; /* min-h-screen */
+  background-color: #000000; /* bg-neutral-950 adaptado */
+  z-index: 10; /* z-10 */
+  position: fixed; /* fixed */
+  top: 0; /* top-0 */
+  width: 25%; /* w-1/4 */
+}
+
+.banner-2 {
+  left: 25%; /* left-1/4 */
+}
+
+.banner-3 {
+  left: 50%; /* left-2/4 */
+}
+
+.banner-4 {
+  left: 75%; /* left-3/4 */
+}

@@ -1,8 +1,7 @@
 "use client";
 import styles from "./nav.module.css";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
-
+import { TransitionLink } from "../transition-link";
 export function Nav() {
   const pathName = usePathname();
   const items = [
@@ -20,9 +19,9 @@ export function Nav() {
             key={item.href}
             className={pathName === item.href ? styles.active : ""}
           >
-            <Link className={styles.link} href={item.href}>
-              <p>{item.label}</p>
-            </Link>
+            <div className={styles.link}>
+              <TransitionLink href={item.href} label={item.label} />
+            </div>
           </li>
         ))}
       </ul>
