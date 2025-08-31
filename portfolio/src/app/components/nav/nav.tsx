@@ -2,32 +2,30 @@
 import styles from "./nav.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+
 export function Nav() {
   const pathName = usePathname();
+  const items = [
+    { href: "/", label: "Home" },
+    { href: "/about-me", label: "About" },
+    { href: "/projects", label: "Projects" },
+    // { href: "/blog", label: "Blog" },
+  ];
+
   return (
-    <div className={styles.nav}>
+    <nav className={styles.nav}>
       <ul>
-        <li className={pathName === "/" ? styles.active : ""}>
-          <Link className={styles.link} href={"/"}>
-            Home
-          </Link>
-        </li>
-        <li className={pathName === "/about-me" ? styles.active : ""}>
-          <Link className={styles.link} href={"/about-me"}>
-            About
-          </Link>
-        </li>
-        <li className={pathName === "/projects" ? styles.active : ""}>
-          <Link className={styles.link} href={"/projects"}>
-            Projects
-          </Link>
-        </li>
-        {/* <li className={pathName === "/blog" ? styles.active : ""}>
-          <Link className={styles.link} href={"/blog"}>
-            Blog
-          </Link>
-        </li> */}
+        {items.map((item) => (
+          <li
+            key={item.href}
+            className={pathName === item.href ? styles.active : ""}
+          >
+            <Link className={styles.link} href={item.href}>
+              <p>{item.label}</p>
+            </Link>
+          </li>
+        ))}
       </ul>
-    </div>
+    </nav>
   );
 }
