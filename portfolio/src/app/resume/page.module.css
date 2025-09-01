@@ -9,9 +9,11 @@
   display: grid;
   gap: 1.5rem;
   padding: 2rem 1.5rem;
-  background: var(--black);
   border-radius: 18px;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+  width: clamp(200px, 90%, 1200px);
+  margin: 0 auto;
+  padding: 1rem;
+  margin-top: 10dvh;
 }
 
 .header {
@@ -89,7 +91,6 @@
   border: 1px solid var(--border);
   border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.35);
 }
 
 .pdf {

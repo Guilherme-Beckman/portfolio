@@ -1,6 +1,7 @@
 "use client";
 import styles from "./page.module.css";
 import { Mail, FileDown } from "lucide-react";
+import ContactCard from "../components/about-me/contacts/contacs";
 export default function Resume() {
   return (
     <section className={styles.container}>
@@ -44,6 +45,7 @@ export default function Resume() {
           </p>
         </object>
       </div>
+      <ContactCard/>
     </section>
   );
 }
