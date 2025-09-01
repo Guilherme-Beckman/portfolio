@@ -3,6 +3,7 @@ import { Average_Sans } from "next/font/google";
 import "./globals.css";
 import { Nav } from "./components/nav/nav";
 import { FadeIn } from "./components/animations/fade-in";
+import { NextIntlClientProvider } from "next-intl";
 const averageSans = Average_Sans({
   variable: "--font-main",
   weight: "400",
@@ -24,7 +25,7 @@ export default function RootLayout({
         <FadeIn fromY={-20}>
           <Nav />
         </FadeIn>
-        {children}
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>{" "}
       </body>
     </html>
   );

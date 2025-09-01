@@ -1,7 +1,12 @@
+.navContainer {
+  padding-top: 8dvh;
+}
+
 .nav {
+  position: relative;
+
   display: flex;
   justify-content: center;
-  margin-top: 8dvh;
 }
 
 .nav ul {
@@ -72,6 +77,84 @@
 .nav .active .link::after {
   width: 80%;
 }
+.translate {
+  position: absolute;
+  top: 25%;
+  right: 2rem;
+  width: 100px;
+  z-index: 20;
+}
+
+.dropdown {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.translateButton {
+  width: 100%;
+  background: rgba(25, 25, 26, 0.6);
+  border: 1px solid rgba(154, 229, 243, 0.3);
+  border-radius: 12px;
+  padding: 0.6rem;
+  cursor: pointer;
+  color: var(--light-cyan);
+  font-size: 0.9rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.translateButton:hover {
+  background: rgba(154, 229, 243, 0.15);
+  transform: scale(1.07);
+  box-shadow: 0 0 12px rgba(154, 229, 243, 0.4);
+}
+
+.dropdownMenu {
+  margin-top: 0.4rem;
+  background: rgba(25, 25, 26, 0.9);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(154, 229, 243, 0.3);
+  border-radius: 12px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+  animation: slideFadeIn 0.25s ease forwards;
+}
+
+.localeOption {
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: var(--light-cyan);
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.localeOption:hover {
+  background: rgba(154, 229, 243, 0.15);
+  color: white;
+}
+
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 
 @media screen and (max-width: 480px) {
   .nav ul {
@@ -81,5 +164,9 @@
   .link {
     padding: 0.4rem 0.8rem;
     font-size: 0.9rem;
+  }
+  .translate {
+    right: 1rem;
+    top: 120%;
   }
 }

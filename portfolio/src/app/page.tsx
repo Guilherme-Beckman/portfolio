@@ -3,6 +3,7 @@ import { AiInput } from "./components/ai/input/input";
 import { Prompts } from "./components/ai/prompts/prompts";
 import styles from "./page.module.css";
 import { FadeIn } from "./components/animations/fade-in";
+import { useTranslations } from "next-intl";
 export default function Page() {
   return (
     <div className={styles.page}>
