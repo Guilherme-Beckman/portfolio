@@ -14,6 +14,7 @@ export function Nav() {
     { href: "/", label: "Home" },
     { href: "/about-me", label: "About" },
     { href: "/projects", label: "Projects" },
+    { href: "/resume", label: "Resume" },
   ];
 
   const locales = ["en", "pt"];
