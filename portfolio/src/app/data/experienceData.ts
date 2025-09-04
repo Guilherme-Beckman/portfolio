@@ -35,6 +35,7 @@ const experiencesData = [
       { name: "Shell", pathIcon: shellIcon },
     ],
   },
+  
 ];
 
 export default experiencesData;

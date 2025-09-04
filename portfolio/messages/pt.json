@@ -24,7 +24,7 @@
   },
 
   "Experience": {
-    "ifms": "IFMS",
+    "ifms": "IFMS - LIADS",
     "onsite": "Presencial",
     "fullstackInfra": "FullStack / Infra",
     "ifmsDescription": "Trabalhei no LIADS na parte de infraestrutura, tendo a função de configurar um servidor do zero (on-premise), no qual a arquitetura foi planejada para suportar Microserviços. Para isso, implementei um API Gateway utilizando o software Kong, que utilizava um DNS resolver com Consul para mapear os IPs dos microsserviços, facilitando o registro e a comunicação entre eles. Além disso, utilizei Ubuntu Server, Docker e Docker Compose para conteinerização. Também realizo manutenção em projetos já existentes, incluindo um chatbot para a Prefeitura de Corumbá-MS e um software para leitura e digitalização de peças da cultura pantaneira."
