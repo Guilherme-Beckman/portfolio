@@ -1,47 +1,40 @@
-import reactIcon from "public/icons/skills/react.svg";
-import typescriptIcon from "public/icons/skills/typescript.svg";
-
- const experiencesData = [
+import kongIcon from "public/icons/skills/kong-icon-svgrepo-com.svg";
+import consulIcon from "public/icons/skills/consul-svgrepo-com.svg";
+import typeScriptIcon from "public/icons/skills/typescript.svg";
+import javaScriptIcon from "public/icons/skills/js-svgrepo-com.svg";
+import laravelIcon from "public/icons/skills/laravel-svgrepo-com.svg";
+import phpIcon from "public/icons/skills/php-svgrepo-com.svg";
+import microservicesIcon from "public/icons/skills/microservice-icon.svg";
+import dockerIcon from "public/icons/skills/docker-svgrepo-com.svg";
+import nginxIcon from "public/icons/skills/nginx-svgrepo-com.svg";
+import mysqlIcon from "public/icons/skills/mysql-svgrepo-com.svg";
+import htmlIcon from "public/icons/skills/html-5-svgrepo-com.svg";
+import cssIcon from "public/icons/skills/css-3-svgrepo-com.svg";
+import shellIcon from "public/icons/skills/shell-svgrepo-com.svg";
+const experiencesData = [
   {
-    companieName: "IFMS",
-    model: "Presencial",
+    companieNameKey: "ifms",
+    modelKey: "onsite",
     period: "JAN 2025 - Present",
     local: "Corumbá, MS, Brazil",
-    role: "FullStack / Infra",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut necessitatibus veritatis facilis tempore, magnam vel ullam dicta distinctio facere repellat iusto minus eius. Ullam facilis asperiores repellendus laborum dicta dolores!",
+    roleKey: "fullstackInfra",
+    descriptionKey: "ifmsDescription",
     usedSkills: [
-      { name: "React", pathIcon: reactIcon },
-      { name: "TypeScript", pathIcon: typescriptIcon },
-    ],
-  },
-  {
-    companieName: "IFMS",
-    model: "Presencial",
-    period: "JAN 2025 - Present",
-    local: "Corumbá, MS, Brazil",
-
-    role: "FullStack / Infra",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut necessitatibus veritatis facilis tempore, magnam vel ullam dicta distinctio facere repellat iusto minus eius. Ullam facilis asperiores repellendus laborum dicta dolores!",
-    usedSkills: [
-      { name: "React", pathIcon: reactIcon },
-      { name: "TypeScript", pathIcon: typescriptIcon },
-    ],
-  },
-  {
-    companieName: "IFMS",
-    model: "Presencial",
-    period: "JAN 2025 - Present",
-    local: "Corumbá, MS, Brazil",
-
-    role: "FullStack / Infra",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut necessitatibus veritatis facilis tempore, magnam vel ullam dicta distinctio facere repellat iusto minus eius. Ullam facilis asperiores repellendus laborum dicta dolores!",
-    usedSkills: [
-      { name: "React", pathIcon: reactIcon },
-      { name: "TypeScript", pathIcon: typescriptIcon },
+      { name: "Kong", pathIcon: kongIcon },
+      { name: "Consul", pathIcon: consulIcon },
+      { name: "Typescript", pathIcon: typeScriptIcon },
+      { name: "JavaScript", pathIcon: javaScriptIcon },
+      { name: "HTML", pathIcon: htmlIcon },
+      { name: "CSS", pathIcon: cssIcon },
+      { name: "Laravel", pathIcon: laravelIcon },
+      { name: "PHP", pathIcon: phpIcon },
+      { name: "Microservices", pathIcon: microservicesIcon },
+      { name: "Docker", pathIcon: dockerIcon },
+      { name: "Nginx", pathIcon: nginxIcon },
+      { name: "MySql", pathIcon: mysqlIcon },
+      { name: "Shell", pathIcon: shellIcon },
     ],
   },
 ];
+
 export default experiencesData;

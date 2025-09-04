@@ -5,9 +5,6 @@
     "name": "Guilherme Beckman",
     "status": "Currently working as an intern at IFMS"
   },
-  "HomePage": {
-    "title": "Hello world!"
-  },
   "Education": {
     "educationTitle": "EDUCATION",
     "primary": "Primary School",
@@ -24,5 +21,11 @@
     "senaiCorumba": "SENAI Corumbá, MS",
     "faculdadeLocal": "IFMS Corumbá, MS",
     "aws": "AWS re/Start"
+  },
+  "Experience": {
+    "ifms": "IFMS",
+    "onsite": "Onsite",
+    "fullstackInfra": "FullStack / Infra",
+    "ifmsDescription": "Worked at LIADS in the infrastructure area, with the responsibility of configuring a server from scratch (on-premise), where the architecture was designed to support Microservices. To achieve this, I implemented an API Gateway using Kong, integrated with Consul as a DNS resolver to map microservice IPs, making service registration and communication easier. Additionally, I used Ubuntu Server, Docker, and Docker Compose for containerization. I also maintain existing projects, including a chatbot for the Municipality of Corumbá-MS** and software for reading and digitizing pieces of Pantanal culture."
   }
 }
