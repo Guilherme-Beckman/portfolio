@@ -7,5 +7,22 @@
   },
   "HomePage": {
     "title": "Hello world!"
+  },
+  "Education": {
+    "educationTitle": "EDUCATION",
+    "primary": "Primary School",
+    "primaryCourse": "Primary",
+    "fundamentalSchool2": "Middle School",
+    "fundamentalSchool2Course": "Middle",
+    "highSchool": "High School",
+    "technicalIT": "Technical Course in Internet Informatics",
+    "technologist": "Technologist Degree",
+    "systemsAnalysis": "Systems Analysis and Development",
+    "certification": "Certification",
+    "awsRestart": "AWS re/Start Program",
+    "sesiCorumba": "SESI Corumbá, MS",
+    "senaiCorumba": "SENAI Corumbá, MS",
+    "faculdadeLocal": "IFMS Corumbá, MS",
+    "aws": "AWS re/Start"
   }
 }
