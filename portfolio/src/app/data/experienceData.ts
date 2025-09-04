@@ -11,7 +11,25 @@ import mysqlIcon from "public/icons/skills/mysql-svgrepo-com.svg";
 import htmlIcon from "public/icons/skills/html-5-svgrepo-com.svg";
 import cssIcon from "public/icons/skills/css-3-svgrepo-com.svg";
 import shellIcon from "public/icons/skills/shell-svgrepo-com.svg";
+import pythonIcon from "public/icons/skills/python-svgrepo-com.svg";
+import opencvIcon from "public/icons/skills/opencv-svgrepo-com.svg";
+import postgresIcon from "public/icons/skills/postgresql-svgrepo-com.svg";
+import facialRecIcon from "public/icons/skills/face-id-svgrepo-com.svg";
 const experiencesData = [
+   {
+    companieNameKey: "ifmsFacial",
+    modelKey: "research",
+    period: "SEP 2025 - AUG 2026",
+    local: "Corumbá, MS, Brazil",
+    roleKey: "researcher",
+    descriptionKey: "ifmsFacialDescription",
+    usedSkills: [
+      { name: "Python", pathIcon: pythonIcon },
+      { name: "OpenCV", pathIcon: opencvIcon },
+      { name: "Face Recognition", pathIcon: facialRecIcon },
+      { name: "PostgreSQL", pathIcon: postgresIcon },
+    ],
+  },
   {
     companieNameKey: "ifms",
     modelKey: "onsite",

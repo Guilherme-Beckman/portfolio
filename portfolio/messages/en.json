@@ -26,6 +26,10 @@
     "ifms": "IFMS - LIADS",
     "onsite": "Onsite",
     "fullstackInfra": "FullStack / Infra",
-    "ifmsDescription": "Worked at LIADS in the infrastructure area, with the responsibility of configuring a server from scratch (on-premise), where the architecture was designed to support Microservices. To achieve this, I implemented an API Gateway using Kong, integrated with Consul as a DNS resolver to map microservice IPs, making service registration and communication easier. Additionally, I used Ubuntu Server, Docker, and Docker Compose for containerization. I also maintain existing projects, including a chatbot for the Municipality of Corumbá-MS** and software for reading and digitizing pieces of Pantanal culture."
+    "ifmsDescription": "Worked at LIADS in the infrastructure area, with the responsibility of configuring a server from scratch (on-premise), where the architecture was designed to support Microservices. To achieve this, I implemented an API Gateway using Kong, integrated with Consul as a DNS resolver to map microservice IPs, making service registration and communication easier. Additionally, I used Ubuntu Server, Docker, and Docker Compose for containerization. I also maintain existing projects, including a chatbot for the Municipality of Corumbá-MS** and software for reading and digitizing pieces of Pantanal culture.",
+    "ifmsFacial": "IFMS - Research Project",
+    "research": "Scientific Research",
+    "researcher": "Researcher / Scholar",
+    "ifmsFacialDescription": "Development of a facial recognition system for access control, using Python, OpenCV, and the face_recognition library. The project involved image capture via webcam, comparison against a local database, and registration of access attempts in PostgreSQL. Tests were conducted under different lighting and angle conditions, and a technical report was produced with results and recommendations."
   }
 }
