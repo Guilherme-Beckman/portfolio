@@ -33,5 +33,16 @@ const links: SkillLink[] = [
   // Tool connections
   { source: nodes[25], target: nodes[26] }, // Git -> GitHub
   { source: nodes[25], target: nodes[27] }, // Git -> Postman
+
+// Interligações adicionais entre Hardware / Other Skills e infra/backend
+{ source: nodes[29], target: nodes[32] }, // Arduino -> OpenCV (alguns projetos de visão computacional com hardware)
+{ source: nodes[29], target: nodes[34] }, // Arduino -> Face ID (projetos de autenticação física)
+{ source: nodes[30], target: nodes[9] },  // Microservices -> Spring (backend de microserviços)
+{ source: nodes[30], target: nodes[12] }, // Microservices -> Python (FastAPI)
+{ source: nodes[31], target: nodes[28] }, // Linux -> FastAPI (rodando backend)
+{ source: nodes[31], target: nodes[8] },  // Linux -> Java (rodando backend)
+{ source: nodes[32], target: nodes[34] }, // OpenCV -> Face ID (visão computacional específica)
+{ source: nodes[31], target: nodes[16] }, // Linux -> Docker (garantia de execução em containers)
+
 ];
 export default links;
