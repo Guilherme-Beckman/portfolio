@@ -1,5 +1,11 @@
 {
+  "Bio": {
+    "alt": "Foto de Guilherme Beckman",
+    "role": "Desenvolvedor FullStack",
+    "name": "Guilherme Beckman",
+    "status": "Atualmente estagiando no IFMS"
+  },
   "HomePage": {
-    "title": "Ola mundo!"
+    "title": "Olá mundo!"
   }
 }

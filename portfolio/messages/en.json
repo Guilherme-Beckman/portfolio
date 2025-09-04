@@ -1,4 +1,10 @@
 {
+  "Bio": {
+    "alt": "Profile picture of Guilherme Beckman",
+    "role": "FullStack Developer",
+    "name": "Guilherme Beckman",
+    "status": "Currently working as an intern at IFMS"
+  },
   "HomePage": {
     "title": "Hello world!"
   }
