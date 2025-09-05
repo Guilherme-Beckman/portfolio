@@ -2,6 +2,7 @@ interface Project {
   name: string;
   link: string;
 }
+
 interface TechItem {
   icon: string;
   name: string;
@@ -9,22 +10,20 @@ interface TechItem {
   category: string;
   description: string;
 }
+
 const skills: TechItem[] = [
   {
     icon: "/icons/skills/angular-svgrepo-com.svg",
     name: "Angular",
     projects: [
-      {
-        name: "Portfolio Website",
-        link: "https://github.com/Guilherme-Beckman/portfolio",
-      },
+      { name: "MySell", link: "/projects/mysell" },
       {
         name: "FocusBird Frontend",
         link: "https://github.com/Guilherme-Beckman/focusbird-frontend",
       },
     ],
     category: "frontend",
-    description: "Framework para construir aplicações web dinâmicas.",
+    description: "angular.description",
   },
   {
     icon: "/icons/skills/kong-icon-svgrepo-com.svg",
@@ -36,7 +35,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "backend",
-    description: "Gateway de APIs para roteamento e segurança.",
+    description: "kong.description",
   },
   {
     icon: "/icons/skills/aws-ec2-svgrepo-com.svg",
@@ -48,7 +47,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "cloud",
-    description: "Serviço de instâncias virtuais na nuvem.",
+    description: "awsEc2.description",
   },
   {
     icon: "/icons/skills/laravel-svgrepo-com.svg",
@@ -60,7 +59,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "backend",
-    description: "Framework PHP para desenvolvimento rápido de APIs.",
+    description: "laravel.description",
   },
   {
     icon: "/icons/skills/aws-route53-svgrepo-com.svg",
@@ -72,7 +71,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "cloud",
-    description: "Serviço de DNS escalável da AWS.",
+    description: "awsRoute53.description",
   },
   {
     icon: "/icons/skills/mongodb-svgrepo-com.svg",
@@ -84,7 +83,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "database",
-    description: "Banco de dados NoSQL orientado a documentos.",
+    description: "mongodb.description",
   },
   {
     icon: "/icons/skills/aws-s3-svgrepo-com.svg",
@@ -96,7 +95,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "cloud",
-    description: "Armazenamento de arquivos escalável na nuvem.",
+    description: "awsS3.description",
   },
   {
     icon: "/icons/skills/mysql-svgrepo-com.svg",
@@ -108,7 +107,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "database",
-    description: "Banco de dados relacional amplamente usado.",
+    description: "mysql.description",
   },
   {
     icon: "/icons/skills/aws-svgrepo-com.svg",
@@ -120,8 +119,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "cloud",
-    description:
-      "Serviços de nuvem da Amazon para infraestrutura e aplicações.",
+    description: "aws.description",
   },
   {
     icon: "/icons/skills/nextjs-fill-svgrepo-com.svg",
@@ -133,7 +131,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "frontend",
-    description: "Framework React para aplicações SSR e estáticas.",
+    description: "nextjs.description",
   },
   {
     icon: "/icons/skills/consul-svgrepo-com.svg",
@@ -145,7 +143,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "devops",
-    description: "Ferramenta para descoberta e configuração de serviços.",
+    description: "consul.description",
   },
   {
     icon: "/icons/skills/nginx-svgrepo-com.svg",
@@ -157,7 +155,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "devops",
-    description: "Servidor web e proxy reverso de alto desempenho.",
+    description: "nginx.description",
   },
   {
     icon: "/icons/skills/css-3-svgrepo-com.svg",
@@ -169,7 +167,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "frontend",
-    description: "Folhas de estilo para estilizar páginas web.",
+    description: "css3.description",
   },
   {
     icon: "/icons/skills/onshape-svgrepo-com.svg",
@@ -181,7 +179,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "design",
-    description: "Plataforma de CAD 3D na nuvem.",
+    description: "onshape.description",
   },
   {
     icon: "/icons/skills/docker-svgrepo-com.svg",
@@ -193,8 +191,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "devops",
-    description:
-      "Containerização de aplicações para consistência e portabilidade.",
+    description: "docker.description",
   },
   {
     icon: "/icons/skills/php-svgrepo-com.svg",
@@ -206,7 +203,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "backend",
-    description: "Linguagem de programação para web backend.",
+    description: "php.description",
   },
   {
     icon: "/icons/skills/fastapi-svgrepo-com.svg",
@@ -218,7 +215,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "backend",
-    description: "Framework Python para APIs rápidas e modernas.",
+    description: "fastapi.description",
   },
   {
     icon: "/icons/skills/postgresql-svgrepo-com.svg",
@@ -230,7 +227,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "database",
-    description: "Banco de dados relacional avançado e open-source.",
+    description: "postgresql.description",
   },
   {
     icon: "/icons/skills/github-142-svgrepo-com.svg",
@@ -242,7 +239,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "devops",
-    description: "Plataforma de versionamento e colaboração de código.",
+    description: "github.description",
   },
   {
     icon: "/icons/skills/git-merge-svgrepo-com.svg",
@@ -254,7 +251,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "devops",
-    description: "Operação de versionamento para integrar branches.",
+    description: "gitMerge.description",
   },
   {
     icon: "/icons/skills/git-svgrepo-com.svg",
@@ -266,7 +263,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "devops",
-    description: "Sistema de controle de versão distribuído.",
+    description: "git.description",
   },
   {
     icon: "/icons/skills/html-5-svgrepo-com.svg",
@@ -278,23 +275,11 @@ const skills: TechItem[] = [
       },
     ],
     category: "frontend",
-    description: "Linguagem de marcação para estruturar páginas web.",
-  },
-  {
-    icon: "/icons/skills/react.svg",
-    name: "React",
-    projects: [
-      {
-        name: "FocusBird Frontend",
-        link: "https://github.com/Guilherme-Beckman/focusbird-frontend",
-      },
-    ],
-    category: "frontend",
-    description: "Biblioteca JavaScript para construir UIs interativas.",
+    description: "html5.description",
   },
   {
     icon: "/icons/skills/react-svgrepo-com.svg",
-    name: "React (alt)",
+    name: "React",
     projects: [
       {
         name: "Portfolio Website",
@@ -302,7 +287,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "frontend",
-    description: "Alternativa de logo React para portfólio.",
+    description: "reactAlt.description",
   },
   {
     icon: "/icons/skills/ionic-svgrepo-com.svg",
@@ -314,7 +299,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "frontend",
-    description: "Framework para apps mobile híbridos.",
+    description: "ionic.description",
   },
   {
     icon: "/icons/skills/java-svgrepo-com.svg",
@@ -326,7 +311,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "backend",
-    description: "Linguagem de programação orientada a objetos.",
+    description: "java.description",
   },
   {
     icon: "/icons/skills/spring-svgrepo-com.svg",
@@ -338,7 +323,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "backend",
-    description: "Framework Java para construção de aplicações robustas.",
+    description: "spring.description",
   },
   {
     icon: "/icons/skills/js-svgrepo-com.svg",
@@ -350,7 +335,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "frontend",
-    description: "Linguagem de programação para comportamento web.",
+    description: "javascript.description",
   },
   {
     icon: "/icons/skills/typescript.svg",
@@ -362,7 +347,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "frontend",
-    description: "Superset do JavaScript com tipagem estática.",
+    description: "typescript.description",
   },
   {
     icon: "/icons/skills/python-svgrepo-com.svg",
@@ -374,7 +359,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "backend",
-    description: "Linguagem de programação versátil e popular.",
+    description: "python.description",
   },
   {
     icon: "/icons/skills/rabbitmq-icon-svgrepo-com.svg",
@@ -386,7 +371,7 @@ const skills: TechItem[] = [
       },
     ],
     category: "backend",
-    description: "Sistema de mensageria para aplicações distribuídas.",
+    description: "rabbitmq.description",
   },
   {
     icon: "/icons/skills/postman-icon-svgrepo-com.svg",
@@ -398,7 +383,8 @@ const skills: TechItem[] = [
       },
     ],
     category: "devops",
-    description: "Ferramenta para testar e documentar APIs.",
+    description: "postman.description",
   },
 ];
+
 export default skills;

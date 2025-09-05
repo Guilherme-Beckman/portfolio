@@ -41,5 +41,104 @@
       "cloud": "Cloud & DevOps",
       "tools": "Development Tools"
     }
+  },
+
+  "SkillsData": {
+    "angular": {
+      "description": "Framework for building modern SPAs with TypeScript."
+    },
+    "kong": {
+      "description": "API Gateway for routing and security."
+    },
+    "awsEc2": {
+      "description": "Cloud virtual machine service."
+    },
+    "laravel": {
+      "description": "PHP framework for rapid API development."
+    },
+    "awsRoute53": {
+      "description": "Scalable DNS service from AWS."
+    },
+    "mongodb": {
+      "description": "Document-oriented NoSQL database."
+    },
+    "awsS3": {
+      "description": "Scalable cloud file storage."
+    },
+    "mysql": {
+      "description": "Widely used relational database."
+    },
+    "aws": {
+      "description": "Amazon cloud services for infrastructure and applications."
+    },
+    "nextjs": {
+      "description": "React framework for SSR and static applications."
+    },
+    "consul": {
+      "description": "Tool for service discovery and configuration."
+    },
+    "nginx": {
+      "description": "High-performance web server and reverse proxy."
+    },
+    "css3": {
+      "description": "Style sheets for designing web pages."
+    },
+    "onshape": {
+      "description": "Cloud-based 3D CAD platform."
+    },
+    "docker": {
+      "description": "Application containerization for consistency and portability."
+    },
+    "php": {
+      "description": "Programming language for web backend."
+    },
+    "fastapi": {
+      "description": "Python framework for fast and modern APIs."
+    },
+    "postgresql": {
+      "description": "Advanced open-source relational database."
+    },
+    "github": {
+      "description": "Platform for code versioning and collaboration."
+    },
+    "gitMerge": {
+      "description": "Version control operation to integrate branches."
+    },
+    "git": {
+      "description": "Distributed version control system."
+    },
+    "html5": {
+      "description": "Markup language for structuring web pages."
+    },
+    "react": {
+      "description": "JavaScript library for building interactive UIs."
+    },
+    "reactAlt": {
+      "description": "Alternative React logo for portfolio."
+    },
+    "ionic": {
+      "description": "Framework for hybrid mobile apps."
+    },
+    "java": {
+      "description": "Object-oriented programming language."
+    },
+    "spring": {
+      "description": "Java framework for building robust applications."
+    },
+    "javascript": {
+      "description": "Programming language for web behavior."
+    },
+    "typescript": {
+      "description": "JavaScript superset with static typing."
+    },
+    "python": {
+      "description": "Versatile and popular programming language."
+    },
+    "rabbitmq": {
+      "description": "Message broker for distributed applications."
+    },
+    "postman": {
+      "description": "Tool for testing and documenting APIs."
+    }
   }
 }

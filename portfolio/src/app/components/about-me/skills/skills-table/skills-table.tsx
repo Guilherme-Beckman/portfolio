@@ -30,15 +30,17 @@ const categories = [
 ];
 
 export default function SkillsTable() {
-  const t = useTranslations("SkillsTable");
+  const tSkillsTable = useTranslations("SkillsTable");
+  const tSkillsData = useTranslations("SkillsData");
+
   const [selectedCategory, setSelectedCategory] = useState<string | null>(
     "frontend"
   );
   const filteredSkills = skills.filter((s) => s.category === selectedCategory);
   return (
     <div className={`${styles.skillsTable} animatedBg`}>
-      <h1 className={styles.title}>{t("stackTitle")}</h1>
-      <h2 className={styles.subtitle}>{t("stackSubtitle")}</h2>
+      <h1 className={styles.title}>{tSkillsTable("stackTitle")}</h1>
+      <h2 className={styles.subtitle}>{tSkillsTable("stackSubtitle")}</h2>
 
       <br />
       <div className={styles.categoriesContainer}>
@@ -62,7 +64,7 @@ export default function SkillsTable() {
               <Image src={skill.icon} width={0} height={0} alt="a" />
               <h1>{skill.name}</h1>
             </div>
-            <p>{skill.description}</p>
+            <p>{tSkillsData(skill.description)}</p>
 
             <ul className={styles.skillItemProjects}>
               {skill.projects.map((project) => (

@@ -42,5 +42,103 @@
       "cloud": "Cloud & DevOps",
       "tools": "Ferramentas de Desenvolvimento"
     }
+  },
+  "SkillsData": {
+    "angular": {
+      "description": "Framework para construir SPAs modernas com TypeScript."
+    },
+    "kong": {
+      "description": "API Gateway para roteamento e segurança."
+    },
+    "awsEc2": {
+      "description": "Serviço de instâncias virtuais na nuvem."
+    },
+    "laravel": {
+      "description": "Framework PHP para desenvolvimento rápido de APIs."
+    },
+    "awsRoute53": {
+      "description": "Serviço de DNS escalável da AWS."
+    },
+    "mongodb": {
+      "description": "Banco de dados NoSQL orientado a documentos."
+    },
+    "awsS3": {
+      "description": "Armazenamento de arquivos escalável na nuvem."
+    },
+    "mysql": {
+      "description": "Banco de dados relacional amplamente usado."
+    },
+    "aws": {
+      "description": "Serviços de nuvem da Amazon para infraestrutura e aplicações."
+    },
+    "nextjs": {
+      "description": "Framework React para aplicações SSR e estáticas."
+    },
+    "consul": {
+      "description": "Ferramenta para descoberta e configuração de serviços."
+    },
+    "nginx": {
+      "description": "Servidor web e proxy reverso de alto desempenho."
+    },
+    "css3": {
+      "description": "Folhas de estilo para estilizar páginas web."
+    },
+    "onshape": {
+      "description": "Plataforma de CAD 3D na nuvem."
+    },
+    "docker": {
+      "description": "Containerização de aplicações para consistência e portabilidade."
+    },
+    "php": {
+      "description": "Linguagem de programação para web backend."
+    },
+    "fastapi": {
+      "description": "Framework Python para APIs rápidas e modernas."
+    },
+    "postgresql": {
+      "description": "Banco de dados relacional avançado e open-source."
+    },
+    "github": {
+      "description": "Plataforma de versionamento e colaboração de código."
+    },
+    "gitMerge": {
+      "description": "Operação de versionamento para integrar branches."
+    },
+    "git": {
+      "description": "Sistema de controle de versão distribuído."
+    },
+    "html5": {
+      "description": "Linguagem de marcação para estruturar páginas web."
+    },
+    "react": {
+      "description": "Biblioteca JavaScript para construir UIs interativas."
+    },
+    "reactAlt": {
+      "description": "Alternativa de logo React para portfólio."
+    },
+    "ionic": {
+      "description": "Framework para apps mobile híbridos."
+    },
+    "java": {
+      "description": "Linguagem de programação orientada a objetos."
+    },
+    "spring": {
+      "description": "Framework Java para construção de aplicações robustas."
+    },
+    "javascript": {
+      "description": "Linguagem de programação para comportamento web."
+    },
+    "typescript": {
+      "description": "Superset do JavaScript com tipagem estática."
+    },
+    "python": {
+      "description": "Linguagem de programação versátil e popular."
+    },
+    "rabbitmq": {
+      "description": "Sistema de mensageria para aplicações distribuídas."
+    },
+    "postman": {
+      "description": "Ferramenta para testar e documentar APIs."
+    }
   }
 }
