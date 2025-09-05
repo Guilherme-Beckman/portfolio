@@ -7,12 +7,13 @@ import { Url } from "next/dist/shared/lib/router/router";
 import Link from "next/link";
 import Image from "next/image";
 import skills from "@/app/data/skillsData";
+import { useTranslations } from "next-intl";
 
 const categories = [
   //{ id: 'ai', name: 'AI & Machine Learning', icon: <Blocks className="w-4 h-4" /> },
   {
     id: "frontend",
-    name: "Frontend Development",
+    name: "Frontend",
     icon: <Code className="w-4 h-4" />,
   },
   {
@@ -29,16 +30,16 @@ const categories = [
 ];
 
 export default function SkillsTable() {
+  const t = useTranslations("SkillsTable");
   const [selectedCategory, setSelectedCategory] = useState<string | null>(
     "frontend"
   );
   const filteredSkills = skills.filter((s) => s.category === selectedCategory);
   return (
     <div className={`${styles.skillsTable} animatedBg`}>
-      <h1 className={styles.title}>Technical Stack</h1>
-      <h2 className={styles.subtitle}>
-        Technologies and tools I use to build innovative solutions
-      </h2>
+      <h1 className={styles.title}>{t("stackTitle")}</h1>
+      <h2 className={styles.subtitle}>{t("stackSubtitle")}</h2>
+
       <br />
       <div className={styles.categoriesContainer}>
         {categories.map((c) => (

@@ -32,5 +32,15 @@
     "research": "Pesquisa Científica",
     "researcher": "Pesquisador / Bolsista",
     "ifmsFacialDescription": "Desenvolvimento de um sistema de reconhecimento facial para controle de acesso, utilizando Python, OpenCV e a biblioteca face_recognition. O projeto envolveu captura de imagem via webcam, comparação com banco de dados local e registro de tentativas de acesso em PostgreSQL. Foram realizados testes em diferentes condições de iluminação e ângulos, além da produção de relatório técnico com resultados e recomendações."
+  },
+  "SkillsTable": {
+    "stackTitle": "Stack Técnica",
+    "stackSubtitle": "Tecnologias e ferramentas que utilizo para construir soluções inovadoras",
+    "categories": {
+      "frontend": "Desenvolvimento Frontend",
+      "backend": "Backend & APIs",
+      "cloud": "Cloud & DevOps",
+      "tools": "Ferramentas de Desenvolvimento"
+    }
   }
 }
