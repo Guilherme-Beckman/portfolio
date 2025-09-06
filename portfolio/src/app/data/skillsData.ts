@@ -82,7 +82,7 @@ const skills: TechItem[] = [
         link: "https://github.com/Guilherme-Beckman/focusbird-backend",
       },
     ],
-    category: "database",
+    category: "backend",
     description: "mongodb.description",
   },
   {
@@ -106,7 +106,7 @@ const skills: TechItem[] = [
         link: "https://github.com/Guilherme-Beckman/mysql-inventory",
       },
     ],
-    category: "database",
+    category: "backend",
     description: "mysql.description",
   },
   {
@@ -142,7 +142,7 @@ const skills: TechItem[] = [
         link: "https://github.com/Guilherme-Beckman/consul-setup",
       },
     ],
-    category: "devops",
+    category: "cloud",
     description: "consul.description",
   },
   {
@@ -154,7 +154,7 @@ const skills: TechItem[] = [
         link: "https://github.com/Guilherme-Beckman/nginx-config",
       },
     ],
-    category: "devops",
+    category: "cloud",
     description: "nginx.description",
   },
   {
@@ -170,18 +170,6 @@ const skills: TechItem[] = [
     description: "css3.description",
   },
   {
-    icon: "/icons/skills/onshape-svgrepo-com.svg",
-    name: "Onshape",
-    projects: [
-      {
-        name: "3D Modeling Project",
-        link: "https://github.com/Guilherme-Beckman/onshape-models",
-      },
-    ],
-    category: "design",
-    description: "onshape.description",
-  },
-  {
     icon: "/icons/skills/docker-svgrepo-com.svg",
     name: "Docker",
     projects: [
@@ -190,7 +178,7 @@ const skills: TechItem[] = [
         link: "https://github.com/Guilherme-Beckman/docker-microservices",
       },
     ],
-    category: "devops",
+    category: "cloud",
     description: "docker.description",
   },
   {
@@ -226,7 +214,7 @@ const skills: TechItem[] = [
         link: "https://github.com/Guilherme-Beckman/postgresql-analytics",
       },
     ],
-    category: "database",
+    category: "backend",
     description: "postgresql.description",
   },
   {
@@ -238,19 +226,19 @@ const skills: TechItem[] = [
         link: "https://github.com/Guilherme-Beckman",
       },
     ],
-    category: "devops",
+    category: "cloud",
     description: "github.description",
   },
   {
     icon: "/icons/skills/git-merge-svgrepo-com.svg",
-    name: "Git Merge",
+    name: "Git Flow",
     projects: [
       {
         name: "Branching Workflows",
         link: "https://github.com/Guilherme-Beckman/git-workflows",
       },
     ],
-    category: "devops",
+    category: "cloud",
     description: "gitMerge.description",
   },
   {
@@ -262,7 +250,7 @@ const skills: TechItem[] = [
         link: "https://github.com/Guilherme-Beckman/git-setup",
       },
     ],
-    category: "devops",
+    category: "cloud",
     description: "git.description",
   },
   {
@@ -382,8 +370,80 @@ const skills: TechItem[] = [
         link: "https://github.com/Guilherme-Beckman/postman-tests",
       },
     ],
-    category: "devops",
+    category: "tools",
     description: "postman.description",
+  },
+  {
+    icon: "/icons/skills/arduino-svgrepo-com.svg",
+    name: "Arduino",
+    projects: [
+      {
+        name: "IoT Sensor Project",
+        link: "https://github.com/Guilherme-Beckman/arduino-iot",
+      },
+    ],
+    category: "backend",
+    description: "arduino.description",
+  },
+  {
+    icon: "/icons/skills/linux-svgrepo-com.svg",
+    name: "Linux",
+    projects: [
+      {
+        name: "Server Setup",
+        link: "https://github.com/Guilherme-Beckman/linux-server",
+      },
+    ],
+    category: "tools",
+    description: "linux.description",
+  },
+  {
+    icon: "/icons/skills/microservice-icon.svg",
+    name: "Microservices",
+    projects: [
+      {
+        name: "FocusBird Microservices",
+        link: "https://github.com/Guilherme-Beckman/focusbird-backend",
+      },
+    ],
+    category: "backend",
+    description: "microservices.description",
+  },
+  {
+    icon: "/icons/skills/opencv-svgrepo-com.svg",
+    name: "OpenCV",
+    projects: [
+      {
+        name: "Facial Recognition",
+        link: "https://github.com/Guilherme-Beckman/opencv-facial",
+      },
+    ],
+    category: "backend",
+    description: "opencv.description",
+  },
+  {
+    icon: "/icons/skills/face-id-svgrepo-com.svg",
+    name: "Face Recognition",
+    projects: [
+      {
+        name: "Access Control System",
+        link: "https://github.com/Guilherme-Beckman/facial-access",
+      },
+    ],
+    category: "backend",
+    description: "faceid.description",
+  },
+  {
+    icon: "/icons/skills/shell-svgrepo-com.svg",
+    name: "Shell Script",
+    projects: [
+      {
+        name: "Automation Scripts",
+        link: "https://github.com/Guilherme-Beckman/shell-scripts",
+      },
+    ],
+    category: "cloud",
+    description: "shell.description",
   },
 ];
 

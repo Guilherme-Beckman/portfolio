@@ -139,6 +139,24 @@
     },
     "postman": {
       "description": "Ferramenta para testar e documentar APIs."
+    },
+    "arduino": {
+      "description": "Plataforma de prototipagem eletrônica para IoT e automação."
+    },
+    "linux": {
+      "description": "Sistema operacional open-source usado em servidores e desenvolvimento."
+    },
+    "microservices": {
+      "description": "Arquitetura para desenvolvimento de aplicações distribuídas e escaláveis."
+    },
+    "opencv": {
+      "description": "Biblioteca de visão computacional para processamento de imagens."
+    },
+    "faceid": {
+      "description": "Tecnologia de reconhecimento facial para autenticação e segurança."
+    },
+    "shell": {
+      "description": "Scripts de linha de comando para automação de tarefas."
     }
   }
 }
