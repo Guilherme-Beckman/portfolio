@@ -180,5 +180,13 @@
     "about": "About",
     "projects": "Projects",
     "resume": "Resume"
+  },
+  "Projects": {
+    "title": "Projects",
+    "subtitle": "A collection of projects that showcase my skills in web development, design, and problem-solving."
+  },
+  "ProjectCard": {
+    "moreInfo": "More info",
+    "code": "Code"
   }
 }

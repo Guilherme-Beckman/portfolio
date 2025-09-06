@@ -180,5 +180,13 @@
     "about": "Sobre",
     "projects": "Projetos",
     "resume": "Currículo"
+  },
+  "Projects": {
+    "title": "Projetos",
+    "subtitle": "Uma coleção de projetos que demonstram minhas habilidades em desenvolvimento web, design e resolução de problemas."
+  },
+  "ProjectCard": {
+    "moreInfo": "Mais informações",
+    "code": "Código"
   }
 }
