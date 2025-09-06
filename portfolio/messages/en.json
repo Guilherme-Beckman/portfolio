@@ -165,15 +165,20 @@
     "location": "Location"
   },
   "Resume": {
-  "title": "Hire Me",
-  "subtitle": "Full-stack developer focused on backend and infrastructure. Shall we work together?",
-  "contact": "Contact me",
-  "download": "Download CV (PDF)",
-  "aria": "PDF resume viewer",
-  "fallback": "It was not possible to embed the PDF in your browser.",
-  "open": "Open the resume in a new tab",
-  "or": "or",
-  "downloadFile": "download the file"
-}
-
+    "title": "Hire Me",
+    "subtitle": "Full-stack developer focused on backend and infrastructure. Shall we work together?",
+    "contact": "Contact me",
+    "download": "Download CV (PDF)",
+    "aria": "PDF resume viewer",
+    "fallback": "It was not possible to embed the PDF in your browser.",
+    "open": "Open the resume in a new tab",
+    "or": "or",
+    "downloadFile": "download the file"
+  },
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "resume": "Resume"
+  }
 }
