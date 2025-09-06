@@ -159,4 +159,9 @@
       "description": "Scripts de linha de comando para automação de tarefas."
     }
   }
+  ,"Contact":{
+    "title": "Contatos",
+    "external": "Externo",
+    "location": "Localização"
+  }
 }

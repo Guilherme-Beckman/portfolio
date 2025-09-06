@@ -158,5 +158,10 @@
     "shell": {
       "description": "Command-line scripts for task automation."
     }
+  },
+  "Contact": {
+    "title": "Contacts",
+    "external": "External",
+    "location": "Location"
   }
 }
