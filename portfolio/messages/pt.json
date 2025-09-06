@@ -163,5 +163,17 @@
     "title": "Contatos",
     "external": "Externo",
     "location": "Localização"
-  }
+  },
+  "Resume": {
+  "title": "ME CONTRATA",
+  "subtitle": "Desenvolvedor full-stack focado em backend e infra. Vamos trabalhar juntos?",
+  "contact": "Fale comigo",
+  "download": "Baixar CV (PDF)",
+  "aria": "Visualizador de currículo em PDF",
+  "fallback": "Não foi possível embutir o PDF no seu navegador.",
+  "open": "Abrir o currículo em uma nova aba",
+  "or": "ou",
+  "downloadFile": "baixar o arquivo"
+}
+
 }
