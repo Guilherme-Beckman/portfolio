@@ -2,10 +2,14 @@
 import styles from "./page.module.css";
 import { Mail, FileDown } from "lucide-react";
 import ContactCard from "../components/about-me/contacts/contacs";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function Resume() {
   const t = useTranslations("Resume");
+  const locale = useLocale();
+
+  // escolhe o PDF baseado no idioma
+  const pdfFile = locale === "pt" ? "/resume-pt.pdf" : "/resume-en.pdf";
 
   return (
     <section className={styles.container}>
@@ -19,7 +23,7 @@ export default function Resume() {
           >
             <Mail /> <p>{t("contact")}</p>
           </a>
-          <a className={styles.buttonGhost} href="/cv.pdf" download>
+          <a className={styles.buttonGhost} href={pdfFile} download>
             <FileDown />
             <p>{t("download")}</p>
           </a>
@@ -28,18 +32,18 @@ export default function Resume() {
 
       <div className={styles.viewer}>
         <object
-          data="/resume.pdf#toolbar=1&navpanes=0"
+          data={`${pdfFile}#toolbar=1&navpanes=0`}
           type="application/pdf"
           className={styles.pdf}
           aria-label={t("aria")}
         >
           <p className={styles.fallback}>
             {t("fallback")}{" "}
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a href={pdfFile} target="_blank" rel="noopener noreferrer">
               {t("open")}
             </a>{" "}
             {t("or")}{" "}
-            <a href="/resume.pdf" download>
+            <a href={pdfFile} download>
               {t("downloadFile")}
             </a>
             .
