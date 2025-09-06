@@ -15,7 +15,7 @@ export default function Projects() {
         <div className={styles.projectCard}>
           <SlideIn>
             <ProjectCard
-              title="Devflow Console"
+              title="MySell"
               description="A dashboard application integrated with GitHub, developed using Golang and the GitHub GraphQL API, to display repository analytics, pull request data, and test summaries."
               image="/icons/skills/angular-svgrepo-com.svg"
               tags={[
@@ -24,7 +24,7 @@ export default function Projects() {
                   icon: "/icons/skills/angular-svgrepo-com.svg",
                 },
               ]}
-              demoLink="https://example.com/demo"
+              demoLink="/projects/project-example"
               codeLink="https://github.com/example/devflow-console"
             />
           </SlideIn>

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import styles from "./project-card.module.css";
 import { useTranslations } from "next-intl";
-import { TransitionLink } from "../../transition-link";
 
 interface Tag {
   name: string;
@@ -61,10 +60,14 @@ export function ProjectCard({
         </div>
 
         <div className={styles.actions}>
-          <div className={styles.demoBtn}>
-            <TransitionLink href={demoLink} label={t("moreInfo")} />
-          </div>
-
+          <a
+            href={demoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.demoBtn}
+          >
+            {t("moreInfo")}
+          </a>
           <a
             href={codeLink}
             target="_blank"
