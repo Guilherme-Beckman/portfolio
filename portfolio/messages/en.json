@@ -192,5 +192,34 @@
   "ProjectCard": {
     "moreInfo": "More info",
     "code": "Code"
+  },
+
+  "ProjectPage": {
+    "MySell": {
+      "title": "MySell",
+      "subtitle": "Smart Sales Dashboard for Small Entrepreneurs",
+      "description": "Application that helps small entrepreneurs record their daily sales. Features include JWT authentication, Google and Facebook login, product and sales registration, PDF report generation, sales history, and protection against suspicious access.",
+      "features": "User Registration & Login; Google & Facebook Authentication; Email Verification; Account Lockout on Multiple Failed Attempts; Welcome Email Sending; Product Registration (Manual, QR Code, Pre-created); Product Editing & Deletion; Sales Registration & Deletion; Sales History & Search; Daily, Weekly, Monthly PDF Reports; Cache for Performance Optimization; Angular Guards for Route Protection",
+      "demo": {
+        "dashboard": "Dashboard",
+        "bancoDeDados": "Database",
+        "loginRaw": "Raw Login",
+        "registerRaw": "Raw Register",
+        "googleLogin": "Google Login",
+        "facebookLogin": "Facebook Login",
+        "criandoProdutos": "Creating Products",
+        "produtosPreCriados": "Pre-created Products",
+        "editandoProdutos": "Editing Products",
+        "excluindoProdutos": "Deleting Products",
+        "vendendoProdutos": "Selling Products",
+        "excluindoVendas": "Deleting Sales",
+        "qrCodeProdutos": "Product Registration via QR Code",
+        "gerandoRelatoriosPDF": "Generating PDF Reports",
+        "graficoRelatorios": "Reports Graph",
+        "excecaoBruteForce": "Brute Force Exception",
+        "visaoGeralAplicacao": "Application Overview",
+        "buscandoCoisas": "Searching Things"
+      }
+    }
   }
 }

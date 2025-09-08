@@ -192,5 +192,33 @@
   "ProjectCard": {
     "moreInfo": "Mais informações",
     "code": "Código"
+  },
+  "ProjectPage": {
+    "MySell": {
+      "title": "MySell",
+      "subtitle": "Dashboard inteligente de vendas para pequenos empreendedores",
+      "description": "Aplicação que ajuda pequenos empreendedores a registrar suas vendas diárias. Possui autenticação JWT, login com Google e Facebook, cadastro de produtos e vendas, relatórios em PDF, histórico de vendas e proteção contra acessos suspeitos.",
+      "features": "Cadastro e Login de Usuário; Autenticação com Google e Facebook; Verificação de E-mail; Bloqueio de Conta após Múltiplas Tentativas Falhas; Envio de E-mail de Boas-Vindas; Cadastro de Produtos (Manual, QR Code, Pré-criados); Edição e Exclusão de Produtos; Registro e Exclusão de Vendas; Histórico e Pesquisa de Vendas; Relatórios em PDF Diários, Semanais e Mensais; Cache para Otimização de Performance; Angular Guards para Proteção de Rotas",
+      "demo": {
+        "dashboard": "Dashboard",
+        "bancoDeDados": "Banco de Dados",
+        "loginRaw": "Login Cru",
+        "registerRaw": "Registro Cru",
+        "googleLogin": "Login com Google",
+        "facebookLogin": "Login com Facebook",
+        "criandoProdutos": "Criando Produtos",
+        "produtosPreCriados": "Produtos Pré-criados",
+        "editandoProdutos": "Editando Produtos",
+        "excluindoProdutos": "Excluindo Produtos",
+        "vendendoProdutos": "Vendendo Produtos",
+        "excluindoVendas": "Excluindo Vendas",
+        "qrCodeProdutos": "Registro de Produtos com QR Code",
+        "gerandoRelatoriosPDF": "Gerando Relatórios em PDF",
+        "graficoRelatorios": "Gráfico de Relatórios",
+        "excecaoBruteForce": "Exceção Brute Force",
+        "visaoGeralAplicacao": "Visão Geral da Aplicação",
+        "buscandoCoisas": "Buscando Coisas"
+      }
+    }
   }
 }

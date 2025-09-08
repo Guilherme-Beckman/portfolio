@@ -33,7 +33,7 @@ export default function Projects() {
                 },
                 { name: "Ionic", icon: "/icons/skills/ionic-svgrepo-com.svg" },
               ]}
-              demoLink="https://github.com/Guilherme-Beckman/mysell"
+              demoLink="projects/mysell"
               codeLink="https://github.com/Guilherme-Beckman/mysell"
             />
           </SlideIn>
