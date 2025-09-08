@@ -183,7 +183,11 @@
   },
   "Projects": {
     "title": "Projects",
-    "subtitle": "A collection of projects that showcase my skills in web development, design, and problem-solving."
+    "subtitle": "A collection of projects that showcase my skills in web development, design, and problem-solving.",
+    "MySell": {
+      "title": "MySell",
+      "description": "Application that helps small entrepreneurs record their daily sales. It features JWT authentication, Google and Facebook login, product and sales registration, PDF report generation, and sales history."
+    }
   },
   "ProjectCard": {
     "moreInfo": "More info",

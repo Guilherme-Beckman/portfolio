@@ -15,17 +15,26 @@ export default function Projects() {
         <div className={styles.projectCard}>
           <SlideIn>
             <ProjectCard
-              title="MySell"
-              description="A dashboard application integrated with GitHub, developed using Golang and the GitHub GraphQL API, to display repository analytics, pull request data, and test summaries."
-              image="/icons/skills/angular-svgrepo-com.svg"
+              title={t("MySell.title")}
+              description={t("MySell.description")}
+              image="https://guilherme-beckman.github.io/portfolio-assets/mysell/images/favicon.png"
               tags={[
                 {
-                  name: "NextJS",
+                  name: "Spring Boot WebFlux",
+                  icon: "/icons/skills/spring-svgrepo-com.svg",
+                },
+                {
+                  name: "PostgreSQL",
+                  icon: "/icons/skills/postgresql-svgrepo-com.svg",
+                },
+                {
+                  name: "Angular",
                   icon: "/icons/skills/angular-svgrepo-com.svg",
                 },
+                { name: "Ionic", icon: "/icons/skills/ionic-svgrepo-com.svg" },
               ]}
-              demoLink="/projects/project-example"
-              codeLink="https://github.com/example/devflow-console"
+              demoLink="https://github.com/Guilherme-Beckman/mysell"
+              codeLink="https://github.com/Guilherme-Beckman/mysell"
             />
           </SlideIn>
         </div>

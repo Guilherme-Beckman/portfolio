@@ -183,7 +183,11 @@
   },
   "Projects": {
     "title": "Projetos",
-    "subtitle": "Uma coleção de projetos que demonstram minhas habilidades em desenvolvimento web, design e resolução de problemas."
+    "subtitle": "Uma coleção de projetos que demonstram minhas habilidades em desenvolvimento web, design e resolução de problemas.",
+    "MySell": {
+      "title": "MySell",
+      "description": "Aplicação que ajuda pequenos empreendedores a registrar suas vendas diárias. Possui autenticação JWT, login com Google e Facebook, cadastro de produtos e vendas, relatórios em PDF e histórico de vendas."
+    }
   },
   "ProjectCard": {
     "moreInfo": "Mais informações",
