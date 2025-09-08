@@ -21,9 +21,9 @@ export default function ProjectExample() {
         title={t("title")}
         subtitle={t("subtitle")}
         badges={[
-          { name: "Java", color: "orange" },
-          { name: "Angular", color: "blue" },
-          { name: "Ionic", color: "cyan" },
+          { name: "Mobile", color: "red" },
+          { name: "Web", color: "blue" },
+          { name: "API", color: "cyan" },
         ]}
         description={t("description")}
         features={features}
@@ -103,6 +103,11 @@ export default function ProjectExample() {
         }}
         demo={{
           slides: [
+            {
+              title: t("demo.visaoGeralAplicacao"),
+              type: "video",
+              src: "https://guilherme-beckman.github.io/portfolio-assets/mysell/videos/general-application.mp4",
+            },
             {
               title: t("demo.dashboard"),
               type: "image",
@@ -185,11 +190,7 @@ export default function ProjectExample() {
               type: "video",
               src: "https://guilherme-beckman.github.io/portfolio-assets/mysell/videos/brute-force-exception.mp4",
             },
-            {
-              title: t("demo.visaoGeralAplicacao"),
-              type: "video",
-              src: "https://guilherme-beckman.github.io/portfolio-assets/mysell/videos/general-application.mp4",
-            },
+
             {
               title: t("demo.buscandoCoisas"),
               type: "video",

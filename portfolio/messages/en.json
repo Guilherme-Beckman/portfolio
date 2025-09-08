@@ -203,22 +203,22 @@
       "demo": {
         "dashboard": "Dashboard",
         "bancoDeDados": "Database",
-        "loginRaw": "Raw Login",
-        "registerRaw": "Raw Register",
-        "googleLogin": "Google Login",
-        "facebookLogin": "Facebook Login",
+        "loginRaw": "Login",
+        "registerRaw": "Register",
+        "googleLogin": "Login - Google",
+        "facebookLogin": "Login - Facebook",
         "criandoProdutos": "Creating Products",
         "produtosPreCriados": "Pre-created Products",
         "editandoProdutos": "Editing Products",
         "excluindoProdutos": "Deleting Products",
         "vendendoProdutos": "Selling Products",
         "excluindoVendas": "Deleting Sales",
-        "qrCodeProdutos": "Product Registration via QR Code",
-        "gerandoRelatoriosPDF": "Generating PDF Reports",
+        "qrCodeProdutos": "Product via QR Code",
+        "gerandoRelatoriosPDF": "PDF Reports",
         "graficoRelatorios": "Reports Graph",
         "excecaoBruteForce": "Brute Force Exception",
-        "visaoGeralAplicacao": "Application Overview",
-        "buscandoCoisas": "Searching Things"
+        "visaoGeralAplicacao": "Overview",
+        "buscandoCoisas": "Searching"
       }
     }
   }

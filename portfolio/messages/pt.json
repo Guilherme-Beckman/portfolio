@@ -201,23 +201,23 @@
       "features": "Cadastro e Login de Usuário; Autenticação com Google e Facebook; Verificação de E-mail; Bloqueio de Conta após Múltiplas Tentativas Falhas; Envio de E-mail de Boas-Vindas; Cadastro de Produtos (Manual, QR Code, Pré-criados); Edição e Exclusão de Produtos; Registro e Exclusão de Vendas; Histórico e Pesquisa de Vendas; Relatórios em PDF Diários, Semanais e Mensais; Cache para Otimização de Performance; Angular Guards para Proteção de Rotas",
       "demo": {
         "dashboard": "Dashboard",
-        "bancoDeDados": "Banco de Dados",
-        "loginRaw": "Login Cru",
-        "registerRaw": "Registro Cru",
-        "googleLogin": "Login com Google",
-        "facebookLogin": "Login com Facebook",
+        "bancoDeDados": "Banco de dados",
+        "loginRaw": "Login",
+        "registerRaw": "Registro",
+        "googleLogin": "Login - Google",
+        "facebookLogin": "Login - Facebook",
         "criandoProdutos": "Criando Produtos",
-        "produtosPreCriados": "Produtos Pré-criados",
+        "produtosPreCriados": "Produtos Existentes",
         "editandoProdutos": "Editando Produtos",
         "excluindoProdutos": "Excluindo Produtos",
         "vendendoProdutos": "Vendendo Produtos",
         "excluindoVendas": "Excluindo Vendas",
-        "qrCodeProdutos": "Registro de Produtos com QR Code",
-        "gerandoRelatoriosPDF": "Gerando Relatórios em PDF",
+        "qrCodeProdutos": "Produtos com QR Code",
+        "gerandoRelatoriosPDF": "Relatórios em PDF",
         "graficoRelatorios": "Gráfico de Relatórios",
         "excecaoBruteForce": "Exceção Brute Force",
-        "visaoGeralAplicacao": "Visão Geral da Aplicação",
-        "buscandoCoisas": "Buscando Coisas"
+        "visaoGeralAplicacao": "Geral",
+        "buscandoCoisas": "Buscando"
       }
     }
   }
