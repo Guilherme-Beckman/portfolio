@@ -223,6 +223,20 @@
         "excecaoBruteForce": "Brute Force Exception",
         "visaoGeralAplicacao": "Overview",
         "buscandoCoisas": "Searching"
+      },
+
+      "statistics": {
+        "activeUsers": "Active Users",
+        "uptime": "Uptime",
+        "performanceScore": "Performance Score"
+      },
+      "timeline": {
+        "projectStart": "Project Start",
+        "initialPlanning": "Initial Planning",
+        "betaRelease": "Backend",
+        "firstVersion": "Finish Api",
+        "officialLaunch": "Frontend",
+        "finalVersion": "Finish Frontend"
       }
     }
   },

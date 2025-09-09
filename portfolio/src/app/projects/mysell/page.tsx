@@ -36,19 +36,22 @@ export default function ProjectExample() {
             { name: "Ionic", iconUrl: "/icons/skills/ionic-svgrepo-com.svg" },
             { name: "TypeScript", iconUrl: "/icons/skills/typescript.svg" },
             {
-              name: "HTML/CSS",
+              name: "HTML",
               iconUrl: "/icons/skills/html-5-svgrepo-com.svg",
+            },
+            {
+              name: "CSS",
+              iconUrl: "/icons/skills/css-3-svgrepo-com.svg",
             },
           ],
           backend: [
             {
-              name: "Java Spring Boot",
-              iconUrl: "/icons/skills/spring-svgrepo-com.svg",
+              name: "Java",
+              iconUrl: "/icons/skills/java-svgrepo-com.svg",
             },
-            { name: "Golang", iconUrl: "" },
             {
-              name: "Python FastAPI",
-              iconUrl: "/icons/skills/fastapi-svgrepo-com.svg",
+              name: "Spring",
+              iconUrl: "/icons/skills/spring-svgrepo-com.svg",
             },
           ],
           database: [
@@ -56,7 +59,7 @@ export default function ProjectExample() {
               name: "PostgreSQL",
               iconUrl: "/icons/skills/postgresql-svgrepo-com.svg",
             },
-            { name: "Redis", iconUrl: "" },
+            { name: "Redis", iconUrl: "/icons/skills/redis-svgrepo-com.svg" },
           ],
           authentication: [
             { name: "JWT", iconUrl: "" },
@@ -67,37 +70,36 @@ export default function ProjectExample() {
             },
           ],
           hosting: [
-            { name: "AWS", iconUrl: "/icons/skills/aws-svgrepo-com.svg" },
-            { name: "Vercel", iconUrl: "" },
+            { name: "Mobile", iconUrl: "/icons/skills/mobile-svgrepo-com.svg" },
           ],
           performance: [
-            { name: "Caching", iconUrl: "" },
-            { name: "Load Balancing", iconUrl: "" },
+            { name: "Caching", iconUrl: "/icons/skills/redis-svgrepo-com.svg" },
+            { name: "Non-blocking Concurrency", iconUrl: "" },
           ],
         }}
         projectStatistics={{
           statistics: [
-            { label: "Active Users", value: "500+" },
-            { label: "Uptime", value: "99.9%" },
-            { label: "Performance Score", value: "95/100" },
+            { label: t("statistics.activeUsers"), value: "1" },
+            { label: t("statistics.uptime"), value: "99.9%" },
+            { label: t("statistics.performanceScore"), value: "95/100" },
           ],
         }}
         developmentTimeline={{
           events: [
             {
-              date: "Jan 2025",
-              title: "Project Start",
-              description: "Initial Planning",
-            },
-            {
               date: "Mar 2025",
-              title: "Beta Release",
-              description: "First Version",
+              title: t("timeline.projectStart"),
+              description: t("timeline.initialPlanning"),
             },
             {
-              date: "Aug 2025",
-              title: "Official Launch",
-              description: "Final Version",
+              date: "Jun 2025",
+              title: t("timeline.betaRelease"),
+              description: t("timeline.firstVersion"),
+            },
+            {
+              date: "Jul 2025",
+              title: t("timeline.officialLaunch"),
+              description: t("timeline.finalVersion"),
             },
           ],
         }}
