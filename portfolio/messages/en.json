@@ -228,5 +228,8 @@
   },
   "MoreAbout": {
     "projectOverview": "Project Overview"
+  },
+  "KeyFeatures": {
+    "keyFeatures": "Key Features"
   }
 }
