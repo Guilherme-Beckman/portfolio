@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./technical-specifications.module.css";
 import { Grid2X2Plus } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export interface TechItem {
   name: string;
@@ -15,7 +16,6 @@ export interface TechnicalSpecificationsProps {
   hosting: TechItem[];
   performance: TechItem[];
 }
-
 export function TechnicalSpecifications({
   frontend,
   backend,
@@ -24,20 +24,22 @@ export function TechnicalSpecifications({
   hosting,
   performance,
 }: TechnicalSpecificationsProps) {
+  const t = useTranslations("TechnicalSpecifications");
+
   const sections = [
-    { title: "Frontend", items: frontend },
-    { title: "Backend", items: backend },
-    { title: "Database", items: database },
-    { title: "Authentication", items: authentication },
-    { title: "Hosting", items: hosting },
-    { title: "Performance", items: performance },
+    { title: t("frontend"), items: frontend },
+    { title: t("backend"), items: backend },
+    { title: t("database"), items: database },
+    { title: t("authentication"), items: authentication },
+    { title: t("hosting"), items: hosting },
+    { title: t("performance"), items: performance },
   ];
 
   return (
     <div className={styles.technicalSpecifications}>
       <div className={styles.title}>
         <Grid2X2Plus color="#9ae5f3" />
-        <h3>Technical Specifications</h3>
+        <h3>{t("technicalSpecifications")}</h3>
       </div>
 
       {sections.map((section, index) => (
@@ -49,7 +51,7 @@ export function TechnicalSpecifications({
                 {item.iconUrl && (
                   <Image
                     src={item.iconUrl}
-                    alt={""}
+                    alt=""
                     width={20}
                     height={20}
                     className={styles.specIcon}

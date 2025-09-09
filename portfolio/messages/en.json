@@ -231,5 +231,14 @@
   },
   "KeyFeatures": {
     "keyFeatures": "Key Features"
+  },
+  "TechnicalSpecifications": {
+    "technicalSpecifications": "Technical Specifications",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Database",
+    "authentication": "Authentication",
+    "hosting": "Hosting",
+    "performance": "Performance"
   }
 }
