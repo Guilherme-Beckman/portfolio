@@ -131,7 +131,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                     height={200}
                   />
                 ) : (
-                  <Video src={slide.src} className={styles.video} />
+                  <video src={slide.src} className={styles.video} controls />
                 )}
               </div>
             </div>

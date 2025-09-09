@@ -36,7 +36,6 @@
 .embla__slide__content .video {
   width: 100%;
   height: fit-content;
-  object-fit: cover; /* preenche mantendo proporção */
   border-radius: inherit;
 }
 .embla__controls {
