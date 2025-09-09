@@ -20,6 +20,7 @@ import {
 } from "./development-timeline/development-timeline";
 import { Demo, DemoProps } from "./demo/demo";
 import ContactCard from "../../about-me/contacts/contacs";
+import { useTranslations } from "next-intl";
 interface FadeInProps {
   children: React.ReactNode;
   fromY?: number;
@@ -100,6 +101,8 @@ export function MoreAbout({
   developmentTimeline,
   demo,
 }: MoreAboutProps) {
+  const t = useTranslations("MoreAbout");
+
   return (
     <div className={styles.moreAboutContainer}>
       <div className={`${styles.moreAbout} animatedBg`}>
@@ -146,7 +149,7 @@ export function MoreAbout({
               <div className={styles.projectOverviewContainer}>
                 <div className={styles.projectOverviewTitle}>
                   <Code color="#9ae5f3" />
-                  <h3>Project Overview</h3>
+                  <h3>{t("projectOverview")}</h3>{" "}
                 </div>
                 <p className={styles.description}>{description}</p>
               </div>

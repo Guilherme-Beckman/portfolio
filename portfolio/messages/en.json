@@ -225,5 +225,8 @@
         "buscandoCoisas": "Searching"
       }
     }
+  },
+  "MoreAbout": {
+    "projectOverview": "Project Overview"
   }
 }
