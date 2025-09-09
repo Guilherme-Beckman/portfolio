@@ -203,7 +203,7 @@
       "title": "MySell",
       "subtitle": "Dashboard inteligente de vendas para pequenos empreendedores",
       "description": "Aplicação que ajuda pequenos empreendedores a registrar suas vendas diárias. Possui autenticação JWT, login com Google e Facebook, cadastro de produtos e vendas, relatórios em PDF, histórico de vendas e proteção contra acessos suspeitos.",
-      "features": "Cadastro e Login de Usuário; Autenticação com Google e Facebook; Verificação de E-mail; Bloqueio de Conta após Múltiplas Tentativas Falhas; Envio de E-mail de Boas-Vindas; Cadastro de Produtos (Manual, QR Code, Pré-criados); Edição e Exclusão de Produtos; Registro e Exclusão de Vendas; Histórico e Pesquisa de Vendas; Relatórios em PDF Diários, Semanais e Mensais; Cache para Otimização de Performance; Angular Guards para Proteção de Rotas",
+      "features": "Cadastro de Usuário; Login de Usuário; Autenticação com Google;Autenticação com Facebook; Verificação de E-mail; Bloqueio após Tentativas Falhas; E-mail de Boas-Vindas; Cadastro de Produtos (QR Code); CRUD de Produtos; Registro e Exclusão de Vendas; Histórico de Vendas; Relatórios em PDF; Cache para Performance; Proteção de Rotas",
       "demo": {
         "dashboard": "Dashboard",
         "bancoDeDados": "Banco de dados",
@@ -240,5 +240,11 @@
     "authentication": "Autenticação",
     "hosting": "Hospedagem",
     "performance": "Performance"
+  },
+  "ProjectStatistics": {
+    "projectStatistics": "Estatísticas do Projeto"
+  },
+  "DevelopmentTimeline": {
+    "developmentTimeline": "Linha do Tempo do Desenvolvimento"
   }
 }

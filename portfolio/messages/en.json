@@ -203,7 +203,7 @@
       "title": "MySell",
       "subtitle": "Smart Sales Dashboard for Small Entrepreneurs",
       "description": "Application that helps small entrepreneurs record their daily sales. Features include JWT authentication, Google and Facebook login, product and sales registration, PDF report generation, sales history, and protection against suspicious access.",
-      "features": "User Registration & Login; Google & Facebook Authentication; Email Verification; Account Lockout on Multiple Failed Attempts; Welcome Email Sending; Product Registration (Manual, QR Code, Pre-created); Product Editing & Deletion; Sales Registration & Deletion; Sales History & Search; Daily, Weekly, Monthly PDF Reports; Cache for Performance Optimization; Angular Guards for Route Protection",
+      "features": "User Registration; User Login; Google Authentication; Facebook Authentication; Email Verification; Account Lockout after Failed Attempts; Welcome Email; Product Registration (QR Code); Product CRUD; Sales Recording and Deletion; Sales History; PDF Reports; Performance Caching; Route Protection",
       "demo": {
         "dashboard": "Dashboard",
         "bancoDeDados": "Database",
@@ -240,5 +240,11 @@
     "authentication": "Authentication",
     "hosting": "Hosting",
     "performance": "Performance"
+  },
+  "ProjectStatistics": {
+    "projectStatistics": "Project Statistics"
+  },
+  "DevelopmentTimeline": {
+    "developmentTimeline": "Development Timeline"
   }
 }

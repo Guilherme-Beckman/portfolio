@@ -9,14 +9,14 @@ export function KeyFeatures({ features }: KeyFeaturesProps) {
   return (
     <div className={styles.keyFeatures}>
       <div className={styles.keyFeaturesTitle}>
-        <CircleCheck color="#9ae5f3" />
+        <CircleCheck color="#9ae5f3"  />
         <h3>{t("keyFeatures")}</h3>{" "}
       </div>
 
       <ul className={styles.featuresContainer}>
         {features.map((feature, index) => (
           <li key={index} className={styles.featureItem}>
-            <CircleCheck color="#9ae5f3" className={styles.checkIcon} />
+            <CircleCheck color="#9ae5f3" className={styles.checkIcon} width={20} height={20} />
             <p className={styles.featureText}>{feature}</p>
           </li>
         ))}

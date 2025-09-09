@@ -32,6 +32,8 @@
 
 .checkIcon {
   margin-right: 0.75rem;
+  min-height: 20px;
+  min-width: 20px;
 }
 
 .featureText {
