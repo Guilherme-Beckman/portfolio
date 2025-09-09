@@ -193,7 +193,11 @@
     "moreInfo": "More info",
     "code": "Code"
   },
-
+  "NavProject": {
+    "backToProjects": "Back to projects",
+    "github": "GitHub",
+    "liveDemo": "Live Demo"
+  },
   "ProjectPage": {
     "MySell": {
       "title": "MySell",

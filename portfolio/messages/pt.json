@@ -189,6 +189,11 @@
       "description": "Aplicação que ajuda pequenos empreendedores a registrar suas vendas diárias. Possui autenticação JWT, login com Google e Facebook, cadastro de produtos e vendas, relatórios em PDF e histórico de vendas."
     }
   },
+  "NavProject": {
+    "backToProjects": "Voltar para projetos",
+    "github": "GitHub",
+    "liveDemo": "Demo"
+  },
   "ProjectCard": {
     "moreInfo": "Mais informações",
     "code": "Código"
