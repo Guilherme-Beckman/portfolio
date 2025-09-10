@@ -241,6 +241,36 @@
         "officialLaunch": "Frontend",
         "finalVersion": "Finaliza o Frontend"
       }
+    },
+    "BirdPantanal": {
+      "title": "Bird Pantanal Photo Gallery",
+      "subtitle": "Galeria digital de aves do Pantanal",
+      "description": "Bird Pantanal Photo Gallery é uma galeria digital dedicada às aves do Pantanal, apresentando artigos detalhados sobre cada espécie. A aplicação permite explorar diferentes aves com descrições informativas, proporcionando um espaço para apreciar a fauna local.",
+      "features": "Listar todas as aves; Buscar dados de uma ave específica; Criar novas aves; Atualizar dados de aves; Excluir aves; Criar usuários; Login com geração de token JWT; Proteção de rotas com JWT",
+      "demo": {
+        "dashboard": "Dashboard",
+        "bancoDeDados": "Banco de Dados",
+        "listandoAves": "Listando Aves",
+        "criandoAves": "Criando Aves",
+        "atualizandoAves": "Atualizando Aves",
+        "deletandoAves": "Deletando Aves",
+        "login": "Login",
+        "registro": "Registro",
+        "diagramaFluxo": "Fluxo da Aplicação"
+      },
+      "statistics": {
+        "activeUsers": "Usuários Ativos",
+        "uptime": "Tempo de Atividade",
+        "performanceScore": "Pontuação de Performance"
+      },
+      "timeline": {
+        "projectStart": "Início do Projeto",
+        "initialPlanning": "Planejamento Inicial",
+        "betaRelease": "Backend Finalizado",
+        "firstVersion": "Frontend Finalizado",
+        "officialLaunch": "Lançamento Oficial",
+        "finalVersion": "Deploy na AWS"
+      }
     }
   },
   "MoreAbout": {

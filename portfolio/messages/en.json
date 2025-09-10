@@ -242,6 +242,36 @@
         "officialLaunch": "Frontend",
         "finalVersion": "Finish Frontend"
       }
+    },
+    "BirdPantanal": {
+      "title": "Bird Pantanal Photo Gallery",
+      "subtitle": "Digital gallery of Pantanal birds",
+      "description": "Bird Pantanal Photo Gallery is a digital gallery dedicated to Pantanal birds, featuring detailed articles about each species. The application allows exploring various birds with informative descriptions, providing a space to appreciate the local fauna.",
+      "features": "List all birds; Retrieve specific bird data; Create new birds; Update bird data; Delete birds; Create users; Login generating a JWT token; Protect routes with JWT",
+      "demo": {
+        "dashboard": "Dashboard",
+        "bancoDeDados": "Database",
+        "listandoAves": "Listing Birds",
+        "criandoAves": "Creating Birds",
+        "atualizandoAves": "Updating Birds",
+        "deletandoAves": "Deleting Birds",
+        "login": "Login",
+        "registro": "Register",
+        "diagramaFluxo": "Application Flow"
+      },
+      "statistics": {
+        "activeUsers": "Active Users",
+        "uptime": "Uptime",
+        "performanceScore": "Performance Score"
+      },
+      "timeline": {
+        "projectStart": "Project Start",
+        "initialPlanning": "Initial Planning",
+        "betaRelease": "Backend Completed",
+        "firstVersion": "Frontend Completed",
+        "officialLaunch": "Official Launch",
+        "finalVersion": "Deployed on AWS"
+      }
     }
   },
   "MoreAbout": {
