@@ -187,6 +187,10 @@
     "MySell": {
       "title": "MySell",
       "description": "Aplicação que ajuda pequenos empreendedores a registrar suas vendas diárias. Possui autenticação JWT, login com Google e Facebook, cadastro de produtos e vendas, relatórios em PDF e histórico de vendas."
+    },
+    "BirdPantanal": {
+      "title": "Bird Pantanal Photo Gallery",
+      "description": "Explore uma galeria digital dedicada às aves do Pantanal, com artigos e descrições detalhadas de cada espécie."
     }
   },
   "NavProject": {

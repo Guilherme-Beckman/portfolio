@@ -1,7 +1,7 @@
 import { MoreAbout } from "@/app/components/projects/more-about/more-about";
 import { useTranslations } from "next-intl";
 
-export default function ProjectExample() {
+export default function MySell() {
   const t = useTranslations("ProjectPage.MySell");
 
   // Sempre garante array de strings plano

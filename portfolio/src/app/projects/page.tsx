@@ -38,6 +38,48 @@ export default function Projects() {
             />
           </SlideIn>
         </div>
+        <div className={styles.projectCard}>
+          <SlideIn fromX={50}>
+            <ProjectCard
+              title={t("BirdPantanal.title")}
+              description={t("BirdPantanal.description")}
+              image="https://guilherme-beckman.github.io/portfolio-assets/bird-pantanal-photo-gallery/images/favicon.png"
+              tags={[
+                {
+                  name: "Spring Boot",
+                  icon: "/icons/skills/spring-svgrepo-com.svg",
+                },
+                {
+                  name: "PostgreSQL",
+                  icon: "/icons/skills/postgresql-svgrepo-com.svg",
+                },
+                {
+                  name: "Angular",
+                  icon: "/icons/skills/angular-svgrepo-com.svg",
+                },
+                {
+                  name: "SCSS",
+                  icon: "/icons/skills/css-3-svgrepo-com.svg",
+                },
+                {
+                  name: "AWS EC2",
+                  icon: "/icons/skills/aws-ec2-svgrepo-com.svg",
+                },
+                {
+                  name: "AWS Route 53",
+                  icon: "/icons/skills/aws-route53-svgrepo-com.svg",
+                },
+                {
+                  name: "AWS S3",
+                  icon: "/icons/skills/aws-s3-svgrepo-com.svg",
+                },
+                
+              ]}
+              demoLink="projects/birds-pantanal"
+              codeLink="https://github.com/Guilherme-Beckman/bird-pantanal-photo-gallery"
+            />
+          </SlideIn>
+        </div>
       </div>
     </div>
   );

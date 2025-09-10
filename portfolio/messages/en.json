@@ -187,6 +187,10 @@
     "MySell": {
       "title": "MySell",
       "description": "Application that helps small entrepreneurs record their daily sales. It features JWT authentication, Google and Facebook login, product and sales registration, PDF report generation, and sales history."
+    },
+    "BirdPantanal": {
+      "title": "Bird Pantanal Photo Gallery",
+      "description": "Explore a digital gallery dedicated to Pantanal birds, featuring articles and detailed descriptions of each species."
     }
   },
   "ProjectCard": {
