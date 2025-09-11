@@ -276,6 +276,33 @@
         "finalVersion": "Versão Final",
         "awsInfrastructure": "Infraestrutura final na AWS"
       }
+    },
+    "OrderManager": {
+      "title": "Sistema de Gerenciamento de Pedidos Online",
+      "subtitle": "Sistema de pedidos para restaurantes baseado em microsserviços",
+      "description": "Este projeto é um sistema completo de gerenciamento de pedidos para restaurantes utilizando arquitetura de microsserviços. Inclui autenticação com JWT, papéis de usuário, filas de pedidos com RabbitMQ, MongoDB para armazenamento e Docker para deploy em contêineres.",
+      "features": "Autenticação com JWT; Controle de acesso baseado em papéis; Cadastro e login de usuários; Perfil do cliente e histórico de pedidos; Gerenciamento de cardápio e produtos; Processamento de pedidos com filas; Atualização de status em tempo real; Documentação da API com Postman",
+      "demo": {
+        "systemDesign": "Diagrama do Sistema",
+        "postman1": "Requisições Postman",
+        "microservices": "Microservices"
+      },
+      "statistics": {
+        "microservices": "Microsserviços",
+        "users": "Usuários Simulados"
+      },
+      "timeline": {
+        "projectStart": "Início do Projeto",
+        "initialPlanning": "Planejamento inicial e levantamento de requisitos",
+        "firstServices": "Primeiros Microsserviços",
+        "basicArchitecture": "Implementação da arquitetura básica com autenticação",
+        "integration": "Fase de Integração",
+        "rabbitMqWorking": "Filas do RabbitMQ conectadas entre serviços",
+        "testing": "Testes e Documentação",
+        "postmanDocs": "Coleção do Postman concluída",
+        "deploy": "Deploy",
+        "containerizedDeploy": "Deploy utilizando contêineres Docker"
+      }
     }
   },
   "MoreAbout": {

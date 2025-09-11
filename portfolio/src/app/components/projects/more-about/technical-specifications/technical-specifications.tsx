@@ -9,12 +9,12 @@ export interface TechItem {
 }
 
 export interface TechnicalSpecificationsProps {
-  frontend: TechItem[];
-  backend: TechItem[];
-  database: TechItem[];
-  authentication: TechItem[];
-  hosting: TechItem[];
-  performance: TechItem[];
+  frontend?: TechItem[];
+  backend?: TechItem[];
+  database?: TechItem[];
+  authentication?: TechItem[];
+  hosting?: TechItem[];
+  performance?: TechItem[];
 }
 export function TechnicalSpecifications({
   frontend,
@@ -46,7 +46,7 @@ export function TechnicalSpecifications({
         <div key={index} className={styles.section}>
           <span className={styles.sectionTitle}>{section.title}</span>
           <ul className={styles.specsContainer}>
-            {section.items.map((item, i) => (
+            {section.items?.map((item, i) => (
               <li key={i} className={styles.specItem}>
                 {item.iconUrl && (
                   <Image

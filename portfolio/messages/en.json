@@ -277,6 +277,33 @@
         "finalVersion": "Final Version",
         "awsInfrastructure": "Final infrastructure on AWS"
       }
+    },
+    "OrderManager": {
+      "title": "Online Order Management System",
+      "subtitle": "Microservices-based restaurant ordering system",
+      "description": "This project is a complete order management system for restaurants using a microservices architecture. It includes authentication with JWT, user roles, order queues with RabbitMQ, MongoDB for storage, and Docker for containerized deployment.",
+      "features": "Authentication with JWT; Role-based access control; User registration and login; Customer profile and order history; Menu and product management; Order processing with queues; Status updates in real-time; API documentation with Postman",
+      "demo": {
+        "systemDesign": "System Design",
+        "postman1": "Postman Request",
+        "microservices": "Microservices"
+      },
+      "statistics": {
+        "microservices": "Microservices",
+        "users": "Simulated Users"
+      },
+      "timeline": {
+        "projectStart": "Project Start",
+        "initialPlanning": "Initial planning and requirements gathering",
+        "firstServices": "First Microservices",
+        "basicArchitecture": "Implemented basic architecture with authentication",
+        "integration": "Integration Phase",
+        "rabbitMqWorking": "RabbitMQ queues connected between services",
+        "testing": "Testing and Documentation",
+        "postmanDocs": "Postman collection completed",
+        "deploy": "Deployment",
+        "containerizedDeploy": "Deployed using Docker containers"
+      }
     }
   },
   "MoreAbout": {
