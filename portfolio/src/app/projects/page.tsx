@@ -62,21 +62,51 @@ export default function Projects() {
                   icon: "/icons/skills/css-3-svgrepo-com.svg",
                 },
                 {
-                  name: "AWS EC2",
-                  icon: "/icons/skills/aws-ec2-svgrepo-com.svg",
+                  name: "AWS",
+                  icon: "/icons/skills/aws-svgrepo-com.svg",
                 },
-                {
-                  name: "AWS Route 53",
-                  icon: "/icons/skills/aws-route53-svgrepo-com.svg",
-                },
-                {
-                  name: "AWS S3",
-                  icon: "/icons/skills/aws-s3-svgrepo-com.svg",
-                },
-                
+
               ]}
               demoLink="projects/birds-pantanal"
               codeLink="https://github.com/Guilherme-Beckman/bird-pantanal-photo-gallery"
+            />
+          </SlideIn>
+        </div>
+
+        <div className={styles.projectCard}>
+          <SlideIn fromX={-50}>
+            <ProjectCard
+              title={t("OrderManager.title")}
+              description={t("OrderManager.description")}
+              image="/icons/skills/spring-svgrepo-com.svg"
+              tags={[
+                {
+                  name: "Spring Boot",
+                  icon: "/icons/skills/spring-svgrepo-com.svg",
+                },
+                {
+                  name: "Spring Security",
+                  icon: "/icons/skills/spring-svgrepo-com.svg",
+                },
+                {
+                  name: "MongoDB",
+                  icon: "/icons/skills/mongodb-svgrepo-com.svg",
+                },
+                {
+                  name: "Docker",
+                  icon: "/icons/skills/docker-svgrepo-com.svg",
+                },
+                {
+                  name: "RabbitMQ",
+                  icon: "/icons/skills/rabbitmq-icon-svgrepo-com.svg",
+                },
+                {
+                  name: "Postman",
+                  icon: "/icons/skills/postman-icon-svgrepo-com.svg",
+                },
+              ]}
+              demoLink="projects/order-manager"
+              codeLink="https://github.com/Guilherme-Beckman/order-manager"
             />
           </SlideIn>
         </div>

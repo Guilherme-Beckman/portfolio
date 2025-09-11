@@ -191,6 +191,10 @@
     "BirdPantanal": {
       "title": "Bird Pantanal Photo Gallery",
       "description": "Explore a digital gallery dedicated to Pantanal birds, featuring articles and detailed descriptions of each species."
+    },
+    "OrderManager": {
+      "title": "Online Order Management System",
+      "description": "A microservices-based system for restaurants where customers can place orders, restaurants manage menus and order statuses, with authentication, RabbitMQ queues, and Dockerized services."
     }
   },
   "ProjectCard": {
