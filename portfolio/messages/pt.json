@@ -248,28 +248,29 @@
       "description": "Bird Pantanal Photo Gallery é uma galeria digital dedicada às aves do Pantanal, apresentando artigos detalhados sobre cada espécie. A aplicação permite explorar diferentes aves com descrições informativas, proporcionando um espaço para apreciar a fauna local.",
       "features": "Listar todas as aves; Buscar dados de uma ave específica; Criar novas aves; Atualizar dados de aves; Excluir aves; Criar usuários; Login com geração de token JWT; Proteção de rotas com JWT",
       "demo": {
-        "dashboard": "Dashboard",
-        "bancoDeDados": "Banco de Dados",
-        "listandoAves": "Listando Aves",
-        "criandoAves": "Criando Aves",
-        "atualizandoAves": "Atualizando Aves",
-        "deletandoAves": "Deletando Aves",
+        "creating": "Criando",
+        "downloadCard": "Baixando Cartão",
         "login": "Login",
-        "registro": "Registro",
-        "diagramaFluxo": "Fluxo da Aplicação"
+        "delete": "Deletando",
+        "editing": "Editando",
+        "searching": "Buscando",
+        "fluxogram": "Fluxograma"
       },
       "statistics": {
-        "activeUsers": "Usuários Ativos",
-        "uptime": "Tempo de Atividade",
-        "performanceScore": "Pontuação de Performance"
+        "birds": "Pássaros Registrados",
+        "uptime": "Tempo de Atividade"
       },
       "timeline": {
         "projectStart": "Início do Projeto",
-        "initialPlanning": "Planejamento Inicial",
-        "betaRelease": "Backend Finalizado",
-        "firstVersion": "Frontend Finalizado",
+        "initialPlanning": "Planejamento inicial e definição do escopo",
+        "betaRelease": "Beta Release",
+        "apiReady": "API pronta e testada",
+        "firstVersion": "Primeira Versão",
+        "frontendCompleted": "Frontend concluído",
         "officialLaunch": "Lançamento Oficial",
-        "finalVersion": "Deploy na AWS"
+        "firstDeploy": "Primeiro deploy oficial",
+        "finalVersion": "Versão Final",
+        "awsInfrastructure": "Infraestrutura final na AWS"
       }
     }
   },

@@ -35,7 +35,8 @@ export default function BirdPantanal() {
               iconUrl: "/icons/skills/angular-svgrepo-com.svg",
             },
             { name: "TypeScript", iconUrl: "/icons/skills/typescript.svg" },
-            { name: "SCSS", iconUrl: "/icons/skills/scss-svgrepo-com.svg" },
+            { name: "SCSS", iconUrl: "/icons/skills/css-3-svgrepo-com.svg" },
+            { name: "HTML", iconUrl: "/icons/skills/html-5-svgrepo-com.svg" },
           ],
           backend: [
             {
@@ -52,6 +53,15 @@ export default function BirdPantanal() {
               name: "PostgreSQL",
               iconUrl: "/icons/skills/postgresql-svgrepo-com.svg",
             },
+
+            {
+              name: "AWS S3",
+              iconUrl: "/icons/skills/aws-s3-svgrepo-com.svg",
+            },
+            {
+              name: "AWS RDS",
+              iconUrl: "/icons/skills/aws-rds-svgrepo-com.svg",
+            },
           ],
           authentication: [
             { name: "JWT", iconUrl: "" },
@@ -67,97 +77,91 @@ export default function BirdPantanal() {
               name: "Nginx",
               iconUrl: "/icons/skills/nginx-svgrepo-com.svg",
             },
+            {
+              name: "AWS Route 53",
+              iconUrl: "/icons/skills/aws-route53-svgrepo-com.svg",
+            },
           ],
           performance: [
-            { name: "Caching", iconUrl: "/icons/skills/redis-svgrepo-com.svg" },
+            {
+              name: "Spring Cache",
+              iconUrl: "/icons/skills/spring-svgrepo-com.svg",
+            },
             { name: "Exception Handling (RFC)", iconUrl: "" },
           ],
         }}
         projectStatistics={{
           statistics: [
-            { label: t("statistics.activeUsers"), value: "10+" },
+            { label: t("statistics.birds"), value: "50+" },
             { label: t("statistics.uptime"), value: "99.9%" },
-            { label: t("statistics.performanceScore"), value: "90/100" },
           ],
         }}
         developmentTimeline={{
           events: [
             {
-              date: "Jan 2025",
+              date: "Dec 2025",
               title: t("timeline.projectStart"),
               description: t("timeline.initialPlanning"),
             },
             {
-              date: "Mar 2025",
+              date: "Jan 2025",
               title: t("timeline.betaRelease"),
-              description: "API pronta e testada",
+              description: t("timeline.apiReady"),
+            },
+            {
+              date: "Feb 2025",
+              title: t("timeline.firstVersion"),
+              description: t("timeline.frontendCompleted"),
+            },
+            {
+              date: "Feb 2025",
+              title: t("timeline.officialLaunch"),
+              description: t("timeline.firstDeploy"),
             },
             {
               date: "May 2025",
-              title: t("timeline.firstVersion"),
-              description: "Frontend concluído",
-            },
-            {
-              date: "Jun 2025",
-              title: t("timeline.officialLaunch"),
-              description: "Primeiro deploy oficial",
-            },
-            {
-              date: "Jul 2025",
               title: t("timeline.finalVersion"),
-              description: "Infraestrutura final na AWS",
+              description: t("timeline.awsInfrastructure"),
             },
           ],
         }}
         demo={{
           slides: [
             {
-              title: t("demo.dashboard"),
+              title: t("demo.fluxogram"),
               type: "image",
-              src: "https://guilherme-beckman.github.io/portfolio-assets/birdpantanal/videos/listing-birds.mp4",
-              alt: t("demo.dashboard") + " Preview",
+              src: "https://guilherme-beckman.github.io/portfolio-assets/bird-pantanal-photo-gallery/images/fluxogram.png",
+              alt: t("demo.fluxogram"),
             },
             {
-              title: t("demo.bancoDeDados"),
-              type: "image",
-              src: "https://guilherme-beckman.github.io/portfolio-assets/birdpantanal/videos/listing-birds.mp4",
-              alt: t("demo.bancoDeDados") + " Preview",
-            },
-            {
-              title: t("demo.listandoAves"),
+              title: t("demo.creating"),
               type: "video",
-              src: "https://guilherme-beckman.github.io/portfolio-assets/birdpantanal/videos/listing-birds.mp4",
+              src: "https://guilherme-beckman.github.io/portfolio-assets/bird-pantanal-photo-gallery/videos/creating.mp4",
             },
             {
-              title: t("demo.criandoAves"),
+              title: t("demo.downloadCard"),
               type: "video",
-              src: "https://guilherme-beckman.github.io/portfolio-assets/birdpantanal/videos/creating-birds.mp4",
-            },
-            {
-              title: t("demo.atualizandoAves"),
-              type: "video",
-              src: "https://guilherme-beckman.github.io/portfolio-assets/birdpantanal/videos/updating-birds.mp4",
-            },
-            {
-              title: t("demo.deletandoAves"),
-              type: "video",
-              src: "https://guilherme-beckman.github.io/portfolio-assets/birdpantanal/videos/deleting-birds.mp4",
+              src: "https://guilherme-beckman.github.io/portfolio-assets/bird-pantanal-photo-gallery/videos/download-card.mp4",
             },
             {
               title: t("demo.login"),
               type: "video",
-              src: "https://guilherme-beckman.github.io/portfolio-assets/birdpantanal/videos/login.mp4",
+              src: "https://guilherme-beckman.github.io/portfolio-assets/bird-pantanal-photo-gallery/videos/login.mp4",
             },
             {
-              title: t("demo.registro"),
+              title: t("demo.delete"),
               type: "video",
-              src: "https://guilherme-beckman.github.io/portfolio-assets/birdpantanal/videos/register.mp4",
+              src: "https://guilherme-beckman.github.io/portfolio-assets/bird-pantanal-photo-gallery/videos/delete.mp4",
             },
             {
-              title: t("demo.diagramaFluxo"),
-              type: "image",
-              src: "https://guilherme-beckman.github.io/portfolio-assets/birdpantanal/videos/register.mp4",
-              alt: t("demo.diagramaFluxo") + " Preview",
+              title: t("demo.editing"),
+              type: "video",
+              src: "https://guilherme-beckman.github.io/portfolio-assets/bird-pantanal-photo-gallery/videos/editing.mp4",
+            },
+            {
+              title: t("demo.searching"),
+              type: "video",
+              src: "https://guilherme-beckman.github.io/portfolio-assets/bird-pantanal-photo-gallery/videos/searching.mp4",
             },
           ],
         }}
