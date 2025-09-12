@@ -203,6 +203,10 @@
     "IoTSchoolBell": {
       "title": "Automated School Bell System",
       "description": "An IoT project to automate the school bell at SESI Corumbá-MS. Arduino with ESP8266 controls the bell, while a Python FastAPI backend with SQLite manages schedules via WebSocket/HTTP. Next.js frontend allows easy schedule configuration."
+    },
+    "FaceRecognition": {
+      "title": "Facial Recognition System",
+      "description": "Facial recognition system developed in Python using the face_recognition library. Captures images from a camera, processes them, and stores faces in a PostgreSQL database. Microservices-based architecture with modules in Python (recognition), Java (security), and Golang (auditing). Project currently in planning phase, with a one-year development timeline."
     }
   },
   "ProjectCard": {

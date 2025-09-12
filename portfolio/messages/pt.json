@@ -203,6 +203,10 @@
     "IoTSchoolBell": {
       "title": "Sistema de Sinal Escolar Automatizado",
       "description": "Projeto de IoT para automatizar o sinal escolar na SESI Corumbá-MS. Arduino com ESP8266 controla o sinal, enquanto backend em Python FastAPI com SQLite gerencia os horários via WebSocket/HTTP. Frontend em Next.js permite configurar os horários facilmente."
+    },
+    "FaceRecognition": {
+      "title": "Sistema de Reconhecimento Facial",
+      "description": "Sistema de reconhecimento facial desenvolvido em Python utilizando a biblioteca face_recognition. Captura imagens de câmera, processa e armazena os rostos no banco de dados PostgreSQL. Arquitetura baseada em microserviços com módulos em Python (reconhecimento), Java (segurança) e Golang (auditoria). Projeto em andamento, atualmente na fase de planejamento, com prazo de um ano para desenvolvimento."
     }
   },
   "NavProject": {

@@ -47,6 +47,10 @@ export default function IoTSchoolBell() {
               iconUrl: "/icons/skills/wifi-svgrepo-com.svg",
             },
             { name: "TypeScript", iconUrl: "/icons/skills/typescript.svg" },
+            {
+              name: "C",
+              iconUrl: "/icons/skills/64px-C_Programming_Language.svg.png",
+            },
           ],
           database: [
             {
