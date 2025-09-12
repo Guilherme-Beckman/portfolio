@@ -49,7 +49,7 @@ export default function Projects() {
                 },
               ]}
               demoLink="projects/face-recognition"
-              codeLink="https://github.com/seu-usuario/seu-repo-face-recognition"
+              codeLink="https://github.com/Guilherme-Beckman/reconhecimento-facial-ifms"
             />
           </SlideIn>
         </div>

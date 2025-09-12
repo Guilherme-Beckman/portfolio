@@ -371,6 +371,33 @@
         "onshape": "Onshape CAD",
         "cCode": "C Code"
       }
+    },
+    "FaceRecognition": {
+      "title": "Facial Recognition System",
+      "subtitle": "Automatic face identification with microservices architecture",
+      "description": "Project focused on developing a facial recognition system using Python and the face_recognition library. Images are processed, compared, and stored in a PostgreSQL database. The architecture is microservices-based, with security and auditing modules built in Java and Golang, ensuring robustness and scalability.",
+      "features": "Facial recognition; Image capture; Face storage; Security module; Auditing module; Microservices architecture; Team leadership; Iterative development",
+      "statistics": {
+        "projectStatus": "Project Status",
+        "planningPhase": "Planning phase",
+        "estimatedDuration": "Estimated Duration",
+        "teamMembers": "Team Members"
+      },
+      "timeline": {
+        "projectStart": "Project Start",
+        "initialPlanning": "Initial planning and scope definition",
+        "softwareDevelopment": "Software Development",
+        "pythonImplementation": "Python facial recognition implementation",
+        "securityModule": "Security Module",
+        "javaIntegration": "Java security module integration",
+        "auditModule": "Audit Module",
+        "golangImplementation": "Golang audit module implementation",
+        "testingDeployment": "Testing and Deployment",
+        "systemRelease": "First version released for use"
+      },
+      "demo": {
+        "systemArchitecture": "System Architecture"
+      }
     }
   },
   "MoreAbout": {
