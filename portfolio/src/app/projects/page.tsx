@@ -55,7 +55,7 @@ export default function Projects() {
         </div>
 
         <div className={styles.projectCard}>
-          <SlideIn fromX={-50}>
+          <SlideIn fromX={50}>
             <ProjectCard
               title={t("IoTSchoolBell.title")}
               description={t("IoTSchoolBell.description")}
@@ -93,7 +93,7 @@ export default function Projects() {
           </SlideIn>
         </div>
         <div className={styles.projectCard}>
-          <SlideIn fromX={50}>
+          <SlideIn fromX={-50}>
             <ProjectCard
               title={t("LiadsServer.title")}
               description={t("LiadsServer.description")}
@@ -134,7 +134,7 @@ export default function Projects() {
           </SlideIn>
         </div>
         <div className={styles.projectCard}>
-          <SlideIn fromX={-50}>
+          <SlideIn fromX={50}>
             <ProjectCard
               title={t("MySell.title")}
               description={t("MySell.description")}
@@ -160,7 +160,7 @@ export default function Projects() {
           </SlideIn>
         </div>
         <div className={styles.projectCard}>
-          <SlideIn fromX={50}>
+          <SlideIn fromX={-50}>
             <ProjectCard
               title={t("BirdPantanal.title")}
               description={t("BirdPantanal.description")}
@@ -193,7 +193,7 @@ export default function Projects() {
           </SlideIn>
         </div>
         <div className={styles.projectCard}>
-          <SlideIn>
+          <SlideIn fromX={50}>
             <ProjectCard
               title={t("OrderManager.title")}
               description={t("OrderManager.description")}

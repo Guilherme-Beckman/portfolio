@@ -21,8 +21,8 @@ export default function IoTSchoolBell() {
         subtitle={t("subtitle")}
         badges={[
           { name: "IoT", color: "green" },
-          { name: "FastAPI", color: "blue" },
-          { name: "Next.js", color: "gray" },
+          { name: "API", color: "blue" },
+          { name: "WEB", color: "gray" },
         ]}
         description={t("description")}
         features={features}
