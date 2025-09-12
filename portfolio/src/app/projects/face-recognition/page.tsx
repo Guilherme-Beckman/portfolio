@@ -53,7 +53,7 @@ export default function FaceRecognition() {
               iconUrl: "/icons/skills/face-id-svgrepo-com.svg",
             },
             {
-              name: "Java (Security)",
+              name: "Java",
               iconUrl: "/icons/skills/java-svgrepo-com.svg",
             },
             {
@@ -61,7 +61,7 @@ export default function FaceRecognition() {
               iconUrl: "/icons/skills/spring-svgrepo-com.svg",
             },
             {
-              name: "Golang (Auditing)",
+              name: "Golang",
               iconUrl: "/icons/skills/golang-svgrepo-com.svg",
             },
           ],
@@ -96,7 +96,7 @@ export default function FaceRecognition() {
               label: t("statistics.projectStatus"),
               value: t("statistics.planningPhase"),
             },
-            { label: t("statistics.estimatedDuration"), value: "1 Year" },
+            { label: t("statistics.estimatedDuration"), value: "1Y" },
             { label: t("statistics.teamMembers"), value: "3" },
           ],
         }}

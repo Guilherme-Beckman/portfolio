@@ -375,8 +375,8 @@
     "FaceRecognition": {
       "title": "Facial Recognition System",
       "subtitle": "Automatic face identification with microservices architecture",
-      "description": "Project focused on developing a facial recognition system using Python and the face_recognition library. Images are processed, compared, and stored in a PostgreSQL database. The architecture is microservices-based, with security and auditing modules built in Java and Golang, ensuring robustness and scalability.",
-      "features": "Facial recognition; Image capture; Face storage; Security module; Auditing module; Microservices architecture; Team leadership; Iterative development",
+      "description": "Project focused on developing a facial recognition system using Python and the face_recognition library. Images are processed, compared, and stored in a PostgreSQL database. The architecture is microservices-based, with security and auditing modules built in Java and Golang, ensuring robustness and scalability. I am leading a small team of two less-experienced developers, guiding them throughout the development process.",
+      "features": "Facial recognition; Image capture; Face storage; Security module; Auditing module; Microservices architecture; Iterative development",
       "statistics": {
         "projectStatus": "Project Status",
         "planningPhase": "Planning phase",

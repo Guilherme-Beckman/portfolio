@@ -53,48 +53,7 @@ export default function Projects() {
             />
           </SlideIn>
         </div>
-        <div className={styles.projectCard}>
-          <SlideIn fromX={50}>
-            <ProjectCard
-              title={t("IoTSchoolBell.title")}
-              description={t("IoTSchoolBell.description")}
-              image="/icons/skills/python-svgrepo-com.svg"
-              tags={[
-                {
-                  name: "Arduino",
-                  icon: "/icons/skills/arduino-svgrepo-com.svg",
-                },
-                {
-                  name: "ESP8266",
-                  icon: "/icons/skills/wifi-svgrepo-com.svg",
-                },
-                {
-                  name: "FastAPI",
-                  icon: "/icons/skills/fastapi-svgrepo-com.svg",
-                },
-                {
-                  name: "SQLAlchemy",
-                  icon: "/icons/skills/SQLAlchemy.svg",
-                },
-                {
-                  name: "SQLite",
-                  icon: "/icons/skills/sqllite-svgrepo-com.svg",
-                },
-                {
-                  name: "Next.js",
-                  icon: "/icons/skills/nextjs-fill-svgrepo-com.svg",
-                },
-                { name: "TypeScript", icon: "/icons/skills/typescript.svg" },
-                {
-                  name: "C",
-                  icon: "/icons/skills/64px-C_Programming_Language.svg.png",
-                },
-              ]}
-              demoLink="projects/iot-project"
-              codeLink="https://github.com/Gaby0805/Arduino-Rirau-ipyra"
-            />
-          </SlideIn>
-        </div>
+
         <div className={styles.projectCard}>
           <SlideIn fromX={-50}>
             <ProjectCard
@@ -230,6 +189,54 @@ export default function Projects() {
               ]}
               demoLink="projects/birds-pantanal"
               codeLink="https://github.com/Guilherme-Beckman/bird-pantanal-photo-gallery"
+            />
+          </SlideIn>
+        </div>
+        <div className={styles.projectCard}>
+          <SlideIn>
+            <ProjectCard
+              title={t("OrderManager.title")}
+              description={t("OrderManager.description")}
+              image="/icons/skills/spring-svgrepo-com.svg"
+              tags={[
+                {
+                  name: "Spring Boot",
+
+                  icon: "/icons/skills/spring-svgrepo-com.svg",
+                },
+
+                {
+                  name: "Spring Security",
+
+                  icon: "/icons/skills/spring-svgrepo-com.svg",
+                },
+
+                {
+                  name: "MongoDB",
+
+                  icon: "/icons/skills/mongodb-svgrepo-com.svg",
+                },
+
+                {
+                  name: "Docker",
+
+                  icon: "/icons/skills/docker-svgrepo-com.svg",
+                },
+
+                {
+                  name: "RabbitMQ",
+
+                  icon: "/icons/skills/rabbitmq-icon-svgrepo-com.svg",
+                },
+
+                {
+                  name: "Postman",
+
+                  icon: "/icons/skills/postman-icon-svgrepo-com.svg",
+                },
+              ]}
+              demoLink="projects/order-manager"
+              codeLink="https://github.com/Guilherme-Beckman/order-manager"
             />
           </SlideIn>
         </div>
