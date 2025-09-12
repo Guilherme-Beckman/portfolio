@@ -48,8 +48,8 @@ export default function Projects() {
                   icon: "/icons/skills/vagrant-svgrepo-com.svg",
                 },
               ]}
-              demoLink="projects/order-manager"
-              codeLink="https://github.com/Guilherme-Beckman/order-manager"
+              demoLink="projects/liads-server"
+              codeLink="https://github.com/LIADS-IFMS "
             />
           </SlideIn>
         </div>

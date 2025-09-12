@@ -307,6 +307,32 @@
         "deploy": "Deploy",
         "containerizedDeploy": "Deploy utilizando contêineres Docker"
       }
+    },
+    "Liads": {
+      "title": "Servidor On-premise LIADS IFMS",
+      "subtitle": "Infraestrutura de microsserviços com Docker, Kong, Consul e Nginx",
+      "description": "O LIADS Server é uma infraestrutura on-premise projetada para gerenciar múltiplos serviços com isolamento, roteamento e verificação de saúde. Ele utiliza Docker para conteinerização, Kong como API Gateway, Consul como registro e resolvedor DNS de serviços e Nginx como proxy reverso. O projeto tem como objetivo simplificar o registro e o roteamento de serviços dentro da rede local do IFMS.",
+      "features": "Conteinerização de serviços com Docker; Roteamento automático via Kong; Resolução DNS com Consul; Health checks de todos os serviços; Registro de serviços facilitado; Arquitetura modular de microsserviços; Deploy on-premise em Ubuntu Server",
+      "statistics": {
+        "registeredServices": "Serviços Registrados",
+        "uptime": "Disponibilidade",
+        "infrastructure": "Infraestrutura"
+      },
+      "timeline": {
+        "projectStart": "Início do Projeto",
+        "initialPlanning": "Planejamento inicial e definição da stack",
+        "baseInfrastructure": "Configuração da Infraestrutura Base",
+        "kongConsulSetup": "Kong + Consul configurados e rodando",
+        "currentDevelopment": "Desenvolvimento Atual",
+        "serviceRegistration": "Primeiros serviços registrados no Consul e roteados via Kong"
+      },
+      "demo": {
+        "infrastructureDiagram": "Diagrama da Infraestrutura",
+        "consulDashboard": "Consul",
+        "kongRoutes": "Rotas no Kong",
+        "dockerCompose": "Docker Compose",
+        "ubuntuOnPremise": "Ubuntu On-Premise"
+      }
     }
   },
   "MoreAbout": {
