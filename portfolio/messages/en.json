@@ -317,7 +317,7 @@
       "title": "LIADS IFMS On-premise Server",
       "subtitle": "Microservice Infrastructure with Docker, Kong, Consul and Nginx",
       "description": "LIADS Server is an on-premise infrastructure designed to manage multiple services with isolation, routing and health checks. It uses Docker for containerization, Kong as API Gateway, Consul as service discovery and DNS resolver, and Nginx for reverse proxy. The project aims to simplify service registration and routing inside the IFMS local network.",
-      "features": "Service containerization with Docker; Automatic routing through Kong; DNS resolution with Consul; Health checks for all services; Easy service registration; Modular microservice architecture; On-premise deployment with Ubuntu Server",
+      "features": "Arduino + ESP8266 Integration; Python API with FastAPI; ORM with SQLAlchemy; Migrations with Alembic; SQLite Database; WebSocket Communication; HTTP Communication; Schedule Management; Next.js Frontend; Open-source on GitHub",
       "statistics": {
         "registeredServices": "Registered Services",
         "uptime": "Uptime",

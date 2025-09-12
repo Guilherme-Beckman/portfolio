@@ -35,26 +35,29 @@ export default function IoTSchoolBell() {
             },
             {
               name: "SQLAlchemy",
-              iconUrl: "/icons/skills/sqlalchemy-svgrepo-com.svg",
+              iconUrl: "/icons/skills/SQLAlchemy.svg",
             },
-            {
-              name: "Alembic",
-              iconUrl: "/icons/skills/alembic-svgrepo-com.svg",
-            },
-            { name: "SQLite", iconUrl: "/icons/skills/sqlite-svgrepo-com.svg" },
+
             {
               name: "Arduino",
               iconUrl: "/icons/skills/arduino-svgrepo-com.svg",
             },
             {
               name: "ESP8266",
-              iconUrl: "/icons/skills/esp8266-svgrepo-com.svg",
+              iconUrl: "/icons/skills/wifi-svgrepo-com.svg",
+            },
+            { name: "TypeScript", iconUrl: "/icons/skills/typescript.svg" },
+          ],
+          database: [
+            {
+              name: "SQLite",
+              iconUrl: "/icons/skills/sqllite-svgrepo-com.svg",
             },
           ],
           frontend: [
             {
               name: "Next.js",
-              iconUrl: "/icons/skills/nextjs-svgrepo-com.svg",
+              iconUrl: "/icons/skills/nextjs-fill-svgrepo-com.svg",
             },
             { name: "TypeScript", iconUrl: "/icons/skills/typescript.svg" },
           ],
@@ -63,7 +66,12 @@ export default function IoTSchoolBell() {
               name: "WebSocket",
               iconUrl: "/icons/skills/websocket-svgrepo-com.svg",
             },
-            { name: "HTTP", iconUrl: "/icons/skills/http-svgrepo-com.svg" },
+          ],
+          authentication: [
+            { name: "TypeScript", iconUrl: "/icons/skills/typescript.svg" },
+          ],
+          hosting: [
+            { name: "Docker", iconUrl: "/icons/skills/docker-svgrepo-com.svg" },
           ],
         }}
         projectStatistics={{
@@ -72,34 +80,34 @@ export default function IoTSchoolBell() {
               label: t("statistics.devicesConnected"),
               value: "1 Arduino + ESP8266",
             },
-            { label: t("statistics.scheduledRings"), value: "100% Automático" },
+            { label: t("statistics.scheduledRings"), value: "100%" },
             { label: t("statistics.manualIntervention"), value: "0" },
           ],
         }}
         developmentTimeline={{
           events: [
             {
-              date: "Mar 2024",
+              date: "May 2025",
               title: t("timeline.projectStart"),
               description: t("timeline.initialPlanning"),
             },
             {
-              date: "Abr 2024",
+              date: "Jun 2025",
               title: t("timeline.hardwareIntegration"),
               description: t("timeline.arduinoTests"),
             },
             {
-              date: "Mai 2024",
+              date: "Jun 2025",
               title: t("timeline.apiDevelopment"),
               description: t("timeline.fastApiIntegration"),
             },
             {
-              date: "Jun 2024",
+              date: "Jul 2025",
               title: t("timeline.frontendDevelopment"),
               description: t("timeline.schedulerUI"),
             },
             {
-              date: "Jul 2024",
+              date: "Ago 2025",
               title: t("timeline.productionDeployment"),
               description: t("timeline.systemOperational"),
             },
@@ -130,7 +138,7 @@ export default function IoTSchoolBell() {
               type: "image",
               src: "https://guilherme-beckman.github.io/portfolio-assets/iot-project/images/onshape-2.png",
             },
-                        {
+            {
               title: t("demo.cCode"),
               type: "image",
               src: "https://guilherme-beckman.github.io/portfolio-assets/iot-project/images/c-arduino.png",

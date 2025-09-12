@@ -342,7 +342,7 @@
       "title": "Sistema de Sinal Escolar Automatizado",
       "subtitle": "Projeto IoT desenvolvido para a Escola SESI de Corumbá-MS",
       "description": "Desenvolvido em parceria com um colega, este projeto de IoT tem como objetivo automatizar o sinal escolar, eliminando a necessidade de acionamento manual pela coordenação. Utilizamos Arduino com ESP8266 para controlar o dispositivo físico e uma API em Python com FastAPI, integrada ao SQLAlchemy e Alembic para persistência de dados em SQLite. A comunicação com o Arduino é feita via WebSocket e HTTP, recebendo os horários configurados em um scheduler e acionando o sinal de forma automática. O frontend em Next.js com TypeScript permite que os administradores configurem os horários de forma simples e intuitiva.",
-      "features": "Integração hardware/software com Arduino + ESP8266; API Python com FastAPI; ORM com SQLAlchemy e migrações Alembic; Banco de dados SQLite; Comunicação via WebSocket e HTTP; Scheduler configurável para horários de sinal; Frontend moderno em Next.js; Código versionado no GitHub",
+      "features": "Integração com Arduino e ESP8266; API em Python com FastAPI; ORM com SQLAlchemy; Migrações com Alembic; Banco de dados SQLite; Comunicação via WebSocket; Comunicação via HTTP; Scheduler de horários; Frontend em Next.js; Código aberto no GitHub",
       "statistics": {
         "devicesConnected": "Dispositivos Conectados",
         "scheduledRings": "Toques Programados",
