@@ -15,6 +15,47 @@ export default function Projects() {
         <div className={styles.projectCard}>
           <SlideIn>
             <ProjectCard
+              title={t("LiadsServer.title")}
+              description={t("LiadsServer.description")}
+              image="https://guilherme-beckman.github.io/portfolio-assets/liads/images/liads.png"
+              tags={[
+                {
+                  name: "Kong Gateway",
+                  icon: "/icons/skills/kong-icon-svgrepo-com.svg",
+                },
+                {
+                  name: "Consul",
+                  icon: "/icons/skills/consul-svgrepo-com.svg",
+                },
+                {
+                  name: "Nginx",
+                  icon: "/icons/skills/nginx-svgrepo-com.svg",
+                },
+                {
+                  name: "Shell",
+                  icon: "/icons/skills/shell-svgrepo-com.svg",
+                },
+                {
+                  name: "Ubuntu Server",
+                  icon: "/icons/skills/ubuntu-svgrepo-com.svg",
+                },
+                {
+                  name: "Docker",
+                  icon: "/icons/skills/docker-svgrepo-com.svg",
+                },
+                {
+                  name: "Vagrant",
+                  icon: "/icons/skills/vagrant-svgrepo-com.svg",
+                },
+              ]}
+              demoLink="projects/order-manager"
+              codeLink="https://github.com/Guilherme-Beckman/order-manager"
+            />
+          </SlideIn>
+        </div>
+        <div className={styles.projectCard}>
+          <SlideIn>
+            <ProjectCard
               title={t("MySell.title")}
               description={t("MySell.description")}
               image="https://guilherme-beckman.github.io/portfolio-assets/mysell/images/favicon.png"
@@ -65,7 +106,6 @@ export default function Projects() {
                   name: "AWS",
                   icon: "/icons/skills/aws-svgrepo-com.svg",
                 },
-
               ]}
               demoLink="projects/birds-pantanal"
               codeLink="https://github.com/Guilherme-Beckman/bird-pantanal-photo-gallery"
@@ -74,7 +114,7 @@ export default function Projects() {
         </div>
 
         <div className={styles.projectCard}>
-          <SlideIn fromX={-50}>
+          <SlideIn>
             <ProjectCard
               title={t("OrderManager.title")}
               description={t("OrderManager.description")}

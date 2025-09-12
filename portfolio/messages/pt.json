@@ -195,6 +195,10 @@
     "OrderManager": {
       "title": "Sistema de Gerenciamento de Pedidos Online",
       "description": "Um sistema baseado em microsserviços para restaurantes, onde clientes podem fazer pedidos, restaurantes gerenciam cardápios e status dos pedidos, com autenticação, filas RabbitMQ e serviços em contêineres Docker."
+    },
+    "LiadsServer": {
+      "title": "Servidor LIADS IFMS On-premise",
+      "description": "Servidor desenvolvido para centralizar e gerenciar o registro de diversos projetos do Liads IFMS, simplificando o processo de deploy. Ele adota uma arquitetura baseada em microsserviços e utiliza conteinerização para garantir escalabilidade e facilidade de manutenção."
     }
   },
   "NavProject": {

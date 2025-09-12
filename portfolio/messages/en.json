@@ -195,6 +195,10 @@
     "OrderManager": {
       "title": "Online Order Management System",
       "description": "A microservices-based system for restaurants where customers can place orders, restaurants manage menus and order statuses, with authentication, RabbitMQ queues, and Dockerized services."
+    },
+    "LiadsServer": {
+      "title": "LIADS IFMS On-premise Server",
+      "description": "Server developed to centralize and manage the registration of multiple Liads IFMS projects, streamlining the deployment process. It follows a microservices architecture and leverages containerization to ensure scalability and ease of maintenance."
     }
   },
   "ProjectCard": {
