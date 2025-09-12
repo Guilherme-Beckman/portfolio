@@ -15,6 +15,7 @@ import { DotButton, useDotButton } from "./EmblaCarouselDotButton";
 import styles from "./embla.module.css";
 import Image from "next/image";
 import Video from "next-video";
+import FullscreenImage from "../../full-screen-image/full-screen-image";
 const TWEEN_FACTOR_BASE = 0.52;
 
 const numberWithinRange = (number: number, min: number, max: number): number =>
@@ -124,11 +125,9 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
               >
                 <h2>{slide.title}</h2>
                 {slide.type === "image" ? (
-                  <Image
+                  <FullscreenImage
                     src={slide.src}
                     alt={slide.alt || `slide-${index}`}
-                    width={200}
-                    height={200}
                   />
                 ) : (
                   <video src={slide.src} className={styles.video} controls />

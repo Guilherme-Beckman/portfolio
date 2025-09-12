@@ -17,7 +17,7 @@ export default function OrderManager() {
           gitHubUrl: "https://github.com/Guilherme-Beckman/order-manager",
         }}
         mainImageProps={{
-          url: "https://guilherme-beckman.github.io/portfolio-assets/order-manager/images/system-design.png",
+          url: "/icons/skills/spring-svgrepo-com.svg",
           alt: t("title"),
         }}
         title={t("title")}
@@ -36,15 +36,12 @@ export default function OrderManager() {
               name: "Spring Boot",
               iconUrl: "/icons/skills/spring-svgrepo-com.svg",
             },
-            {
-              name: "Spring Security",
-              iconUrl: "/icons/skills/spring-svgrepo-com.svg",
-            },
+
             {
               name: "RabbitMQ",
-              iconUrl: "/icons/skills/rabbitmq-svgrepo-com.svg",
+              iconUrl: "/icons/skills/rabbitmq-icon-svgrepo-com.svg",
             },
-            { name: "Postman", iconUrl: "/icons/skills/postman-icon.svg" },
+            { name: "Postman", iconUrl: "/icons/skills/postman-icon-svgrepo-com.svg" },
           ],
           database: [
             {
@@ -55,13 +52,13 @@ export default function OrderManager() {
           hosting: [
             { name: "Docker", iconUrl: "/icons/skills/docker-svgrepo-com.svg" },
           ],
-          performance: [
+          authentication: [
             {
-              name: "Spring Cache",
+              name: "Spring Security",
               iconUrl: "/icons/skills/spring-svgrepo-com.svg",
             },
-            { name: "Exception Handling (RFC)", iconUrl: "" },
           ],
+          performance: [{ name: "Exception Handling (RFC)", iconUrl: "" }],
         }}
         projectStatistics={{
           statistics: [
@@ -72,30 +69,26 @@ export default function OrderManager() {
         developmentTimeline={{
           events: [
             {
-              date: "Mar 2025",
+              date: "Mar 2024",
               title: t("timeline.projectStart"),
               description: t("timeline.initialPlanning"),
             },
             {
-              date: "Apr 2025",
+              date: "Apr 2024",
               title: t("timeline.firstServices"),
               description: t("timeline.basicArchitecture"),
             },
             {
-              date: "May 2025",
+              date: "May 2024",
               title: t("timeline.integration"),
               description: t("timeline.rabbitMqWorking"),
             },
             {
-              date: "Jun 2025",
+              date: "Jun 2024",
               title: t("timeline.testing"),
               description: t("timeline.postmanDocs"),
             },
-            {
-              date: "Jul 2025",
-              title: t("timeline.deploy"),
-              description: t("timeline.containerizedDeploy"),
-            },
+
           ],
         }}
         demo={{
