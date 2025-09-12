@@ -199,6 +199,10 @@
     "LiadsServer": {
       "title": "LIADS IFMS On-premise Server",
       "description": "Server developed to centralize and manage the registration of multiple Liads IFMS projects, streamlining the deployment process. It follows a microservices architecture and leverages containerization to ensure scalability and ease of maintenance."
+    },
+    "IoTSchoolBell": {
+      "title": "Automated School Bell System",
+      "description": "An IoT project to automate the school bell at SESI Corumbá-MS. Arduino with ESP8266 controls the bell, while a Python FastAPI backend with SQLite manages schedules via WebSocket/HTTP. Next.js frontend allows easy schedule configuration."
     }
   },
   "ProjectCard": {
@@ -333,6 +337,35 @@
         "kongRoutes": "Kong Routes",
         "dockerCompose": "Docker Compose",
         "ubuntuOnPremise": "Ubuntu On-Premise"
+      }
+    },
+    "IoTSchoolBell": {
+      "title": "Automated School Bell System",
+      "subtitle": "IoT Project developed for SESI School in Corumbá-MS",
+      "description": "Developed in partnership with a colleague, this IoT project aims to automate the school bell, eliminating the need for manual intervention by the administration. We used Arduino with ESP8266 to control the physical device and a Python API with FastAPI, integrated with SQLAlchemy and Alembic for SQLite database persistence. The API communicates with the Arduino via WebSocket and HTTP, receiving scheduled times and triggering the bell automatically. The frontend in Next.js with TypeScript allows administrators to easily configure the bell schedule.",
+      "features": "Hardware/software integration with Arduino + ESP8266; Python API with FastAPI; ORM with SQLAlchemy and migrations with Alembic; SQLite database; Communication via WebSocket and HTTP; Configurable scheduler for bell times; Modern frontend in Next.js; Code versioned on GitHub",
+      "statistics": {
+        "devicesConnected": "Connected Devices",
+        "scheduledRings": "Scheduled Rings",
+        "manualIntervention": "Manual Interventions Required"
+      },
+      "timeline": {
+        "projectStart": "Project Start",
+        "initialPlanning": "Initial planning and architecture definition",
+        "hardwareIntegration": "Hardware Integration",
+        "arduinoTests": "Testing Arduino + ESP8266",
+        "apiDevelopment": "API Development",
+        "fastApiIntegration": "FastAPI integration with database",
+        "frontendDevelopment": "Frontend Development",
+        "schedulerUI": "Scheduler UI Implementation",
+        "productionDeployment": "Production Deployment",
+        "systemOperational": "System operational and in use"
+      },
+      "demo": {
+        "thinkercad": "Thinkercad",
+        "figma": "Figma Frontend",
+        "onshape": "Onshape CAD",
+        "cCode": "C Code"
       }
     }
   },

@@ -15,6 +15,44 @@ export default function Projects() {
         <div className={styles.projectCard}>
           <SlideIn>
             <ProjectCard
+              title={t("IoTSchoolBell.title")}
+              description={t("IoTSchoolBell.description")}
+              image="/icons/skills/python-svgrepo-com.svg"
+              tags={[
+                {
+                  name: "Arduino",
+                  icon: "/icons/skills/arduino-svgrepo-com.svg",
+                },
+                {
+                  name: "ESP8266",
+                  icon: "/icons/skills/wifi-svgrepo-com.svg",
+                },
+                {
+                  name: "FastAPI",
+                  icon: "/icons/skills/fastapi-svgrepo-com.svg",
+                },
+                {
+                  name: "SQLAlchemy",
+                  icon: "/icons/skills/SQLAlchemy.svg",
+                },
+                {
+                  name: "SQLite",
+                  icon: "/icons/skills/sqllite-svgrepo-com.svg",
+                },
+                {
+                  name: "Next.js",
+                  icon: "/icons/skills/nextjs-fill-svgrepo-com.svg",
+                },
+                { name: "TypeScript", icon: "/icons/skills/typescript.svg" },
+              ]}
+              demoLink="projects/iot-project"
+              codeLink="https://github.com/Gaby0805/Arduino-Rirau-ipyra"
+            />
+          </SlideIn>
+        </div>
+        <div className={styles.projectCard}>
+          <SlideIn>
+            <ProjectCard
               title={t("LiadsServer.title")}
               description={t("LiadsServer.description")}
               image="https://guilherme-beckman.github.io/portfolio-assets/liads/images/liads.png"

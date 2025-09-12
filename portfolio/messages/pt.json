@@ -199,6 +199,10 @@
     "LiadsServer": {
       "title": "Servidor LIADS IFMS On-premise",
       "description": "Servidor desenvolvido para centralizar e gerenciar o registro de diversos projetos do Liads IFMS, simplificando o processo de deploy. Ele adota uma arquitetura baseada em microsserviços e utiliza conteinerização para garantir escalabilidade e facilidade de manutenção."
+    },
+    "IoTSchoolBell": {
+      "title": "Sistema de Sinal Escolar Automatizado",
+      "description": "Projeto de IoT para automatizar o sinal escolar na SESI Corumbá-MS. Arduino com ESP8266 controla o sinal, enquanto backend em Python FastAPI com SQLite gerencia os horários via WebSocket/HTTP. Frontend em Next.js permite configurar os horários facilmente."
     }
   },
   "NavProject": {
@@ -332,6 +336,35 @@
         "kongRoutes": "Rotas no Kong",
         "dockerCompose": "Docker Compose",
         "ubuntuOnPremise": "Ubuntu On-Premise"
+      }
+    },
+    "IoTSchoolBell": {
+      "title": "Sistema de Sinal Escolar Automatizado",
+      "subtitle": "Projeto IoT desenvolvido para a Escola SESI de Corumbá-MS",
+      "description": "Desenvolvido em parceria com um colega, este projeto de IoT tem como objetivo automatizar o sinal escolar, eliminando a necessidade de acionamento manual pela coordenação. Utilizamos Arduino com ESP8266 para controlar o dispositivo físico e uma API em Python com FastAPI, integrada ao SQLAlchemy e Alembic para persistência de dados em SQLite. A comunicação com o Arduino é feita via WebSocket e HTTP, recebendo os horários configurados em um scheduler e acionando o sinal de forma automática. O frontend em Next.js com TypeScript permite que os administradores configurem os horários de forma simples e intuitiva.",
+      "features": "Integração hardware/software com Arduino + ESP8266; API Python com FastAPI; ORM com SQLAlchemy e migrações Alembic; Banco de dados SQLite; Comunicação via WebSocket e HTTP; Scheduler configurável para horários de sinal; Frontend moderno em Next.js; Código versionado no GitHub",
+      "statistics": {
+        "devicesConnected": "Dispositivos Conectados",
+        "scheduledRings": "Toques Programados",
+        "manualIntervention": "Intervenções Manuais Necessárias"
+      },
+      "timeline": {
+        "projectStart": "Início do Projeto",
+        "initialPlanning": "Planejamento inicial e definição de arquitetura",
+        "hardwareIntegration": "Integração do Hardware",
+        "arduinoTests": "Testes com Arduino + ESP8266",
+        "apiDevelopment": "Desenvolvimento da API",
+        "fastApiIntegration": "Integração da API em FastAPI com banco de dados",
+        "frontendDevelopment": "Desenvolvimento do Frontend",
+        "schedulerUI": "Criação da interface de configuração de horários",
+        "productionDeployment": "Implantação em Produção",
+        "systemOperational": "Sistema operacional e em uso"
+      },
+      "demo": {
+        "thinkercad": "Thinkercad",
+        "figma": "Figma Frontend",
+        "onshape": "Onshape CAD",
+        "cCode": "Código em C"
       }
     }
   },
