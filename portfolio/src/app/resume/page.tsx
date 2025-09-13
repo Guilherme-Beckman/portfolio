@@ -2,50 +2,55 @@
 import styles from "./page.module.css";
 import { Mail, FileDown } from "lucide-react";
 import ContactCard from "../components/about-me/contacts/contacs";
+import { useTranslations, useLocale } from "next-intl";
+
 export default function Resume() {
+  const t = useTranslations("Resume");
+  const locale = useLocale();
+
+  // escolhe o PDF baseado no idioma
+  const pdfFile = locale === "pt" ? "/resume-pt.pdf" : "/resume-en.pdf";
+
   return (
     <section className={styles.container}>
       <header className={styles.header}>
-        <h1 className={styles.title}>Hire Me</h1>
-        <p className={styles.subtitle}>
-          Desenvolvedor full-stack focado em backend e infra. Vamos trabalhar
-          juntos?
-        </p>
+        <h1 className={styles.title}>{t("title")}</h1>
+        <p className={styles.subtitle}>{t("subtitle")}</p>
         <div className={styles.ctaRow}>
           <a
             className={styles.buttonPrimary}
             href="mailto:seu.email@exemplo.com"
           >
-            <Mail /> <p>Fale comigo</p>
+            <Mail /> <p>{t("contact")}</p>
           </a>
-          <a className={styles.buttonGhost} href="/cv.pdf" download>
+          <a className={styles.buttonGhost} href={pdfFile} download>
             <FileDown />
-            <p>Baixar CV (PDF)</p>
+            <p>{t("download")}</p>
           </a>
         </div>
       </header>
 
       <div className={styles.viewer}>
         <object
-          data="/resume.pdf#toolbar=1&navpanes=0"
+          data={`${pdfFile}#toolbar=1&navpanes=0`}
           type="application/pdf"
           className={styles.pdf}
-          aria-label="Visualizador de currículo em PDF"
+          aria-label={t("aria")}
         >
           <p className={styles.fallback}>
-            Não foi possível embutir o PDF no seu navegador.
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-              Abrir o currículo em uma nova aba
+            {t("fallback")}{" "}
+            <a href={pdfFile} target="_blank" rel="noopener noreferrer">
+              {t("open")}
             </a>{" "}
-            ou{" "}
-            <a href="/resume.pdf" download>
-              baixar o arquivo
+            {t("or")}{" "}
+            <a href={pdfFile} download>
+              {t("downloadFile")}
             </a>
             .
           </p>
         </object>
       </div>
-      <ContactCard/>
+      <ContactCard />
     </section>
   );
 }

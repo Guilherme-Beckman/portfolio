@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import styles from "./project-statistics.module.css";
 import { Star } from "lucide-react";
 export interface ProjectStatisticsProps {
@@ -8,11 +9,13 @@ export interface ProjectStatisticsProps {
 }
 
 export function ProjectStatistics({ statistics }: ProjectStatisticsProps) {
+  const t = useTranslations("ProjectStatistics");
+
   return (
     <div className={styles.projectStatistics}>
       <div className={styles.projectStatisticsTitle}>
         <Star color="yellow" />
-        <h3>Project Statistics</h3>
+        <h3>{t("projectStatistics")}</h3>
       </div>
 
       <ul className={styles.statsList}>

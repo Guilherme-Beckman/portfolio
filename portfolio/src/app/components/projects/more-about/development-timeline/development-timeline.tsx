@@ -1,5 +1,6 @@
 import { Calendar } from "lucide-react";
 import styles from "./development-timeline.module.css";
+import { useTranslations } from "next-intl";
 export interface TimelineEvent {
   title: string;
   date: string;
@@ -9,13 +10,14 @@ export interface TimelineEvent {
 export interface DevelopmentTimelineProps {
   events: TimelineEvent[];
 }
-
 export function DevelopmentTimeline({ events }: DevelopmentTimelineProps) {
+  const t = useTranslations("DevelopmentTimeline");
+
   return (
     <div className={styles.timelineContainer}>
       <div className={styles.timelineTitle}>
         <Calendar color="#9ae5f3" />
-        <h3>Development Timeline</h3>
+        <h3>{t("developmentTimeline")}</h3>
       </div>
       <div className={styles.timeline}>
         {events.map((event, index) => (

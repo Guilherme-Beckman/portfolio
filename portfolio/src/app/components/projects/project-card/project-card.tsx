@@ -1,5 +1,7 @@
 import Image from "next/image";
 import styles from "./project-card.module.css";
+import { useTranslations } from "next-intl";
+
 interface Tag {
   name: string;
   icon: string;
@@ -21,6 +23,8 @@ export function ProjectCard({
   demoLink,
   codeLink,
 }: ProjectCardProps) {
+  const t = useTranslations("ProjectCard");
+
   return (
     <div className={styles.card}>
       <div
@@ -62,7 +66,7 @@ export function ProjectCard({
             rel="noopener noreferrer"
             className={styles.demoBtn}
           >
-            More info
+            {t("moreInfo")}
           </a>
           <a
             href={codeLink}
@@ -70,7 +74,7 @@ export function ProjectCard({
             rel="noopener noreferrer"
             className={styles.codeBtn}
           >
-            Code
+            {t("code")}
           </a>
         </div>
       </div>

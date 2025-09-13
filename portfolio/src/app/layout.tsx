@@ -22,9 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={averageSans.variable}>
-        <FadeIn fromY={-20}>
-          <Nav />
-        </FadeIn>
+        <NextIntlClientProvider>
+          <FadeIn fromY={-20}>
+            <Nav />
+          </FadeIn>
+        </NextIntlClientProvider>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>{" "}
       </body>
     </html>

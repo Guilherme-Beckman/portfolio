@@ -1,5 +1,423 @@
 {
-  "HomePage": {
-    "title": "Ola mundo!"
+  "Bio": {
+    "alt": "Foto de Guilherme Beckman",
+    "role": "Desenvolvedor FullStack",
+    "name": "Guilherme Beckman",
+    "status": "Atualmente estagiando no IFMS"
+  },
+  "Education": {
+    "educationTitle": "EDUCAÇÃO",
+    "primary": "Ensino Fundamental I",
+    "primaryCourse": "Primário",
+    "fundamentalSchool2": "Ensino Fundamental II",
+    "fundamentalSchool2Course": "Secundário",
+    "highSchool": "Ensino Médio",
+    "technicalIT": "Técnico em Informática para Internet",
+    "technologist": "Tecnólogo",
+    "systemsAnalysis": "Análise e Desenvolvimento de Sistemas",
+    "certification": "Certificação",
+    "awsRestart": "Programa AWS re/Start",
+    "sesiCorumba": "SESI Corumbá, MS",
+    "senaiCorumba": "SENAI Corumbá, MS",
+    "faculdadeLocal": "IFMS Corumbá, MS",
+    "aws": "AWS re/Start"
+  },
+
+  "Experience": {
+    "ifms": "IFMS - LIADS",
+    "onsite": "Presencial",
+    "fullstackInfra": "FullStack / Infra",
+    "ifmsDescription": "Trabalhei no LIADS na parte de infraestrutura, tendo a função de configurar um servidor do zero (on-premise), no qual a arquitetura foi planejada para suportar Microserviços. Para isso, implementei um API Gateway utilizando o software Kong, que utilizava um DNS resolver com Consul para mapear os IPs dos microsserviços, facilitando o registro e a comunicação entre eles. Além disso, utilizei Ubuntu Server, Docker e Docker Compose para conteinerização. Também realizo manutenção em projetos já existentes, incluindo um chatbot para a Prefeitura de Corumbá-MS e um software para leitura e digitalização de peças da cultura pantaneira.",
+    "ifmsFacial": "IFMS - Projeto de Pesquisa",
+    "research": "Pesquisa Científica",
+    "researcher": "Pesquisador / Bolsista",
+    "ifmsFacialDescription": "Desenvolvimento de um sistema de reconhecimento facial para controle de acesso, utilizando Python, OpenCV e a biblioteca face_recognition. O projeto envolveu captura de imagem via webcam, comparação com banco de dados local e registro de tentativas de acesso em PostgreSQL. Foram realizados testes em diferentes condições de iluminação e ângulos, além da produção de relatório técnico com resultados e recomendações."
+  },
+  "SkillsTable": {
+    "stackTitle": "Stack Técnica",
+    "stackSubtitle": "Tecnologias e ferramentas que utilizo para construir soluções inovadoras",
+    "categories": {
+      "frontend": "Desenvolvimento Frontend",
+      "backend": "Backend & APIs",
+      "cloud": "Cloud & DevOps",
+      "tools": "Ferramentas de Desenvolvimento"
+    }
+  },
+  "SkillsData": {
+    "angular": {
+      "description": "Framework para construir SPAs modernas com TypeScript."
+    },
+    "kong": {
+      "description": "API Gateway para roteamento e segurança."
+    },
+    "awsEc2": {
+      "description": "Serviço de instâncias virtuais na nuvem."
+    },
+    "laravel": {
+      "description": "Framework PHP para desenvolvimento rápido de APIs."
+    },
+    "awsRoute53": {
+      "description": "Serviço de DNS escalável da AWS."
+    },
+    "mongodb": {
+      "description": "Banco de dados NoSQL orientado a documentos."
+    },
+    "awsS3": {
+      "description": "Armazenamento de arquivos escalável na nuvem."
+    },
+    "mysql": {
+      "description": "Banco de dados relacional amplamente usado."
+    },
+    "aws": {
+      "description": "Serviços de nuvem da Amazon para infraestrutura e aplicações."
+    },
+    "nextjs": {
+      "description": "Framework React para aplicações SSR e estáticas."
+    },
+    "consul": {
+      "description": "Ferramenta para descoberta e configuração de serviços."
+    },
+    "nginx": {
+      "description": "Servidor web e proxy reverso de alto desempenho."
+    },
+    "css3": {
+      "description": "Folhas de estilo para estilizar páginas web."
+    },
+    "onshape": {
+      "description": "Plataforma de CAD 3D na nuvem."
+    },
+    "docker": {
+      "description": "Containerização de aplicações para consistência e portabilidade."
+    },
+    "php": {
+      "description": "Linguagem de programação para web backend."
+    },
+    "fastapi": {
+      "description": "Framework Python para APIs rápidas e modernas."
+    },
+    "postgresql": {
+      "description": "Banco de dados relacional avançado e open-source."
+    },
+    "github": {
+      "description": "Plataforma de versionamento e colaboração de código."
+    },
+    "gitMerge": {
+      "description": "Operação de versionamento para integrar branches."
+    },
+    "git": {
+      "description": "Sistema de controle de versão distribuído."
+    },
+    "html5": {
+      "description": "Linguagem de marcação para estruturar páginas web."
+    },
+    "react": {
+      "description": "Biblioteca JavaScript para construir UIs interativas."
+    },
+    "reactAlt": {
+      "description": "Alternativa de logo React para portfólio."
+    },
+    "ionic": {
+      "description": "Framework para apps mobile híbridos."
+    },
+    "java": {
+      "description": "Linguagem de programação orientada a objetos."
+    },
+    "spring": {
+      "description": "Framework Java para construção de aplicações robustas."
+    },
+    "javascript": {
+      "description": "Linguagem de programação para comportamento web."
+    },
+    "typescript": {
+      "description": "Superset do JavaScript com tipagem estática."
+    },
+    "python": {
+      "description": "Linguagem de programação versátil e popular."
+    },
+    "rabbitmq": {
+      "description": "Sistema de mensageria para aplicações distribuídas."
+    },
+    "postman": {
+      "description": "Ferramenta para testar e documentar APIs."
+    },
+    "arduino": {
+      "description": "Plataforma de prototipagem eletrônica para IoT e automação."
+    },
+    "linux": {
+      "description": "Sistema operacional open-source usado em servidores e desenvolvimento."
+    },
+    "microservices": {
+      "description": "Arquitetura para desenvolvimento de aplicações distribuídas e escaláveis."
+    },
+    "opencv": {
+      "description": "Biblioteca de visão computacional para processamento de imagens."
+    },
+    "faceid": {
+      "description": "Tecnologia de reconhecimento facial para autenticação e segurança."
+    },
+    "shell": {
+      "description": "Scripts de linha de comando para automação de tarefas."
+    }
+  },
+  "Contact": {
+    "title": "Contatos",
+    "external": "Externo",
+    "location": "Localização"
+  },
+  "Resume": {
+    "title": "ME CONTRATA",
+    "subtitle": "Desenvolvedor full-stack focado em backend e infra. Vamos trabalhar juntos?",
+    "contact": "Fale comigo",
+    "download": "Baixar CV (PDF)",
+    "aria": "Visualizador de currículo em PDF",
+    "fallback": "Não foi possível embutir o PDF no seu navegador.",
+    "open": "Abrir o currículo em uma nova aba",
+    "or": "ou",
+    "downloadFile": "baixar o arquivo"
+  },
+  "Nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "resume": "Currículo"
+  },
+  "Projects": {
+    "title": "Projetos",
+    "subtitle": "Uma coleção de projetos que demonstram minhas habilidades em desenvolvimento web, design e resolução de problemas.",
+    "MySell": {
+      "title": "MySell",
+      "description": "Aplicação que ajuda pequenos empreendedores a registrar suas vendas diárias. Possui autenticação JWT, login com Google e Facebook, cadastro de produtos e vendas, relatórios em PDF e histórico de vendas."
+    },
+    "BirdPantanal": {
+      "title": "Bird Pantanal Photo Gallery",
+      "description": "Explore uma galeria digital dedicada às aves do Pantanal, com artigos e descrições detalhadas de cada espécie."
+    },
+    "OrderManager": {
+      "title": "Sistema de Gerenciamento de Pedidos Online",
+      "description": "Um sistema baseado em microsserviços para restaurantes, onde clientes podem fazer pedidos, restaurantes gerenciam cardápios e status dos pedidos, com autenticação, filas RabbitMQ e serviços em contêineres Docker."
+    },
+    "LiadsServer": {
+      "title": "Servidor LIADS IFMS On-premise",
+      "description": "Servidor desenvolvido para centralizar e gerenciar o registro de diversos projetos do Liads IFMS, simplificando o processo de deploy. Ele adota uma arquitetura baseada em microsserviços e utiliza conteinerização para garantir escalabilidade e facilidade de manutenção."
+    },
+    "IoTSchoolBell": {
+      "title": "Sistema de Sinal Escolar Automatizado",
+      "description": "Projeto de IoT para automatizar o sinal escolar na SESI Corumbá-MS. Arduino com ESP8266 controla o sinal, enquanto backend em Python FastAPI com SQLite gerencia os horários via WebSocket/HTTP. Frontend em Next.js permite configurar os horários facilmente."
+    },
+    "FaceRecognition": {
+      "title": "Sistema de Reconhecimento Facial",
+      "description": "Sistema de reconhecimento facial desenvolvido em Python utilizando a biblioteca face_recognition. Captura imagens de câmera, processa e armazena os rostos no banco de dados PostgreSQL. Arquitetura baseada em microserviços com módulos em Python (reconhecimento), Java (segurança) e Golang (auditoria). Projeto em andamento, atualmente na fase de planejamento, com prazo de um ano para desenvolvimento."
+    }
+  },
+  "NavProject": {
+    "backToProjects": "Voltar para projetos",
+    "github": "GitHub",
+    "liveDemo": "Demo"
+  },
+  "ProjectCard": {
+    "moreInfo": "Mais informações",
+    "code": "Código"
+  },
+  "ProjectPage": {
+    "MySell": {
+      "title": "MySell",
+      "subtitle": "Dashboard inteligente de vendas para pequenos empreendedores",
+      "description": "Aplicação que ajuda pequenos empreendedores a registrar suas vendas diárias. Possui autenticação JWT, login com Google e Facebook, cadastro de produtos e vendas, relatórios em PDF, histórico de vendas e proteção contra acessos suspeitos.",
+      "features": "Cadastro de Usuário; Login de Usuário; Autenticação com Google;Autenticação com Facebook; Verificação de E-mail; Bloqueio após Tentativas Falhas; E-mail de Boas-Vindas; Cadastro de Produtos (QR Code); CRUD de Produtos; Registro e Exclusão de Vendas; Histórico de Vendas; Relatórios em PDF; Cache para Performance; Proteção de Rotas",
+      "demo": {
+        "dashboard": "Dashboard",
+        "bancoDeDados": "Banco de dados",
+        "loginRaw": "Login",
+        "registerRaw": "Registro",
+        "googleLogin": "Login - Google",
+        "facebookLogin": "Login - Facebook",
+        "criandoProdutos": "Criando Produtos",
+        "produtosPreCriados": "Produtos Existentes",
+        "editandoProdutos": "Editando Produtos",
+        "excluindoProdutos": "Excluindo Produtos",
+        "vendendoProdutos": "Vendendo Produtos",
+        "excluindoVendas": "Excluindo Vendas",
+        "qrCodeProdutos": "Produtos com QR Code",
+        "gerandoRelatoriosPDF": "Relatórios em PDF",
+        "graficoRelatorios": "Gráfico de Relatórios",
+        "excecaoBruteForce": "Exceção Brute Force",
+        "visaoGeralAplicacao": "Geral",
+        "buscandoCoisas": "Buscando"
+      },
+      "statistics": {
+        "activeUsers": "Usuários Ativos",
+        "uptime": "Tempo de Atividade",
+        "performanceScore": "Pontuação de Performance"
+      },
+      "timeline": {
+        "projectStart": "Início do Projeto",
+        "initialPlanning": "Planejamento Inicial",
+        "betaRelease": "Backend",
+        "firstVersion": "Finaliza Api",
+        "officialLaunch": "Frontend",
+        "finalVersion": "Finaliza o Frontend"
+      }
+    },
+    "BirdPantanal": {
+      "title": "Bird Pantanal Photo Gallery",
+      "subtitle": "Galeria digital de aves do Pantanal",
+      "description": "Bird Pantanal Photo Gallery é uma galeria digital dedicada às aves do Pantanal, apresentando artigos detalhados sobre cada espécie. A aplicação permite explorar diferentes aves com descrições informativas, proporcionando um espaço para apreciar a fauna local.",
+      "features": "Listar todas as aves; Buscar dados de uma ave específica; Criar novas aves; Atualizar dados de aves; Excluir aves; Criar usuários; Login com geração de token JWT; Proteção de rotas com JWT",
+      "demo": {
+        "creating": "Criando",
+        "downloadCard": "Baixando Cartão",
+        "login": "Login",
+        "delete": "Deletando",
+        "editing": "Editando",
+        "searching": "Buscando",
+        "fluxogram": "Fluxograma"
+      },
+      "statistics": {
+        "birds": "Pássaros Registrados",
+        "uptime": "Tempo de Atividade"
+      },
+      "timeline": {
+        "projectStart": "Início do Projeto",
+        "initialPlanning": "Planejamento inicial e definição do escopo",
+        "betaRelease": "Beta Release",
+        "apiReady": "API pronta e testada",
+        "firstVersion": "Primeira Versão",
+        "frontendCompleted": "Frontend concluído",
+        "officialLaunch": "Lançamento Oficial",
+        "firstDeploy": "Primeiro deploy oficial",
+        "finalVersion": "Versão Final",
+        "awsInfrastructure": "Infraestrutura final na AWS"
+      }
+    },
+    "OrderManager": {
+      "title": "Sistema de Gerenciamento de Pedidos Online",
+      "subtitle": "Sistema de pedidos para restaurantes baseado em microsserviços",
+      "description": "Este projeto é um sistema completo de gerenciamento de pedidos para restaurantes utilizando arquitetura de microsserviços. Inclui autenticação com JWT, papéis de usuário, filas de pedidos com RabbitMQ, MongoDB para armazenamento e Docker para deploy em contêineres.",
+      "features": "Autenticação com JWT; Controle de acesso baseado em papéis; Cadastro e login de usuários; Perfil do cliente e histórico de pedidos; Gerenciamento de cardápio e produtos; Processamento de pedidos com filas; Atualização de status em tempo real; Documentação da API com Postman",
+      "demo": {
+        "systemDesign": "Diagrama do Sistema",
+        "postman1": "Requisições Postman",
+        "microservices": "Microservices"
+      },
+      "statistics": {
+        "microservices": "Microsserviços",
+        "users": "Usuários Simulados"
+      },
+      "timeline": {
+        "projectStart": "Início do Projeto",
+        "initialPlanning": "Planejamento inicial e levantamento de requisitos",
+        "firstServices": "Primeiros Microsserviços",
+        "basicArchitecture": "Implementação da arquitetura básica com autenticação",
+        "integration": "Fase de Integração",
+        "rabbitMqWorking": "Filas do RabbitMQ conectadas entre serviços",
+        "testing": "Testes e Documentação",
+        "postmanDocs": "Coleção do Postman concluída",
+        "deploy": "Deploy",
+        "containerizedDeploy": "Deploy utilizando contêineres Docker"
+      }
+    },
+    "Liads": {
+      "title": "Servidor On-premise LIADS IFMS",
+      "subtitle": "Infraestrutura de microsserviços com Docker, Kong, Consul e Nginx",
+      "description": "O LIADS Server é uma infraestrutura on-premise projetada para gerenciar múltiplos serviços com isolamento, roteamento e verificação de saúde. Ele utiliza Docker para conteinerização, Kong como API Gateway, Consul como registro e resolvedor DNS de serviços e Nginx como proxy reverso. O projeto tem como objetivo simplificar o registro e o roteamento de serviços dentro da rede local do IFMS.",
+      "features": "Conteinerização de serviços com Docker; Roteamento automático via Kong; Resolução DNS com Consul; Health checks de todos os serviços; Registro de serviços facilitado; Arquitetura modular de microsserviços; Deploy on-premise em Ubuntu Server",
+      "statistics": {
+        "registeredServices": "Serviços Registrados",
+        "uptime": "Disponibilidade",
+        "infrastructure": "Infraestrutura"
+      },
+      "timeline": {
+        "projectStart": "Início do Projeto",
+        "initialPlanning": "Planejamento inicial e definição da stack",
+        "baseInfrastructure": "Configuração da Infraestrutura Base",
+        "kongConsulSetup": "Kong + Consul configurados e rodando",
+        "currentDevelopment": "Desenvolvimento Atual",
+        "serviceRegistration": "Primeiros serviços registrados no Consul e roteados via Kong"
+      },
+      "demo": {
+        "infrastructureDiagram": "Diagrama da Infraestrutura",
+        "consulDashboard": "Consul",
+        "kongRoutes": "Rotas no Kong",
+        "dockerCompose": "Docker Compose",
+        "ubuntuOnPremise": "Ubuntu On-Premise"
+      }
+    },
+    "IoTSchoolBell": {
+      "title": "Sistema de Sinal Escolar Automatizado",
+      "subtitle": "Projeto IoT desenvolvido para a Escola SESI de Corumbá-MS",
+      "description": "Desenvolvido em parceria com um colega, este projeto de IoT tem como objetivo automatizar o sinal escolar, eliminando a necessidade de acionamento manual pela coordenação. Utilizamos Arduino com ESP8266 para controlar o dispositivo físico e uma API em Python com FastAPI, integrada ao SQLAlchemy e Alembic para persistência de dados em SQLite. A comunicação com o Arduino é feita via WebSocket e HTTP, recebendo os horários configurados em um scheduler e acionando o sinal de forma automática. O frontend em Next.js com TypeScript permite que os administradores configurem os horários de forma simples e intuitiva.",
+      "features": "Integração com Arduino e ESP8266; API em Python com FastAPI; ORM com SQLAlchemy; Migrações com Alembic; Banco de dados SQLite; Comunicação via WebSocket; Comunicação via HTTP; Scheduler de horários; Frontend em Next.js; Código aberto no GitHub",
+      "statistics": {
+        "devicesConnected": "Dispositivos Conectados",
+        "scheduledRings": "Toques Programados",
+        "manualIntervention": "Intervenções Manuais Necessárias"
+      },
+      "timeline": {
+        "projectStart": "Início do Projeto",
+        "initialPlanning": "Planejamento inicial e definição de arquitetura",
+        "hardwareIntegration": "Integração do Hardware",
+        "arduinoTests": "Testes com Arduino + ESP8266",
+        "apiDevelopment": "Desenvolvimento da API",
+        "fastApiIntegration": "Integração da API em FastAPI com banco de dados",
+        "frontendDevelopment": "Desenvolvimento do Frontend",
+        "schedulerUI": "Criação da interface de configuração de horários",
+        "productionDeployment": "Implantação em Produção",
+        "systemOperational": "Sistema operacional e em uso"
+      },
+      "demo": {
+        "thinkercad": "Thinkercad",
+        "figma": "Figma Frontend",
+        "onshape": "Onshape CAD",
+        "cCode": "Código em C"
+      }
+    },
+    "FaceRecognition": {
+      "title": "Sistema de Reconhecimento Facial",
+      "subtitle": "Identificação automática de rostos com arquitetura de microserviços",
+      "description": "Projeto focado no desenvolvimento de um sistema de reconhecimento facial utilizando Python e a biblioteca face_recognition. As imagens são processadas, comparadas e armazenadas em um banco PostgreSQL. A arquitetura é baseada em microserviços, com módulos para segurança e auditoria em Java e Golang, garantindo robustez e escalabilidade. Estou liderando uma pequena equipe com duas pessoas menos experientes, orientando-as durante todo o processo de desenvolvimento.",
+      "features": "Reconhecimento facial; Captura de imagens; Armazenamento de faces; Módulo de segurança; Módulo de auditoria; Arquitetura de microserviço; Desenvolvimento iterativo",
+      "statistics": {
+        "projectStatus": "Status do Projeto",
+        "planningPhase": "Em fase de planejamento",
+        "estimatedDuration": "Duração Estimada",
+        "teamMembers": "Membros da Equipe"
+      },
+      "timeline": {
+        "projectStart": "Início do Projeto",
+        "initialPlanning": "Planejamento inicial e definição de escopo",
+        "softwareDevelopment": "Desenvolvimento do Software",
+        "pythonImplementation": "Implementação do reconhecimento facial em Python",
+        "securityModule": "Módulo de Segurança",
+        "javaIntegration": "Integração do módulo de segurança em Java",
+        "auditModule": "Módulo de Auditoria",
+        "golangImplementation": "Implementação do módulo de auditoria em Golang",
+        "testingDeployment": "Testes e Deploy",
+        "systemRelease": "Primeira versão liberada para uso"
+      },
+      "demo": {
+        "systemArchitecture": "Arquitetura do Sistema"
+      }
+    }
+  },
+  "MoreAbout": {
+    "projectOverview": "Visão Geral do Projeto"
+  },
+  "KeyFeatures": {
+    "keyFeatures": "Principais Funcionalidades"
+  },
+  "TechnicalSpecifications": {
+    "technicalSpecifications": "Especificações Técnicas",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Banco de Dados",
+    "authentication": "Autenticação",
+    "hosting": "Hospedagem",
+    "performance": "Performance"
+  },
+  "ProjectStatistics": {
+    "projectStatistics": "Estatísticas do Projeto"
+  },
+  "DevelopmentTimeline": {
+    "developmentTimeline": "Linha do Tempo do Desenvolvimento"
   }
 }

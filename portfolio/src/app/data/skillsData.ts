@@ -2,6 +2,7 @@ interface Project {
   name: string;
   link: string;
 }
+
 interface TechItem {
   icon: string;
   name: string;
@@ -9,228 +10,217 @@ interface TechItem {
   category: string;
   description: string;
 }
+
 const skills: TechItem[] = [
   {
     icon: "/icons/skills/angular-svgrepo-com.svg",
     name: "Angular",
     projects: [
-      {
-        name: "Portfolio Website",
-        link: "https://github.com/Guilherme-Beckman/portfolio",
-      },
-      {
-        name: "FocusBird Frontend",
-        link: "https://github.com/Guilherme-Beckman/focusbird-frontend",
-      },
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
+
+      { name: "MySell", link: "/projects/mysell" },
     ],
     category: "frontend",
-    description: "Framework para construir aplicações web dinâmicas.",
+    description: "angular.description",
   },
   {
     icon: "/icons/skills/kong-icon-svgrepo-com.svg",
     name: "Kong",
     projects: [
       {
-        name: "API Gateway Setup",
-        link: "https://github.com/Guilherme-Beckman/kong-setup",
+        name: "Liads Server",
+        link: "/projects/liads-server",
       },
     ],
     category: "backend",
-    description: "Gateway de APIs para roteamento e segurança.",
+    description: "kong.description",
   },
   {
     icon: "/icons/skills/aws-ec2-svgrepo-com.svg",
     name: "AWS EC2",
     projects: [
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
       {
-        name: "Web App Hosting",
-        link: "https://github.com/Guilherme-Beckman/aws-ec2-hosting",
+        name: "AWS re/Start",
+        link: "https://aws.amazon.com/training/restart/",
       },
     ],
     category: "cloud",
-    description: "Serviço de instâncias virtuais na nuvem.",
+    description: "awsEc2.description",
   },
   {
     icon: "/icons/skills/laravel-svgrepo-com.svg",
     name: "Laravel",
     projects: [
       {
-        name: "E-commerce API",
-        link: "https://github.com/Guilherme-Beckman/laravel-ecommerce",
+        name: "",
+        link: "",
       },
     ],
     category: "backend",
-    description: "Framework PHP para desenvolvimento rápido de APIs.",
+    description: "laravel.description",
   },
   {
     icon: "/icons/skills/aws-route53-svgrepo-com.svg",
     name: "AWS Route53",
     projects: [
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
       {
-        name: "DNS Management",
-        link: "https://github.com/Guilherme-Beckman/aws-route53",
+        name: "AWS re/Start",
+        link: "https://aws.amazon.com/training/restart/",
       },
     ],
     category: "cloud",
-    description: "Serviço de DNS escalável da AWS.",
+    description: "awsRoute53.description",
   },
   {
     icon: "/icons/skills/mongodb-svgrepo-com.svg",
     name: "MongoDB",
     projects: [
       {
-        name: "FocusBird Database",
-        link: "https://github.com/Guilherme-Beckman/focusbird-backend",
+        name: "Order Manager",
+        link: "/projects/order-manager",
       },
     ],
-    category: "database",
-    description: "Banco de dados NoSQL orientado a documentos.",
+    category: "backend",
+    description: "mongodb.description",
   },
   {
     icon: "/icons/skills/aws-s3-svgrepo-com.svg",
     name: "AWS S3",
     projects: [
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
       {
-        name: "File Storage Service",
-        link: "https://github.com/Guilherme-Beckman/aws-s3-storage",
+        name: "AWS re/Start",
+        link: "https://aws.amazon.com/training/restart/",
       },
     ],
     category: "cloud",
-    description: "Armazenamento de arquivos escalável na nuvem.",
+    description: "awsS3.description",
   },
   {
     icon: "/icons/skills/mysql-svgrepo-com.svg",
     name: "MySQL",
     projects: [
       {
-        name: "Inventory System",
-        link: "https://github.com/Guilherme-Beckman/mysql-inventory",
+        name: "",
+        link: "",
       },
     ],
-    category: "database",
-    description: "Banco de dados relacional amplamente usado.",
+    category: "backend",
+    description: "mysql.description",
   },
   {
     icon: "/icons/skills/aws-svgrepo-com.svg",
     name: "AWS",
     projects: [
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
       {
-        name: "Cloud Infrastructure",
-        link: "https://github.com/Guilherme-Beckman/aws-infra",
+        name: "AWS re/Start",
+        link: "https://aws.amazon.com/training/restart/",
       },
     ],
     category: "cloud",
-    description:
-      "Serviços de nuvem da Amazon para infraestrutura e aplicações.",
+    description: "aws.description",
   },
   {
     icon: "/icons/skills/nextjs-fill-svgrepo-com.svg",
     name: "Next.js",
     projects: [
       {
-        name: "Marketing Website",
-        link: "https://github.com/Guilherme-Beckman/nextjs-marketing",
+        name: "Portfolio",
+        link: "#",
       },
     ],
     category: "frontend",
-    description: "Framework React para aplicações SSR e estáticas.",
+    description: "nextjs.description",
   },
   {
     icon: "/icons/skills/consul-svgrepo-com.svg",
     name: "Consul",
     projects: [
       {
-        name: "Service Discovery",
-        link: "https://github.com/Guilherme-Beckman/consul-setup",
+        name: "Liads Server",
+        link: "/projects/liads-server",
       },
     ],
-    category: "devops",
-    description: "Ferramenta para descoberta e configuração de serviços.",
+    category: "cloud",
+    description: "consul.description",
   },
   {
     icon: "/icons/skills/nginx-svgrepo-com.svg",
     name: "Nginx",
     projects: [
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
       {
-        name: "Reverse Proxy Setup",
-        link: "https://github.com/Guilherme-Beckman/nginx-config",
+        name: "Liads Server",
+        link: "/projects/liads-server",
       },
     ],
-    category: "devops",
-    description: "Servidor web e proxy reverso de alto desempenho.",
+    category: "cloud",
+    description: "nginx.description",
   },
   {
     icon: "/icons/skills/css-3-svgrepo-com.svg",
     name: "CSS3",
     projects: [
-      {
-        name: "Responsive Website",
-        link: "https://github.com/Guilherme-Beckman/css-website",
-      },
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
+
+      { name: "MySell", link: "/projects/mysell" },
     ],
     category: "frontend",
-    description: "Folhas de estilo para estilizar páginas web.",
-  },
-  {
-    icon: "/icons/skills/onshape-svgrepo-com.svg",
-    name: "Onshape",
-    projects: [
-      {
-        name: "3D Modeling Project",
-        link: "https://github.com/Guilherme-Beckman/onshape-models",
-      },
-    ],
-    category: "design",
-    description: "Plataforma de CAD 3D na nuvem.",
+    description: "css3.description",
   },
   {
     icon: "/icons/skills/docker-svgrepo-com.svg",
     name: "Docker",
     projects: [
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
       {
-        name: "Microservices Setup",
-        link: "https://github.com/Guilherme-Beckman/docker-microservices",
+        name: "Liads Server",
+        link: "/projects/liads-server",
       },
     ],
-    category: "devops",
-    description:
-      "Containerização de aplicações para consistência e portabilidade.",
+    category: "cloud",
+    description: "docker.description",
   },
   {
     icon: "/icons/skills/php-svgrepo-com.svg",
     name: "PHP",
     projects: [
       {
-        name: "Blog CMS",
-        link: "https://github.com/Guilherme-Beckman/php-blog",
+        name: "",
+        link: "",
       },
     ],
     category: "backend",
-    description: "Linguagem de programação para web backend.",
+    description: "php.description",
   },
   {
     icon: "/icons/skills/fastapi-svgrepo-com.svg",
     name: "FastAPI",
     projects: [
       {
-        name: "REST API",
-        link: "https://github.com/Guilherme-Beckman/fastapi-service",
+        name: "Iot Project",
+        link: "/projects/iot-project",
       },
     ],
     category: "backend",
-    description: "Framework Python para APIs rápidas e modernas.",
+    description: "fastapi.description",
   },
   {
     icon: "/icons/skills/postgresql-svgrepo-com.svg",
     name: "PostgreSQL",
     projects: [
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
       {
-        name: "Analytics DB",
-        link: "https://github.com/Guilherme-Beckman/postgresql-analytics",
+        name: "Order Manager",
+        link: "/projects/order-manager",
       },
+      { name: "MySell", link: "/projects/mysell" },
     ],
-    category: "database",
-    description: "Banco de dados relacional avançado e open-source.",
+    category: "backend",
+    description: "postgresql.description",
   },
   {
     icon: "/icons/skills/github-142-svgrepo-com.svg",
@@ -241,164 +231,225 @@ const skills: TechItem[] = [
         link: "https://github.com/Guilherme-Beckman",
       },
     ],
-    category: "devops",
-    description: "Plataforma de versionamento e colaboração de código.",
+    category: "cloud",
+    description: "github.description",
   },
   {
     icon: "/icons/skills/git-merge-svgrepo-com.svg",
-    name: "Git Merge",
+    name: "Git Flow",
     projects: [
       {
-        name: "Branching Workflows",
-        link: "https://github.com/Guilherme-Beckman/git-workflows",
+        name: "All projects",
+        link: "https://github.com/Guilherme-Beckman",
       },
     ],
-    category: "devops",
-    description: "Operação de versionamento para integrar branches.",
+    category: "cloud",
+    description: "gitMerge.description",
   },
   {
     icon: "/icons/skills/git-svgrepo-com.svg",
     name: "Git",
     projects: [
       {
-        name: "Version Control Setup",
-        link: "https://github.com/Guilherme-Beckman/git-setup",
+        name: "All Projects Repo",
+        link: "https://github.com/Guilherme-Beckman",
       },
     ],
-    category: "devops",
-    description: "Sistema de controle de versão distribuído.",
+    category: "cloud",
+    description: "git.description",
   },
   {
     icon: "/icons/skills/html-5-svgrepo-com.svg",
     name: "HTML5",
     projects: [
-      {
-        name: "Landing Page",
-        link: "https://github.com/Guilherme-Beckman/html-landing",
-      },
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
+      { name: "MySell", link: "/projects/mysell" },
     ],
     category: "frontend",
-    description: "Linguagem de marcação para estruturar páginas web.",
-  },
-  {
-    icon: "/icons/skills/react.svg",
-    name: "React",
-    projects: [
-      {
-        name: "FocusBird Frontend",
-        link: "https://github.com/Guilherme-Beckman/focusbird-frontend",
-      },
-    ],
-    category: "frontend",
-    description: "Biblioteca JavaScript para construir UIs interativas.",
+    description: "html5.description",
   },
   {
     icon: "/icons/skills/react-svgrepo-com.svg",
-    name: "React (alt)",
+    name: "React",
     projects: [
       {
         name: "Portfolio Website",
-        link: "https://github.com/Guilherme-Beckman/portfolio",
+        link: "#",
       },
     ],
     category: "frontend",
-    description: "Alternativa de logo React para portfólio.",
+    description: "reactAlt.description",
   },
   {
     icon: "/icons/skills/ionic-svgrepo-com.svg",
     name: "Ionic",
-    projects: [
-      {
-        name: "FocusBird Mobile App",
-        link: "https://github.com/Guilherme-Beckman/focusbird-frontend",
-      },
-    ],
+    projects: [{ name: "MySell", link: "/projects/mysell" }],
     category: "frontend",
-    description: "Framework para apps mobile híbridos.",
+    description: "ionic.description",
   },
   {
     icon: "/icons/skills/java-svgrepo-com.svg",
     name: "Java",
     projects: [
+      { name: "MySell", link: "/projects/mysell" },
       {
-        name: "Backend Services",
-        link: "https://github.com/Guilherme-Beckman/java-backend",
+        name: "Order Manager",
+        link: "/projects/order-manager",
       },
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
     ],
     category: "backend",
-    description: "Linguagem de programação orientada a objetos.",
+    description: "java.description",
   },
   {
     icon: "/icons/skills/spring-svgrepo-com.svg",
     name: "Spring",
     projects: [
+      { name: "MySell", link: "/projects/mysell" },
       {
-        name: "REST API with Spring",
-        link: "https://github.com/Guilherme-Beckman/spring-api",
+        name: "Order Manager",
+        link: "/projects/order-manager",
       },
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
     ],
     category: "backend",
-    description: "Framework Java para construção de aplicações robustas.",
+    description: "spring.description",
   },
   {
     icon: "/icons/skills/js-svgrepo-com.svg",
     name: "JavaScript",
     projects: [
       {
-        name: "Web Interactivity",
-        link: "https://github.com/Guilherme-Beckman/js-interactivity",
+        name: "Portfolio",
+        link: "#",
       },
     ],
     category: "frontend",
-    description: "Linguagem de programação para comportamento web.",
+    description: "javascript.description",
   },
   {
     icon: "/icons/skills/typescript.svg",
     name: "TypeScript",
     projects: [
-      {
-        name: "Typed Web App",
-        link: "https://github.com/Guilherme-Beckman/ts-app",
-      },
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
+      { name: "MySell", link: "/projects/mysell" },
+      { name: "Porfolio", link: "#" },
     ],
     category: "frontend",
-    description: "Superset do JavaScript com tipagem estática.",
+    description: "typescript.description",
   },
   {
     icon: "/icons/skills/python-svgrepo-com.svg",
     name: "Python",
     projects: [
       {
-        name: "FocusBird Backend",
-        link: "https://github.com/Guilherme-Beckman/focusbird-backend",
+        name: "Iot Project",
+        link: "/projects/iot-project",
       },
     ],
     category: "backend",
-    description: "Linguagem de programação versátil e popular.",
+    description: "python.description",
   },
   {
     icon: "/icons/skills/rabbitmq-icon-svgrepo-com.svg",
     name: "RabbitMQ",
     projects: [
       {
-        name: "Message Queue Service",
-        link: "https://github.com/Guilherme-Beckman/rabbitmq-service",
+        name: "Order Manager",
+        link: "/projects/order-manager",
       },
     ],
     category: "backend",
-    description: "Sistema de mensageria para aplicações distribuídas.",
+    description: "rabbitmq.description",
   },
   {
     icon: "/icons/skills/postman-icon-svgrepo-com.svg",
     name: "Postman",
     projects: [
       {
-        name: "API Testing",
-        link: "https://github.com/Guilherme-Beckman/postman-tests",
+        name: "Order Manager",
+        link: "/projects/order-manager",
       },
     ],
-    category: "devops",
-    description: "Ferramenta para testar e documentar APIs.",
+    category: "tools",
+    description: "postman.description",
+  },
+  {
+    icon: "/icons/skills/arduino-svgrepo-com.svg",
+    name: "Arduino",
+    projects: [
+      {
+        name: "Iot Project",
+        link: "/projects/iot-project",
+      },
+    ],
+    category: "backend",
+    description: "arduino.description",
+  },
+  {
+    icon: "/icons/skills/linux-svgrepo-com.svg",
+    name: "Linux",
+    projects: [
+      {
+        name: "Liads Server",
+        link: "/projects/liads-server",
+      },
+      {
+        name: "OS",
+        link: "#",
+      },
+    ],
+    category: "tools",
+    description: "linux.description",
+  },
+  {
+    icon: "/icons/skills/microservice-icon.svg",
+    name: "Microservices",
+    projects: [
+      {
+        name: "Order Manager",
+        link: "/projects/order-manager",
+      },
+    ],
+    category: "backend",
+    description: "microservices.description",
+  },
+  {
+    icon: "/icons/skills/opencv-svgrepo-com.svg",
+    name: "OpenCV",
+    projects: [
+      {
+        name: "Facial Recognition",
+        link: "projects/face-recognition",
+      },
+    ],
+    category: "backend",
+    description: "opencv.description",
+  },
+  {
+    icon: "/icons/skills/face-id-svgrepo-com.svg",
+    name: "Face Recognition",
+    projects: [
+      {
+        name: "Facial Recognition",
+        link: "projects/face-recognition",
+      },
+    ],
+    category: "backend",
+    description: "faceid.description",
+  },
+  {
+    icon: "/icons/skills/shell-svgrepo-com.svg",
+    name: "Shell Script",
+    projects: [
+      {
+        name: "Liads Server",
+        link: "/projects/liads-server",
+      },
+    ],
+    category: "cloud",
+    description: "shell.description",
   },
 ];
+
 export default skills;

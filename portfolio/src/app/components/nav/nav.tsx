@@ -4,24 +4,26 @@ import { usePathname, useRouter } from "next/navigation";
 import { TransitionLink } from "../transition-link";
 import { Languages } from "lucide-react";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 export function Nav() {
   const pathName = usePathname();
   const router = useRouter();
   const [open, setOpen] = useState(false);
+  const t = useTranslations("Nav");
 
   const items = [
-    { href: "/", label: "Home" },
-    { href: "/about-me", label: "About" },
-    { href: "/projects", label: "Projects" },
-    { href: "/resume", label: "Resume" },
+    { href: "/", label: t("home") },
+    { href: "/about-me", label: t("about") },
+    { href: "/projects", label: t("projects") },
+    { href: "/resume", label: t("resume") },
   ];
 
   const locales = ["en", "pt"];
 
   const changeLocale = (locale: string) => {
     document.cookie = `locale=${locale}; path=/; max-age=31536000`;
-    setOpen(false); // fecha o dropdown depois da escolha
+    setOpen(false);
     router.refresh();
   };
 

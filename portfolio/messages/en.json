@@ -1,5 +1,424 @@
 {
-  "HomePage": {
-    "title": "Hello world!"
+  "Bio": {
+    "alt": "Profile picture of Guilherme Beckman",
+    "role": "FullStack Developer",
+    "name": "Guilherme Beckman",
+    "status": "Currently working as an intern at IFMS"
+  },
+  "Education": {
+    "educationTitle": "EDUCATION",
+    "primary": "Primary School",
+    "primaryCourse": "Primary",
+    "fundamentalSchool2": "Middle School",
+    "fundamentalSchool2Course": "Middle",
+    "highSchool": "High School",
+    "technicalIT": "Technical Course in Internet Informatics",
+    "technologist": "Technologist Degree",
+    "systemsAnalysis": "Systems Analysis and Development",
+    "certification": "Certification",
+    "awsRestart": "AWS re/Start Program",
+    "sesiCorumba": "SESI Corumbá, MS",
+    "senaiCorumba": "SENAI Corumbá, MS",
+    "faculdadeLocal": "IFMS Corumbá, MS",
+    "aws": "AWS re/Start"
+  },
+  "Experience": {
+    "ifms": "IFMS - LIADS",
+    "onsite": "Onsite",
+    "fullstackInfra": "FullStack / Infra",
+    "ifmsDescription": "Worked at LIADS in the infrastructure area, with the responsibility of configuring a server from scratch (on-premise), where the architecture was designed to support Microservices. To achieve this, I implemented an API Gateway using Kong, integrated with Consul as a DNS resolver to map microservice IPs, making service registration and communication easier. Additionally, I used Ubuntu Server, Docker, and Docker Compose for containerization. I also maintain existing projects, including a chatbot for the Municipality of Corumbá-MS** and software for reading and digitizing pieces of Pantanal culture.",
+    "ifmsFacial": "IFMS - Research Project",
+    "research": "Scientific Research",
+    "researcher": "Researcher / Scholar",
+    "ifmsFacialDescription": "Development of a facial recognition system for access control, using Python, OpenCV, and the face_recognition library. The project involved image capture via webcam, comparison against a local database, and registration of access attempts in PostgreSQL. Tests were conducted under different lighting and angle conditions, and a technical report was produced with results and recommendations."
+  },
+  "SkillsTable": {
+    "stackTitle": "Technical Stack",
+    "stackSubtitle": "Technologies and tools I use to build innovative solutions",
+    "categories": {
+      "frontend": "Frontend Development",
+      "backend": "Backend & APIs",
+      "cloud": "Cloud & DevOps",
+      "tools": "Development Tools"
+    }
+  },
+
+  "SkillsData": {
+    "angular": {
+      "description": "Framework for building modern SPAs with TypeScript."
+    },
+    "kong": {
+      "description": "API Gateway for routing and security."
+    },
+    "awsEc2": {
+      "description": "Cloud virtual machine service."
+    },
+    "laravel": {
+      "description": "PHP framework for rapid API development."
+    },
+    "awsRoute53": {
+      "description": "Scalable DNS service from AWS."
+    },
+    "mongodb": {
+      "description": "Document-oriented NoSQL database."
+    },
+    "awsS3": {
+      "description": "Scalable cloud file storage."
+    },
+    "mysql": {
+      "description": "Widely used relational database."
+    },
+    "aws": {
+      "description": "Amazon cloud services for infrastructure and applications."
+    },
+    "nextjs": {
+      "description": "React framework for SSR and static applications."
+    },
+    "consul": {
+      "description": "Tool for service discovery and configuration."
+    },
+    "nginx": {
+      "description": "High-performance web server and reverse proxy."
+    },
+    "css3": {
+      "description": "Style sheets for designing web pages."
+    },
+    "onshape": {
+      "description": "Cloud-based 3D CAD platform."
+    },
+    "docker": {
+      "description": "Application containerization for consistency and portability."
+    },
+    "php": {
+      "description": "Programming language for web backend."
+    },
+    "fastapi": {
+      "description": "Python framework for fast and modern APIs."
+    },
+    "postgresql": {
+      "description": "Advanced open-source relational database."
+    },
+    "github": {
+      "description": "Platform for code versioning and collaboration."
+    },
+    "gitMerge": {
+      "description": "Version control operation to integrate branches."
+    },
+    "git": {
+      "description": "Distributed version control system."
+    },
+    "html5": {
+      "description": "Markup language for structuring web pages."
+    },
+    "react": {
+      "description": "JavaScript library for building interactive UIs."
+    },
+    "reactAlt": {
+      "description": "Alternative React logo for portfolio."
+    },
+    "ionic": {
+      "description": "Framework for hybrid mobile apps."
+    },
+    "java": {
+      "description": "Object-oriented programming language."
+    },
+    "spring": {
+      "description": "Java framework for building robust applications."
+    },
+    "javascript": {
+      "description": "Programming language for web behavior."
+    },
+    "typescript": {
+      "description": "JavaScript superset with static typing."
+    },
+    "python": {
+      "description": "Versatile and popular programming language."
+    },
+    "rabbitmq": {
+      "description": "Message broker for distributed applications."
+    },
+    "postman": {
+      "description": "Tool for testing and documenting APIs."
+    },
+    "arduino": {
+      "description": "Electronic prototyping platform for IoT and automation."
+    },
+    "linux": {
+      "description": "Open-source operating system used in servers and development."
+    },
+    "microservices": {
+      "description": "Architecture for developing distributed and scalable applications."
+    },
+    "opencv": {
+      "description": "Computer vision library for image processing."
+    },
+    "faceid": {
+      "description": "Facial recognition technology for authentication and security."
+    },
+    "shell": {
+      "description": "Command-line scripts for task automation."
+    }
+  },
+  "Contact": {
+    "title": "Contacts",
+    "external": "External",
+    "location": "Location"
+  },
+  "Resume": {
+    "title": "Hire Me",
+    "subtitle": "Full-stack developer focused on backend and infrastructure. Shall we work together?",
+    "contact": "Contact me",
+    "download": "Download CV (PDF)",
+    "aria": "PDF resume viewer",
+    "fallback": "It was not possible to embed the PDF in your browser.",
+    "open": "Open the resume in a new tab",
+    "or": "or",
+    "downloadFile": "download the file"
+  },
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "resume": "Resume"
+  },
+  "Projects": {
+    "title": "Projects",
+    "subtitle": "A collection of projects that showcase my skills in web development, design, and problem-solving.",
+    "MySell": {
+      "title": "MySell",
+      "description": "Application that helps small entrepreneurs record their daily sales. It features JWT authentication, Google and Facebook login, product and sales registration, PDF report generation, and sales history."
+    },
+    "BirdPantanal": {
+      "title": "Bird Pantanal Photo Gallery",
+      "description": "Explore a digital gallery dedicated to Pantanal birds, featuring articles and detailed descriptions of each species."
+    },
+    "OrderManager": {
+      "title": "Online Order Management System",
+      "description": "A microservices-based system for restaurants where customers can place orders, restaurants manage menus and order statuses, with authentication, RabbitMQ queues, and Dockerized services."
+    },
+    "LiadsServer": {
+      "title": "LIADS IFMS On-premise Server",
+      "description": "Server developed to centralize and manage the registration of multiple Liads IFMS projects, streamlining the deployment process. It follows a microservices architecture and leverages containerization to ensure scalability and ease of maintenance."
+    },
+    "IoTSchoolBell": {
+      "title": "Automated School Bell System",
+      "description": "An IoT project to automate the school bell at SESI Corumbá-MS. Arduino with ESP8266 controls the bell, while a Python FastAPI backend with SQLite manages schedules via WebSocket/HTTP. Next.js frontend allows easy schedule configuration."
+    },
+    "FaceRecognition": {
+      "title": "Facial Recognition System",
+      "description": "Facial recognition system developed in Python using the face_recognition library. Captures images from a camera, processes them, and stores faces in a PostgreSQL database. Microservices-based architecture with modules in Python (recognition), Java (security), and Golang (auditing). Project currently in planning phase, with a one-year development timeline."
+    }
+  },
+  "ProjectCard": {
+    "moreInfo": "More info",
+    "code": "Code"
+  },
+  "NavProject": {
+    "backToProjects": "Back to projects",
+    "github": "GitHub",
+    "liveDemo": "Live Demo"
+  },
+  "ProjectPage": {
+    "MySell": {
+      "title": "MySell",
+      "subtitle": "Smart Sales Dashboard for Small Entrepreneurs",
+      "description": "Application that helps small entrepreneurs record their daily sales. Features include JWT authentication, Google and Facebook login, product and sales registration, PDF report generation, sales history, and protection against suspicious access.",
+      "features": "User Registration; User Login; Google Authentication; Facebook Authentication; Email Verification; Account Lockout after Failed Attempts; Welcome Email; Product Registration (QR Code); Product CRUD; Sales Recording and Deletion; Sales History; PDF Reports; Performance Caching; Route Protection",
+      "demo": {
+        "dashboard": "Dashboard",
+        "bancoDeDados": "Database",
+        "loginRaw": "Login",
+        "registerRaw": "Register",
+        "googleLogin": "Login - Google",
+        "facebookLogin": "Login - Facebook",
+        "criandoProdutos": "Creating Products",
+        "produtosPreCriados": "Pre-created Products",
+        "editandoProdutos": "Editing Products",
+        "excluindoProdutos": "Deleting Products",
+        "vendendoProdutos": "Selling Products",
+        "excluindoVendas": "Deleting Sales",
+        "qrCodeProdutos": "Product via QR Code",
+        "gerandoRelatoriosPDF": "PDF Reports",
+        "graficoRelatorios": "Reports Graph",
+        "excecaoBruteForce": "Brute Force Exception",
+        "visaoGeralAplicacao": "Overview",
+        "buscandoCoisas": "Searching"
+      },
+
+      "statistics": {
+        "activeUsers": "Active Users",
+        "uptime": "Uptime",
+        "performanceScore": "Performance Score"
+      },
+      "timeline": {
+        "projectStart": "Project Start",
+        "initialPlanning": "Initial Planning",
+        "betaRelease": "Backend",
+        "firstVersion": "Finish Api",
+        "officialLaunch": "Frontend",
+        "finalVersion": "Finish Frontend"
+      }
+    },
+    "BirdPantanal": {
+      "title": "Bird Pantanal Photo Gallery",
+      "subtitle": "Digital gallery of Pantanal birds",
+      "description": "Bird Pantanal Photo Gallery is a digital gallery dedicated to Pantanal birds, featuring detailed articles about each species. The application allows exploring various birds with informative descriptions, providing a space to appreciate the local fauna.",
+      "features": "List all birds; Retrieve specific bird data; Create new birds; Update bird data; Delete birds; Create users; Login generating a JWT token; Protect routes with JWT",
+      "demo": {
+        "creating": "Creating",
+        "downloadCard": "Download Card",
+        "login": "Login",
+        "delete": "Deleting",
+        "editing": "Editing",
+        "searching": "Searching",
+        "fluxogram": "Flowchart"
+      },
+      "statistics": {
+        "birds": "Registered Birds",
+        "uptime": "Uptime"
+      },
+      "timeline": {
+        "projectStart": "Project Start",
+        "initialPlanning": "Initial planning and scope definition",
+        "betaRelease": "Beta Release",
+        "apiReady": "API ready and tested",
+        "firstVersion": "First Version",
+        "frontendCompleted": "Frontend completed",
+        "officialLaunch": "Official Launch",
+        "firstDeploy": "First official deploy",
+        "finalVersion": "Final Version",
+        "awsInfrastructure": "Final infrastructure on AWS"
+      }
+    },
+    "OrderManager": {
+      "title": "Online Order Management System",
+      "subtitle": "Microservices-based restaurant ordering system",
+      "description": "This project is a complete order management system for restaurants using a microservices architecture. It includes authentication with JWT, user roles, order queues with RabbitMQ, MongoDB for storage, and Docker for containerized deployment.",
+      "features": "Authentication with JWT; Role-based access control; User registration and login; Customer profile and order history; Menu and product management; Order processing with queues; Status updates in real-time; API documentation with Postman",
+      "demo": {
+        "systemDesign": "System Design",
+        "postman1": "Postman Request",
+        "microservices": "Microservices"
+      },
+      "statistics": {
+        "microservices": "Microservices",
+        "users": "Simulated Users"
+      },
+      "timeline": {
+        "projectStart": "Project Start",
+        "initialPlanning": "Initial planning and requirements gathering",
+        "firstServices": "First Microservices",
+        "basicArchitecture": "Implemented basic architecture with authentication",
+        "integration": "Integration Phase",
+        "rabbitMqWorking": "RabbitMQ queues connected between services",
+        "testing": "Testing and Documentation",
+        "postmanDocs": "Postman collection completed",
+        "deploy": "Deployment",
+        "containerizedDeploy": "Deployed using Docker containers"
+      }
+    },
+    "Liads": {
+      "title": "LIADS IFMS On-premise Server",
+      "subtitle": "Microservice Infrastructure with Docker, Kong, Consul and Nginx",
+      "description": "LIADS Server is an on-premise infrastructure designed to manage multiple services with isolation, routing and health checks. It uses Docker for containerization, Kong as API Gateway, Consul as service discovery and DNS resolver, and Nginx for reverse proxy. The project aims to simplify service registration and routing inside the IFMS local network.",
+      "features": "Arduino + ESP8266 Integration; Python API with FastAPI; ORM with SQLAlchemy; Migrations with Alembic; SQLite Database; WebSocket Communication; HTTP Communication; Schedule Management; Next.js Frontend; Open-source on GitHub",
+      "statistics": {
+        "registeredServices": "Registered Services",
+        "uptime": "Uptime",
+        "infrastructure": "Infrastructure"
+      },
+      "timeline": {
+        "projectStart": "Project Start",
+        "initialPlanning": "Infrastructure design and stack decision",
+        "baseInfrastructure": "Base Infrastructure Setup",
+        "kongConsulSetup": "Kong + Consul configured and running",
+        "currentDevelopment": "Current Development",
+        "serviceRegistration": "First services registered in Consul and routed via Kong"
+      },
+      "demo": {
+        "infrastructureDiagram": "Infrastructure Diagram",
+        "consulDashboard": "Consul",
+        "kongRoutes": "Kong Routes",
+        "dockerCompose": "Docker Compose",
+        "ubuntuOnPremise": "Ubuntu On-Premise"
+      }
+    },
+    "IoTSchoolBell": {
+      "title": "Automated School Bell System",
+      "subtitle": "IoT Project developed for SESI School in Corumbá-MS",
+      "description": "Developed in partnership with a colleague, this IoT project aims to automate the school bell, eliminating the need for manual intervention by the administration. We used Arduino with ESP8266 to control the physical device and a Python API with FastAPI, integrated with SQLAlchemy and Alembic for SQLite database persistence. The API communicates with the Arduino via WebSocket and HTTP, receiving scheduled times and triggering the bell automatically. The frontend in Next.js with TypeScript allows administrators to easily configure the bell schedule.",
+      "features": "Hardware/software integration with Arduino + ESP8266; Python API with FastAPI; ORM with SQLAlchemy and migrations with Alembic; SQLite database; Communication via WebSocket and HTTP; Configurable scheduler for bell times; Modern frontend in Next.js; Code versioned on GitHub",
+      "statistics": {
+        "devicesConnected": "Connected Devices",
+        "scheduledRings": "Scheduled Rings",
+        "manualIntervention": "Manual Interventions Required"
+      },
+      "timeline": {
+        "projectStart": "Project Start",
+        "initialPlanning": "Initial planning and architecture definition",
+        "hardwareIntegration": "Hardware Integration",
+        "arduinoTests": "Testing Arduino + ESP8266",
+        "apiDevelopment": "API Development",
+        "fastApiIntegration": "FastAPI integration with database",
+        "frontendDevelopment": "Frontend Development",
+        "schedulerUI": "Scheduler UI Implementation",
+        "productionDeployment": "Production Deployment",
+        "systemOperational": "System operational and in use"
+      },
+      "demo": {
+        "thinkercad": "Thinkercad",
+        "figma": "Figma Frontend",
+        "onshape": "Onshape CAD",
+        "cCode": "C Code"
+      }
+    },
+    "FaceRecognition": {
+      "title": "Facial Recognition System",
+      "subtitle": "Automatic face identification with microservices architecture",
+      "description": "Project focused on developing a facial recognition system using Python and the face_recognition library. Images are processed, compared, and stored in a PostgreSQL database. The architecture is microservices-based, with security and auditing modules built in Java and Golang, ensuring robustness and scalability. I am leading a small team of two less-experienced developers, guiding them throughout the development process.",
+      "features": "Facial recognition; Image capture; Face storage; Security module; Auditing module; Microservices architecture; Iterative development",
+      "statistics": {
+        "projectStatus": "Project Status",
+        "planningPhase": "Planning phase",
+        "estimatedDuration": "Estimated Duration",
+        "teamMembers": "Team Members"
+      },
+      "timeline": {
+        "projectStart": "Project Start",
+        "initialPlanning": "Initial planning and scope definition",
+        "softwareDevelopment": "Software Development",
+        "pythonImplementation": "Python facial recognition implementation",
+        "securityModule": "Security Module",
+        "javaIntegration": "Java security module integration",
+        "auditModule": "Audit Module",
+        "golangImplementation": "Golang audit module implementation",
+        "testingDeployment": "Testing and Deployment",
+        "systemRelease": "First version released for use"
+      },
+      "demo": {
+        "systemArchitecture": "System Architecture"
+      }
+    }
+  },
+  "MoreAbout": {
+    "projectOverview": "Project Overview"
+  },
+  "KeyFeatures": {
+    "keyFeatures": "Key Features"
+  },
+  "TechnicalSpecifications": {
+    "technicalSpecifications": "Technical Specifications",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Database",
+    "authentication": "Authentication",
+    "hosting": "Hosting",
+    "performance": "Performance"
+  },
+  "ProjectStatistics": {
+    "projectStatistics": "Project Statistics"
+  },
+  "DevelopmentTimeline": {
+    "developmentTimeline": "Development Timeline"
   }
 }

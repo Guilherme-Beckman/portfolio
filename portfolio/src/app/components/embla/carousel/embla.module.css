@@ -1,7 +1,7 @@
 .embla {
   margin: auto;
   --slide-spacing: 1rem;
-  --slide-size: 55%;
+  --slide-size: 30%;
 }
 .embla__viewport {
   overflow: hidden;
@@ -36,7 +36,6 @@
 .embla__slide__content .video {
   width: 100%;
   height: fit-content;
-  object-fit: cover; /* preenche mantendo proporção */
   border-radius: inherit;
 }
 .embla__controls {
