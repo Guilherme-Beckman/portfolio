@@ -10,6 +10,7 @@ export default function Page() {
       <h1>
         <FadeIn fromY={-20}>
           <span className={styles.highlighted}>AI Portfolio</span>
+          <h2>(building)</h2>
         </FadeIn>
         <br />
         <br />
