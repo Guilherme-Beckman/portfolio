@@ -1,0 +1,62 @@
+.prompts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100dvw;
+  margin-top: 2rem;
+}
+.container {
+  display: flex;
+  width: 60%;
+  max-width: 35rem;
+}
+.prompts ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  min-width: 100%;
+}
+
+.prompts li {
+  padding: 1rem 2rem;
+  background-color: var(--dark-gray);
+  border-radius: 25px;
+  flex-shrink: 0;
+  user-select: none;
+  color: var(--light-cyan);
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.6s ease-in-out, background-color 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.prompts li:hover {
+  background-color: var(--light-gray);
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+.prompts button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+}
+@media screen and (max-height: 768px) {
+  .prompts ul {
+    align-items: center;
+    justify-content: center;
+  }
+  .prompts li {
+    padding: 1rem;
+    width: 100%;
+    background-color: var(--dark-gray);
+  }
+}

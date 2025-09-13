@@ -1,0 +1,113 @@
+.timelineContainer {
+  background: rgba(10, 10, 10, 0.7); /* fundo levemente transparente */
+  border-radius: 8px;
+  padding: 1.5rem;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px); /* blur do fundo */
+}
+
+.timelineContainer::before {
+  content: "";
+  position: absolute;
+  top: -80%;
+  left: -80%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at top left,
+    rgba(255, 255, 255, 0.2),
+    transparent 100%
+  );
+  pointer-events: none; /* não interfere em cliques */
+}
+
+.timelineTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  border-left: 2px solid var(--dark-cyan);
+}
+
+.timelineItem {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timelinePoint {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background: var(--dark-cyan);
+  border-radius: 50%;
+  border: 2px solid var(--dark-gray);
+}
+
+.timelineContent {
+  padding-left: 1rem;
+}
+
+.timelineDate {
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+.timelineEventTitle {
+  margin: 0.2rem 0;
+  color: white;
+}
+
+.timelineDescription {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+/* Exemplo para timelinePoint */
+.timelinePoint {
+  transition: transform 0.3s ease-in, background 0.3s ease-in; /* vai rápido ao hover */
+}
+
+.timelineItem:hover .timelinePoint {
+  transform: scale(1.3);
+  background: var(--light-cyan);
+  transition: transform 1s ease-out, background 1s ease-out; /* volta mais devagar */
+}
+
+/* Mesma lógica para o conteúdo */
+.timelineContent {
+  transition: background 0.3s ease-in, padding 0.3s ease-in;
+}
+
+.timelineItem:hover .timelineContent {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.8rem 1rem;
+  transition: background 1s ease-out, padding 1s ease-out;
+}
+
+/* Título e descrição */
+.timelineEventTitle {
+  transition: color 0.3s ease-in;
+}
+
+.timelineItem:hover .timelineEventTitle {
+  color: var(--light-cyan);
+  transition: color 1s ease-out;
+}
+
+.timelineDescription {
+  transition: color 0.3s ease-in;
+}
+
+.timelineItem:hover .timelineDescription {
+  color: #eee;
+  transition: color 1s ease-out;
+}
+

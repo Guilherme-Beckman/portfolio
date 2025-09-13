@@ -1,0 +1,27 @@
+.aboutMe {
+  width: clamp(200px, 90%, 1200px);
+  margin: 0 auto;
+  padding: 1rem;
+  margin-top: 10dvh;
+}
+.aboutMeWrapper {
+  display: flex;
+  gap: 1rem;
+}
+.aboutMeWrapper > * {
+  flex: 1;
+}
+.skills {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutMe {
+    padding: 0rem;
+  }
+  .aboutMeWrapper {
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}

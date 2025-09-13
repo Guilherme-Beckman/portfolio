@@ -1,0 +1,52 @@
+.projectStatistics {
+  background: rgba(10, 10, 10, 0.7); /* fundo levemente transparente */
+  border-radius: 8px;
+  padding: 1.5rem;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px); /* blur do fundo */
+}
+
+.projectStatistics::before {
+  content: "";
+  position: absolute;
+  top: -80%;
+  left: -80%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at top left,
+    rgba(255, 255, 255, 0.2),
+    transparent 100%
+  );
+  pointer-events: none; /* não interfere em cliques */
+}
+
+.projectStatisticsTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.statsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.statItem {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.statLabel {
+  color: #ccc;
+}
+
+.statValue {
+  color: var(--dark-cyan);
+  font-weight: bold;
+}

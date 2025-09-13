@@ -1,0 +1,42 @@
+.workInfo {
+  
+  text-align: left;
+  min-width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.period {
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.companieName {
+  text-align: left;
+
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.local {
+  text-align: left;
+
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.model {
+  text-align: left;
+
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+.workInfo img{
+  width: 20px;
+  height: 20px;
+  padding-right: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

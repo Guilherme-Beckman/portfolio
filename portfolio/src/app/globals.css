@@ -1,0 +1,76 @@
+:root {
+  --light-gray: #373739;
+  --dark-gray: #19191a;
+  --dark-cyan: #60d4ea;
+  --light-cyan: #9ae5f3;
+  --black: #020202;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  min-height: 100dvh;
+  background-color: var(--black);
+
+  background-image: radial-gradient(
+      circle at center,
+      rgba(0, 0, 0, 0) 0%,
+      var(--black) 80%
+    ),
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--black) 0%, var(--black) 40%, #60d3ea69); /* gradiente principal */
+
+  background-size: 100% 100%, 20px 20px, 20px 20px, 100% 100%;
+
+  background-position: center;
+  color: white;
+  font-family: var(--font-main);
+
+  animation: pulseBalls 4s ease-in-out infinite;
+}
+
+@keyframes pulseBalls {
+  50% {
+    background-image: radial-gradient(
+        circle at center,
+        rgba(0, 0, 0, 0) 0%,
+        var(--black) 80%
+      ),
+      linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--black) 0%, var(--black) 40%, #60d3ea69);
+  }
+}
+
+@keyframes pulseBg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animatedBg {
+  background: linear-gradient(
+    135deg,
+    var(--light-gray),
+    var(--dark-gray),
+    var(--black)
+  );
+  background-size: 500% 500%;
+  animation: pulseBg 8s ease infinite;
+  border-radius: 25px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  color: white;
+  padding: 1rem;
+}

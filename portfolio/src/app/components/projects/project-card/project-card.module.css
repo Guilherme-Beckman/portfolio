@@ -1,0 +1,163 @@
+.card {
+  background: #111;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.6s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+.banner {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .banner {
+  transform: scale(1.05);
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  filter: blur(20px) brightness(0.6);
+  transform: scale(1.2);
+  z-index: 0;
+}
+
+.image {
+  position: relative;
+  z-index: 1;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+.content {
+  padding: 1rem;
+  transition: color 0.3s ease;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.card:hover .title {
+  color: var(--dark-cyan);
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #bbb;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  background: transparent;
+  border: 1px solid var(--dark-cyan);
+  color: var(--dark-cyan);
+  padding: 0.3rem 0.7rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.tag:hover {
+  background: var(--dark-cyan);
+  color: #111;
+  transform: scale(1.05);
+}
+
+.icon {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.demoBtn {
+  flex: 1;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+.demoBtn button {
+  background: transparent;
+  color: #000;
+  text-align: center;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: underline;
+  text-decoration-color: black;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+.demoBtn:hover {
+  background: #f3f3f3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.codeBtn {
+  flex: 1;
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: 1px solid #444;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.codeBtn:hover {
+  background: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,8 @@
+.skillsGraph {
+  height: 50dvh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
