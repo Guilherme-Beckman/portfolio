@@ -16,11 +16,9 @@ const skills: TechItem[] = [
     icon: "/icons/skills/angular-svgrepo-com.svg",
     name: "Angular",
     projects: [
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
+
       { name: "MySell", link: "/projects/mysell" },
-      {
-        name: "FocusBird Frontend",
-        link: "https://github.com/Guilherme-Beckman/focusbird-frontend",
-      },
     ],
     category: "frontend",
     description: "angular.description",
@@ -30,8 +28,8 @@ const skills: TechItem[] = [
     name: "Kong",
     projects: [
       {
-        name: "API Gateway Setup",
-        link: "https://github.com/Guilherme-Beckman/kong-setup",
+        name: "Liads Server",
+        link: "/projects/liads-server",
       },
     ],
     category: "backend",
@@ -41,9 +39,10 @@ const skills: TechItem[] = [
     icon: "/icons/skills/aws-ec2-svgrepo-com.svg",
     name: "AWS EC2",
     projects: [
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
       {
-        name: "Web App Hosting",
-        link: "https://github.com/Guilherme-Beckman/aws-ec2-hosting",
+        name: "AWS re/Start",
+        link: "https://aws.amazon.com/training/restart/",
       },
     ],
     category: "cloud",
@@ -54,8 +53,8 @@ const skills: TechItem[] = [
     name: "Laravel",
     projects: [
       {
-        name: "E-commerce API",
-        link: "https://github.com/Guilherme-Beckman/laravel-ecommerce",
+        name: "",
+        link: "",
       },
     ],
     category: "backend",
@@ -65,9 +64,10 @@ const skills: TechItem[] = [
     icon: "/icons/skills/aws-route53-svgrepo-com.svg",
     name: "AWS Route53",
     projects: [
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
       {
-        name: "DNS Management",
-        link: "https://github.com/Guilherme-Beckman/aws-route53",
+        name: "AWS re/Start",
+        link: "https://aws.amazon.com/training/restart/",
       },
     ],
     category: "cloud",
@@ -78,8 +78,8 @@ const skills: TechItem[] = [
     name: "MongoDB",
     projects: [
       {
-        name: "FocusBird Database",
-        link: "https://github.com/Guilherme-Beckman/focusbird-backend",
+        name: "Order Manager",
+        link: "/projects/order-manager",
       },
     ],
     category: "backend",
@@ -89,9 +89,10 @@ const skills: TechItem[] = [
     icon: "/icons/skills/aws-s3-svgrepo-com.svg",
     name: "AWS S3",
     projects: [
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
       {
-        name: "File Storage Service",
-        link: "https://github.com/Guilherme-Beckman/aws-s3-storage",
+        name: "AWS re/Start",
+        link: "https://aws.amazon.com/training/restart/",
       },
     ],
     category: "cloud",
@@ -102,8 +103,8 @@ const skills: TechItem[] = [
     name: "MySQL",
     projects: [
       {
-        name: "Inventory System",
-        link: "https://github.com/Guilherme-Beckman/mysql-inventory",
+        name: "",
+        link: "",
       },
     ],
     category: "backend",
@@ -113,9 +114,10 @@ const skills: TechItem[] = [
     icon: "/icons/skills/aws-svgrepo-com.svg",
     name: "AWS",
     projects: [
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
       {
-        name: "Cloud Infrastructure",
-        link: "https://github.com/Guilherme-Beckman/aws-infra",
+        name: "AWS re/Start",
+        link: "https://aws.amazon.com/training/restart/",
       },
     ],
     category: "cloud",
@@ -126,8 +128,8 @@ const skills: TechItem[] = [
     name: "Next.js",
     projects: [
       {
-        name: "Marketing Website",
-        link: "https://github.com/Guilherme-Beckman/nextjs-marketing",
+        name: "Portfolio",
+        link: "#",
       },
     ],
     category: "frontend",
@@ -138,8 +140,8 @@ const skills: TechItem[] = [
     name: "Consul",
     projects: [
       {
-        name: "Service Discovery",
-        link: "https://github.com/Guilherme-Beckman/consul-setup",
+        name: "Liads Server",
+        link: "/projects/liads-server",
       },
     ],
     category: "cloud",
@@ -149,9 +151,10 @@ const skills: TechItem[] = [
     icon: "/icons/skills/nginx-svgrepo-com.svg",
     name: "Nginx",
     projects: [
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
       {
-        name: "Reverse Proxy Setup",
-        link: "https://github.com/Guilherme-Beckman/nginx-config",
+        name: "Liads Server",
+        link: "/projects/liads-server",
       },
     ],
     category: "cloud",
@@ -161,10 +164,9 @@ const skills: TechItem[] = [
     icon: "/icons/skills/css-3-svgrepo-com.svg",
     name: "CSS3",
     projects: [
-      {
-        name: "Responsive Website",
-        link: "https://github.com/Guilherme-Beckman/css-website",
-      },
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
+
+      { name: "MySell", link: "/projects/mysell" },
     ],
     category: "frontend",
     description: "css3.description",
@@ -173,9 +175,10 @@ const skills: TechItem[] = [
     icon: "/icons/skills/docker-svgrepo-com.svg",
     name: "Docker",
     projects: [
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
       {
-        name: "Microservices Setup",
-        link: "https://github.com/Guilherme-Beckman/docker-microservices",
+        name: "Liads Server",
+        link: "/projects/liads-server",
       },
     ],
     category: "cloud",
@@ -186,8 +189,8 @@ const skills: TechItem[] = [
     name: "PHP",
     projects: [
       {
-        name: "Blog CMS",
-        link: "https://github.com/Guilherme-Beckman/php-blog",
+        name: "",
+        link: "",
       },
     ],
     category: "backend",
@@ -198,8 +201,8 @@ const skills: TechItem[] = [
     name: "FastAPI",
     projects: [
       {
-        name: "REST API",
-        link: "https://github.com/Guilherme-Beckman/fastapi-service",
+        name: "Iot Project",
+        link: "/projects/iot-project",
       },
     ],
     category: "backend",
@@ -209,10 +212,12 @@ const skills: TechItem[] = [
     icon: "/icons/skills/postgresql-svgrepo-com.svg",
     name: "PostgreSQL",
     projects: [
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
       {
-        name: "Analytics DB",
-        link: "https://github.com/Guilherme-Beckman/postgresql-analytics",
+        name: "Order Manager",
+        link: "/projects/order-manager",
       },
+      { name: "MySell", link: "/projects/mysell" },
     ],
     category: "backend",
     description: "postgresql.description",
@@ -234,8 +239,8 @@ const skills: TechItem[] = [
     name: "Git Flow",
     projects: [
       {
-        name: "Branching Workflows",
-        link: "https://github.com/Guilherme-Beckman/git-workflows",
+        name: "All projects",
+        link: "https://github.com/Guilherme-Beckman",
       },
     ],
     category: "cloud",
@@ -246,8 +251,8 @@ const skills: TechItem[] = [
     name: "Git",
     projects: [
       {
-        name: "Version Control Setup",
-        link: "https://github.com/Guilherme-Beckman/git-setup",
+        name: "All Projects Repo",
+        link: "https://github.com/Guilherme-Beckman",
       },
     ],
     category: "cloud",
@@ -257,10 +262,8 @@ const skills: TechItem[] = [
     icon: "/icons/skills/html-5-svgrepo-com.svg",
     name: "HTML5",
     projects: [
-      {
-        name: "Landing Page",
-        link: "https://github.com/Guilherme-Beckman/html-landing",
-      },
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
+      { name: "MySell", link: "/projects/mysell" },
     ],
     category: "frontend",
     description: "html5.description",
@@ -271,7 +274,7 @@ const skills: TechItem[] = [
     projects: [
       {
         name: "Portfolio Website",
-        link: "https://github.com/Guilherme-Beckman/portfolio",
+        link: "#",
       },
     ],
     category: "frontend",
@@ -280,12 +283,7 @@ const skills: TechItem[] = [
   {
     icon: "/icons/skills/ionic-svgrepo-com.svg",
     name: "Ionic",
-    projects: [
-      {
-        name: "FocusBird Mobile App",
-        link: "https://github.com/Guilherme-Beckman/focusbird-frontend",
-      },
-    ],
+    projects: [{ name: "MySell", link: "/projects/mysell" }],
     category: "frontend",
     description: "ionic.description",
   },
@@ -293,10 +291,12 @@ const skills: TechItem[] = [
     icon: "/icons/skills/java-svgrepo-com.svg",
     name: "Java",
     projects: [
+      { name: "MySell", link: "/projects/mysell" },
       {
-        name: "Backend Services",
-        link: "https://github.com/Guilherme-Beckman/java-backend",
+        name: "Order Manager",
+        link: "/projects/order-manager",
       },
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
     ],
     category: "backend",
     description: "java.description",
@@ -305,10 +305,12 @@ const skills: TechItem[] = [
     icon: "/icons/skills/spring-svgrepo-com.svg",
     name: "Spring",
     projects: [
+      { name: "MySell", link: "/projects/mysell" },
       {
-        name: "REST API with Spring",
-        link: "https://github.com/Guilherme-Beckman/spring-api",
+        name: "Order Manager",
+        link: "/projects/order-manager",
       },
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
     ],
     category: "backend",
     description: "spring.description",
@@ -318,8 +320,8 @@ const skills: TechItem[] = [
     name: "JavaScript",
     projects: [
       {
-        name: "Web Interactivity",
-        link: "https://github.com/Guilherme-Beckman/js-interactivity",
+        name: "Portfolio",
+        link: "#",
       },
     ],
     category: "frontend",
@@ -329,10 +331,9 @@ const skills: TechItem[] = [
     icon: "/icons/skills/typescript.svg",
     name: "TypeScript",
     projects: [
-      {
-        name: "Typed Web App",
-        link: "https://github.com/Guilherme-Beckman/ts-app",
-      },
+      { name: "BirdsPantanal", link: "/projects/birds-pantanal" },
+      { name: "MySell", link: "/projects/mysell" },
+      { name: "Porfolio", link: "#" },
     ],
     category: "frontend",
     description: "typescript.description",
@@ -342,8 +343,8 @@ const skills: TechItem[] = [
     name: "Python",
     projects: [
       {
-        name: "FocusBird Backend",
-        link: "https://github.com/Guilherme-Beckman/focusbird-backend",
+        name: "Iot Project",
+        link: "/projects/iot-project",
       },
     ],
     category: "backend",
@@ -354,8 +355,8 @@ const skills: TechItem[] = [
     name: "RabbitMQ",
     projects: [
       {
-        name: "Message Queue Service",
-        link: "https://github.com/Guilherme-Beckman/rabbitmq-service",
+        name: "Order Manager",
+        link: "/projects/order-manager",
       },
     ],
     category: "backend",
@@ -366,8 +367,8 @@ const skills: TechItem[] = [
     name: "Postman",
     projects: [
       {
-        name: "API Testing",
-        link: "https://github.com/Guilherme-Beckman/postman-tests",
+        name: "Order Manager",
+        link: "/projects/order-manager",
       },
     ],
     category: "tools",
@@ -378,8 +379,8 @@ const skills: TechItem[] = [
     name: "Arduino",
     projects: [
       {
-        name: "IoT Sensor Project",
-        link: "https://github.com/Guilherme-Beckman/arduino-iot",
+        name: "Iot Project",
+        link: "/projects/iot-project",
       },
     ],
     category: "backend",
@@ -390,8 +391,12 @@ const skills: TechItem[] = [
     name: "Linux",
     projects: [
       {
-        name: "Server Setup",
-        link: "https://github.com/Guilherme-Beckman/linux-server",
+        name: "Liads Server",
+        link: "/projects/liads-server",
+      },
+      {
+        name: "OS",
+        link: "#",
       },
     ],
     category: "tools",
@@ -402,8 +407,8 @@ const skills: TechItem[] = [
     name: "Microservices",
     projects: [
       {
-        name: "FocusBird Microservices",
-        link: "https://github.com/Guilherme-Beckman/focusbird-backend",
+        name: "Order Manager",
+        link: "/projects/order-manager",
       },
     ],
     category: "backend",
@@ -415,7 +420,7 @@ const skills: TechItem[] = [
     projects: [
       {
         name: "Facial Recognition",
-        link: "https://github.com/Guilherme-Beckman/opencv-facial",
+        link: "projects/face-recognition",
       },
     ],
     category: "backend",
@@ -426,8 +431,8 @@ const skills: TechItem[] = [
     name: "Face Recognition",
     projects: [
       {
-        name: "Access Control System",
-        link: "https://github.com/Guilherme-Beckman/facial-access",
+        name: "Facial Recognition",
+        link: "projects/face-recognition",
       },
     ],
     category: "backend",
@@ -438,8 +443,8 @@ const skills: TechItem[] = [
     name: "Shell Script",
     projects: [
       {
-        name: "Automation Scripts",
-        link: "https://github.com/Guilherme-Beckman/shell-scripts",
+        name: "Liads Server",
+        link: "/projects/liads-server",
       },
     ],
     category: "cloud",
