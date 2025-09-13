@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import styles from "./contacts.module.css";
-import { Mail, Phone, MapPin, Github, Linkedin, Instagram } from "lucide-react";
+import { Mail, MapPin, Github, Linkedin } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 export default function ContactCard() {

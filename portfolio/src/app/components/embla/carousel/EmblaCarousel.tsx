@@ -13,8 +13,6 @@ import {
 } from "./EmblaCarouselArrowButtons";
 import { DotButton, useDotButton } from "./EmblaCarouselDotButton";
 import styles from "./embla.module.css";
-import Image from "next/image";
-import Video from "next-video";
 import FullscreenImage from "../../full-screen-image/full-screen-image";
 const TWEEN_FACTOR_BASE = 0.52;
 
