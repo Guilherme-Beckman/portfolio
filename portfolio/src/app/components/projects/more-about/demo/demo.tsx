@@ -14,7 +14,7 @@ export interface DemoProps {
   options?: EmblaOptionsType;
 }
 
-export function Demo({ slides, options }: DemoProps) {
+export function Demo({ slides }: DemoProps) {
   const OPTIONS: EmblaOptionsType = { loop: true };
   return (
     <div className={styles.demo}>

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useRef } from "react";
 
 interface FullscreenImageProps {
@@ -26,7 +27,7 @@ export default function FullscreenImage({
   };
 
   return (
-    <img
+    <Image
       ref={imgRef}
       src={src}
       alt={alt}

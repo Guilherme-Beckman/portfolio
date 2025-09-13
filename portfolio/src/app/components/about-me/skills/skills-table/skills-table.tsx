@@ -1,9 +1,7 @@
 "use client";
-import { Cloud, Code, Database, Globe, Wrench } from "lucide-react";
+import { Cloud, Code, Database, Wrench } from "lucide-react";
 import styles from "./skills-table.module.css";
-import { h1, li } from "motion/react-client";
 import { useState } from "react";
-import { Url } from "next/dist/shared/lib/router/router";
 import Link from "next/link";
 import Image from "next/image";
 import skills from "@/app/data/skillsData";
