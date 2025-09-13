@@ -5,7 +5,7 @@ import { Mail, MapPin, Github, Linkedin } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 export default function ContactCard() {
-  const t = useTranslations("Contact")
+  const t = useTranslations("Contact");
   return (
     <div className={`${styles.contactContainer} animatedBg`}>
       {/* Background gradient overlay */}
@@ -58,7 +58,7 @@ export default function ContactCard() {
 
         <div className={styles.socials}>
           <a
-            href="https://github.com"
+            href="https://github.com/Guilherme-Beckman/"
             target="_blank"
             className={`${styles.socialBtn} ${styles.github}`}
           >
@@ -67,7 +67,7 @@ export default function ContactCard() {
             <div className={styles.socialRipple}></div>
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/guilherme-beckman/"
             target="_blank"
             className={`${styles.socialBtn} ${styles.linkedin}`}
           >
