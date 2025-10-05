@@ -10,7 +10,7 @@ const averageSans = Average_Sans({
   subsets: ["latin"],
 });
 export const metadata: Metadata = {
-  title: "Developer Portifolio",
+  title: "Developer Portfolio",
   description: "A personal developer portfolio",
 };
 
