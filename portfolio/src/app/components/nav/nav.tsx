@@ -17,6 +17,7 @@ export function Nav() {
     { href: "/about-me", label: t("about") },
     { href: "/projects", label: t("projects") },
     { href: "/resume", label: t("resume") },
+    { href: "/blog", label: "Blog" }
   ];
 
   const locales = ["en", "pt"];
