@@ -1,6 +1,23 @@
-.blogContainer {
+.blog {
   width: clamp(200px, 90%, 1200px);
   margin: 0 auto;
   padding: 1rem;
   margin-top: 10dvh;
+}
+
+.blogContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.blogCard {
+  width: 49%;
+}
+
+.blogContainer .blogCard:last-child:nth-child(odd) {
+  width: 100%;
 }

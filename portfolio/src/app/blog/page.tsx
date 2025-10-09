@@ -3,11 +3,23 @@ import styles from "./blog.module.css"
 export default function Blog() {
 
   return (
-    <div className={styles.blogContainer}>
-      <BlogCard src="icons/skills/typescript.svg"
-        title="Teste"
-        date="2025-10-06
-"      ></BlogCard>
+    <div className={styles.blog}>
+      <div className={styles.blogContainer}> <div className={styles.blogCard}>
+        <BlogCard
+          src="icons/skills/typescript.svg"
+          title="Teste"
+          date="2025-10-06">
+        </BlogCard>
+      </div>
+        <div className={styles.blogCard}>
+          <BlogCard
+            src="icons/skills/typescript.svg"
+            title="Teste"
+            date="2025-10-06">
+          </BlogCard>
+        </div>
+
+      </div>
     </div>
   )
 }
