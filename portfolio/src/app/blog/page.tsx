@@ -7,7 +7,7 @@ export default function Blog() {
       <div className={styles.blogContainer}> <div className={styles.blogCard}>
         <BlogCard
           src="https://guilherme-beckman.github.io/portfolio-assets/liads/images/liads.png"
-          title="Teste"
+          title="example-blog"
           date="2025-10-06"
           topics={["AWS", "Teste", "Teste"]}
         >
