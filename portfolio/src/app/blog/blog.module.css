@@ -21,3 +21,11 @@
 .blogContainer .blogCard:last-child:nth-child(odd) {
   width: 100%;
 }
+
+@media screen and (max-width: 740px) {
+
+  .blogCard {
+    width: 1000%;
+  }
+
+}

@@ -5,8 +5,9 @@ interface BlogCardProps {
   src: string;
   title: string;
   date: string;
+  topics: string[];
 }
-export function BlogCard({ src, title, date }: BlogCardProps) {
+export function BlogCard({ src, title, date, topics }: BlogCardProps) {
   return (
     <Link href={`/blog/${encodeURIComponent(title)}`} className={styles.card}>
       <div className={styles.image}>
@@ -15,6 +16,16 @@ export function BlogCard({ src, title, date }: BlogCardProps) {
       <div className={styles.content}>
         <h1 className={styles.title}>{title}</h1>
         <h2 className={styles.date}>{date}</h2>
+        <ul className={styles.topics}>
+          {
+            topics.map((topic, index) => (
+              <li className={styles.topic} key={index}>
+                <p>#</p>
+                <p>{topic}</p>
+              </li>
+            ))
+          }
+        </ul>
       </div>
     </Link>
   )

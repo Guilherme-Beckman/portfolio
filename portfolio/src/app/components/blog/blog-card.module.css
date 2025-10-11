@@ -46,7 +46,6 @@
   font-size: 1.25rem;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 0.5rem;
   transition: color 0.3s ease;
   transition: border-bottom 0.2s ease, color 0, 2s;
   border-bottom: 2px solid transparent;
@@ -64,6 +63,16 @@
 .date {
   font-size: 1rem;
   color: #666;
-  margin-top: 0.5rem;
   text-decoration: none !important;
+}
+
+.topics {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.topic {
+  display: flex;
+  color: var(--light-cyan)
 }
