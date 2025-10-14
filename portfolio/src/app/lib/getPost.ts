@@ -1,21 +1,31 @@
-import matter from "gray-matter"
-import { remark } from "remark"
-import html from "remark-html"
+
+import matter from "gray-matter";
+import { remark } from "remark";
+import html from "remark-html";
 
 export async function getPost(slug: string) {
+  // Adiciona .md e codifica corretamente para URL
+  const encodedSlug = encodeURIComponent(slug + ".md");
+
   const res = await fetch(
-    `https://raw.githubusercontent.com/Guilherme-Beckman/portfolio-assets/main/blog/posts/${slug}.md`
-  )
-  if (!res.ok) {
-    throw new Error("Error while trying to fetch posts")
-  }
+    `https://api.github.com/repos/Guilherme-Beckman/portfolio-assets/contents/blog/posts/${encodedSlug}`
+  );
+  if (!res.ok) throw new Error(`Erro ao buscar o post ${slug}`);
 
-  const fileContents = await res.text()
-  const { content, data } = matter(fileContents)
+  const raw = await res.text();
+  const { data, content } = matter(raw);
 
-  const processedContent = await remark().use(html).process(content)
-  const contentHtml = processedContent.toString()
+  const processedContent = await remark()
+    .use(html)
+    .process(content);
+  const contentHtml = processedContent.toString();
 
-  return { slug, contentHtml, ...data }
-
+  return {
+    slug,
+    title: data.title || slug,
+    date: data.date || "",
+    topics: data.topics || [],
+    image: data.image || "",
+    contentHtml,
+  };
 }
