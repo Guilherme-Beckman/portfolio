@@ -1,0 +1,6 @@
+.blogPageContainer {
+  width: clamp(200px, 90%, 1000px);
+  margin: 0 auto;
+  padding: 1rem;
+  margin-top: 5dvh;
+}

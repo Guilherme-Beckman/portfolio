@@ -1,5 +1,8 @@
+import { BlogPage } from "@/app/components/blog/blog-page/blog-page"
 export default function ExampleBlog() {
   return (
-    <div>aaa</div>
+    <div>
+      <BlogPage></BlogPage>
+    </div>
   )
 }
