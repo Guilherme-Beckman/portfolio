@@ -6,10 +6,11 @@ interface BlogCardProps {
   title: string;
   date: string;
   topics: string[];
+  link: string
 }
-export function BlogCard({ src, title, date, topics }: BlogCardProps) {
+export function BlogCard({ src, title, date, topics, link }: BlogCardProps) {
   return (
-    <Link href={`/blog/${encodeURIComponent(title)}`} className={styles.card}>
+    <Link href={`/blog/posts/${link}`} className={styles.card}>
       <div className={styles.image}>
         <Image src={src} width={200} height={100} alt={title}></Image>
       </div>

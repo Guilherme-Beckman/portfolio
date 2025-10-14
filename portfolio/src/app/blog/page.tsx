@@ -1,53 +1,27 @@
-import { BlogCard } from "../components/blog/blog-card"
-import styles from "./blog.module.css"
-export default function Blog() {
 
+import { GetStaticProps } from "next";
+import { BlogCard } from "../components/blog/blog-card";
+import { getPosts } from "../lib/getPosts";
+import styles from "./blog.module.css";
+
+
+
+export default async function Blog() {
+  const posts = await getPosts()
   return (
     <div className={styles.blog}>
-      <div className={styles.blogContainer}> <div className={styles.blogCard}>
-        <BlogCard
-          src="https://guilherme-beckman.github.io/portfolio-assets/liads/images/liads.png"
-          title="example-blog"
-          date="2025-10-06"
-          topics={["AWS", "Teste", "Teste"]}
-        >
-        </BlogCard>
-      </div>
-        <div className={styles.blogCard}>
+      {posts.map((post) => (
+        <div key={post.slug} className={styles.blogCard}>
           <BlogCard
-            src="https://guilherme-beckman.github.io/portfolio-assets/liads/images/liads.png"
-            title="Teste"
-            date="2025-10-06"
-
-            topics={["AWS", "Teste", "Teste"]}
-          >
-
-          </BlogCard>
+            src={post.image}
+            title={post.title}
+            date={post.date}
+            topics={post.topics}
+            link={post.slug}
+          />
         </div>
-
-      </div>
-      <div className={styles.blogContainer}> <div className={styles.blogCard}>
-        <BlogCard
-          src="https://guilherme-beckman.github.io/portfolio-assets/liads/images/liads.png"
-          title="Teste"
-          date="2025-10-06"
-          topics={["AWS", "Teste", "Teste"]}
-        >
-        </BlogCard>
-      </div>
-        <div className={styles.blogCard}>
-          <BlogCard
-            src="https://guilherme-beckman.github.io/portfolio-assets/liads/images/liads.png"
-            title="Teste"
-            date="2025-10-06"
-            topics={["AWS", "Teste", "Teste"]}
-          >
-
-          </BlogCard>
-        </div>
-
-      </div>
-
+      ))}
     </div>
-  )
+  );
 }
+
