@@ -19,6 +19,7 @@ export async function getPosts() {
 
         return {
           slug,
+          slugTitle: data.slugTitle,
           title: data.title || slug,
           date: data.date || "",
           topics: data.topics || [],

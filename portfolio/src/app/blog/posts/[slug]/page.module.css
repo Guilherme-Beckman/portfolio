@@ -1,0 +1,107 @@
+.blogPage {
+  width: clamp(200px, 90%, 1000px);
+  margin: 0 auto;
+  padding: 1rem;
+  margin-top: 5dvh;
+  padding: 2rem;
+  overflow-x: hidden;
+
+  overflow-y: hidden;
+}
+
+
+/* Estilo para o título do post */
+.title {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Estilo para a data */
+.date {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: lightslategray;
+  margin-bottom: 2rem;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Estilo para imagens dentro do post */
+.mainImage {
+  background-color: beige;
+  width: 100%;
+  max-height: 30rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+
+/* Estilo para o conteúdo HTML do post */
+.blogPage {
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+.blogPage p {
+  margin-bottom: 1rem;
+}
+
+.blogPage h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.blogPage h3 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+
+
+.blogPage ul,
+.blogPage ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.blogPage blockquote {
+  border-left: 4px solid #ddd;
+  padding-left: 1rem;
+  color: #666;
+  font-style: italic;
+  margin: 1.5rem 0;
+}
+
+/* Estiliza blocos de código pré-formatados */
+.blogPage pre {
+  /* fundo cinza claro */
+  border-radius: 8px;
+  /* scroll horizontal se o código for muito longo */
+  font-family: 'Fira Code', monospace;
+  /* fonte monoespaçada */
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Estiliza trechos de código inline */
+.blogPage code {
+  background-color: #eee;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95rem;
+  color: #c7254e;
+  /* vermelho suave */
+}

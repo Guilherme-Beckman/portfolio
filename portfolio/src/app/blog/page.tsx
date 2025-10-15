@@ -17,7 +17,7 @@ export default async function Blog() {
             title={post.title}
             date={post.date}
             topics={post.topics}
-            link={post.slug}
+            link={post.slugTitle}
           />
         </div>
       ))}
