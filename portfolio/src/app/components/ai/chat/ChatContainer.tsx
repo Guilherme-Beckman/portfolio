@@ -41,27 +41,62 @@ export function ChatContainer({ initialMessage }: ChatContainerProps) {
           }),
         });
 
-        let content: string;
         if (response.status === 429) {
-          content =
-            "I've reached my message limit. Please try again in a little while!";
-        } else if (!response.ok) {
-          content = "Sorry, something went wrong. Please try again.";
-        } else {
-          const data = await response.json();
-          content = data.content;
+          const aiMsg: Message = {
+            id: crypto.randomUUID(),
+            role: "ai",
+            content:
+              "I've reached my message limit. Please try again in a little while!",
+            timestamp: Date.now(),
+          };
+          setMessages((prev) => [...prev, aiMsg]);
+          return;
+        }
+
+        if (!response.ok) {
+          const aiMsg: Message = {
+            id: crypto.randomUUID(),
+            role: "ai",
+            content: "Sorry, something went wrong. Please try again.",
+            timestamp: Date.now(),
+          };
+          setMessages((prev) => [...prev, aiMsg]);
+          return;
+        }
+
+        const aiMsgId = crypto.randomUUID();
+        const aiMsg: Message = {
+          id: aiMsgId,
+          role: "ai",
+          content: "",
+          timestamp: Date.now(),
+        };
+        setMessages((prev) => [...prev, aiMsg]);
+
+        const reader = response.body!.getReader();
+        const decoder = new TextDecoder();
+        let fullContent = "";
+
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          fullContent += decoder.decode(value, { stream: true });
+          const snapshot = fullContent;
+          setMessages((prev) =>
+            prev.map((m) =>
+              m.id === aiMsgId ? { ...m, content: snapshot } : m
+            )
+          );
         }
 
         const component = getResponseComponent(userContent);
-
-        const aiMsg: Message = {
-          id: crypto.randomUUID(),
-          role: "ai",
-          content,
-          timestamp: Date.now(),
-          ...(component ? { component } : {}),
-        };
-        setMessages((prev) => [...prev, aiMsg]);
+        if (component) {
+          setMessages((prev) =>
+            prev.map((m) =>
+              m.id === aiMsgId ? { ...m, component } : m
+            )
+          );
+        }
       } catch {
         const errorMsg: Message = {
           id: crypto.randomUUID(),
