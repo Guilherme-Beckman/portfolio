@@ -4,17 +4,17 @@ import { SkillsCard } from "./SkillsCard";
 import { ProjectsCard } from "./ProjectsCard";
 import { ContactsCard } from "./ContactsCard";
 
-const componentMap: Record<string, () => ReactNode> = {
-  about: () => <ProfileCard />,
-  skills: () => <SkillsCard />,
-  projects: () => <ProjectsCard />,
-  contact: () => <ContactsCard />,
-};
+const keywordGroups: { keywords: string[]; factory: () => ReactNode }[] = [
+  { keywords: ["about", "sobre"], factory: () => <ProfileCard /> },
+  { keywords: ["skills", "habilidades"], factory: () => <SkillsCard /> },
+  { keywords: ["projects", "projetos"], factory: () => <ProjectsCard /> },
+  { keywords: ["contact", "contato"], factory: () => <ContactsCard /> },
+];
 
 export function getResponseComponent(input: string): ReactNode | null {
   const lower = input.toLowerCase();
-  for (const [keyword, factory] of Object.entries(componentMap)) {
-    if (lower.includes(keyword)) {
+  for (const { keywords, factory } of keywordGroups) {
+    if (keywords.some((kw) => lower.includes(kw))) {
       return factory();
     }
   }
