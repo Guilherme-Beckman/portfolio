@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { Message } from "./types";
 import { getMockResponse, MOCK_DELAY_MS } from "./mockResponses";
+import { getResponseComponent } from "./responses/responseComponents";
 import { ChatMessages } from "./ChatMessages";
 import { AiInput } from "../input/input";
 import styles from "./ChatContainer.module.css";
@@ -18,11 +19,13 @@ export function ChatContainer({ initialMessage }: ChatContainerProps) {
   const addAiReply = useCallback((userContent: string) => {
     setIsTyping(true);
     setTimeout(() => {
+      const component = getResponseComponent(userContent);
       const aiMsg: Message = {
         id: crypto.randomUUID(),
         role: "ai",
         content: getMockResponse(userContent),
         timestamp: Date.now(),
+        ...(component ? { component } : {}),
       };
       setMessages((prev) => [...prev, aiMsg]);
       setIsTyping(false);
