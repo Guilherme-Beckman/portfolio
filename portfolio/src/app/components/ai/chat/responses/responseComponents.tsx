@@ -1,8 +1,12 @@
 import type { ReactNode } from "react";
 import { ProfileCard } from "./ProfileCard";
+import { SkillsCard } from "./SkillsCard";
+import { ProjectsCard } from "./ProjectsCard";
 
 const componentMap: Record<string, () => ReactNode> = {
   about: () => <ProfileCard />,
+  skills: () => <SkillsCard />,
+  projects: () => <ProjectsCard />,
 };
 
 export function getResponseComponent(input: string): ReactNode | null {
