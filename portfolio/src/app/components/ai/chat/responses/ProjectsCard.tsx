@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 import styles from "./ProjectsCard.module.css";
 
 const PROJECTS = [
@@ -61,8 +62,8 @@ export function ProjectsCard() {
             <Image
               src={project.image}
               alt={project.name}
-              width={32}
-              height={32}
+              width={28}
+              height={28}
               className={styles.projectImage}
             />
             <div className={styles.projectInfo}>
@@ -76,6 +77,7 @@ export function ProjectsCard() {
                 ))}
               </div>
             </div>
+            <ChevronRight size={16} className={styles.arrow} />
           </Link>
         ))}
       </div>

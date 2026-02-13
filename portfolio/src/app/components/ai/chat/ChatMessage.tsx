@@ -17,10 +17,16 @@ export function ChatMessage({ message }: ChatMessageProps) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
     >
-      {message.component ? (
-        message.component
-      ) : (
-        <div className={styles.bubble}>{message.content}</div>
+      <div className={styles.bubble}>{message.content}</div>
+      {message.component && (
+        <motion.div
+          className={styles.componentWrapper}
+          initial={{ opacity: 0, y: 8, scale: 0.97 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.35, delay: 0.15 }}
+        >
+          {message.component}
+        </motion.div>
       )}
     </motion.div>
   );

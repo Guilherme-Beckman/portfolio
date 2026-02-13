@@ -6,13 +6,15 @@ import { useState } from "react";
 
 interface AiInputProps {
   onSubmit?: (value: string) => void;
+  disabled?: boolean;
 }
 
-export function AiInput({ onSubmit }: AiInputProps) {
+export function AiInput({ onSubmit, disabled }: AiInputProps) {
   const [inputValue, setInputValue] = useState("");
-  const isButtonDisable = inputValue.trim() === "";
+  const isButtonDisable = inputValue.trim() === "" || disabled;
 
   function handleSubmit() {
+    if (disabled) return;
     const trimmed = inputValue.trim();
     if (!trimmed) return;
     onSubmit?.(trimmed);
@@ -26,6 +28,7 @@ export function AiInput({ onSubmit }: AiInputProps) {
           type="text"
           placeholder="Ask me something..."
           value={inputValue}
+          disabled={disabled}
           onChange={(e) => setInputValue(e.target.value)}
           onKeyDown={(e) => {
             if (e.key === "Enter") handleSubmit();
