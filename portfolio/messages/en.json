@@ -420,5 +420,11 @@
   },
   "DevelopmentTimeline": {
     "developmentTimeline": "Development Timeline"
+  },
+  "Prompts": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "skills": "Skills"
   }
 }

@@ -419,5 +419,11 @@
   },
   "DevelopmentTimeline": {
     "developmentTimeline": "Linha do Tempo do Desenvolvimento"
+  },
+  "Prompts": {
+    "about": "Sobre",
+    "projects": "Projetos",
+    "contact": "Contato",
+    "skills": "Habilidades"
   }
 }
