@@ -1,13 +1,22 @@
+"use client";
 import styles from "./prompts.module.css";
-export function Prompts() {
+
+interface PromptsProps {
+  onPromptClick?: (prompt: string) => void;
+}
+
+const promptLabels = ["About", "Projects", "Contact", "Skills"];
+
+export function Prompts({ onPromptClick }: PromptsProps) {
   return (
     <div className={styles.prompts}>
       <div className={styles.container}>
         <ul>
-          <li><button>About</button></li>
-          <li><button>Projects</button></li>
-          <li><button>Contact</button></li>
-          <li><button>Skills</button></li>
+          {promptLabels.map((label) => (
+            <li key={label}>
+              <button onClick={() => onPromptClick?.(label)}>{label}</button>
+            </li>
+          ))}
         </ul>
       </div>
     </div>

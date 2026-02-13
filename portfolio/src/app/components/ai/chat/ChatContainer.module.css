@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.inputArea {
+  position: sticky;
+  bottom: 0;
+  padding: 1rem 0 1.5rem;
+}

@@ -3,9 +3,22 @@ import styles from "./input.module.css";
 import Image from "next/image";
 import arrow from "public/icons/arrow.svg";
 import { useState } from "react";
-export function AiInput() {
+
+interface AiInputProps {
+  onSubmit?: (value: string) => void;
+}
+
+export function AiInput({ onSubmit }: AiInputProps) {
   const [inputValue, setInputValue] = useState("");
   const isButtonDisable = inputValue.trim() === "";
+
+  function handleSubmit() {
+    const trimmed = inputValue.trim();
+    if (!trimmed) return;
+    onSubmit?.(trimmed);
+    setInputValue("");
+  }
+
   return (
     <div className={styles.input}>
       <div className={styles.container}>
@@ -14,8 +27,11 @@ export function AiInput() {
           placeholder="Ask me something..."
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") handleSubmit();
+          }}
         />
-        <button type="submit" disabled={isButtonDisable}>
+        <button type="submit" disabled={isButtonDisable} onClick={handleSubmit}>
           <Image src={arrow} alt="Arrow" width={25} height={25} />
         </button>
       </div>
