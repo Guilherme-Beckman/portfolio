@@ -1,0 +1,111 @@
+.card {
+  background: rgba(30, 30, 30, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.5rem;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.iconWrapper {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--dark-cyan), var(--light-cyan));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon {
+  color: #1a1a2e;
+}
+
+.itemInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 0;
+}
+
+.label {
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.value {
+  font-size: 0.85rem;
+  color: white;
+}
+
+.link {
+  font-size: 0.85rem;
+  color: var(--light-cyan);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: white;
+}
+
+.socials {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.25rem;
+}
+
+.socialLink {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.socialLink:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.socialIcon {
+  flex-shrink: 0;
+}
