@@ -1,0 +1,103 @@
+.card {
+  background: rgba(30, 30, 30, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 200, 200, 0.12);
+  border-radius: 16px;
+  padding: 1.5rem;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  transition: border-color 0.3s;
+}
+
+.card:hover {
+  border-color: rgba(0, 200, 200, 0.3);
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+}
+
+.project:hover {
+  background: rgba(0, 200, 200, 0.06);
+  border-color: rgba(0, 200, 200, 0.2);
+  transform: translateX(2px);
+}
+
+.projectImage {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+
+.projectInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+  flex: 1;
+}
+
+.projectName {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+}
+
+.projectDesc {
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.5);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-top: 0.1rem;
+}
+
+.tag {
+  background: rgba(0, 200, 200, 0.08);
+  color: var(--light-cyan);
+  border: 1px solid rgba(0, 200, 200, 0.18);
+  border-radius: 999px;
+  padding: 0.08rem 0.45rem;
+  font-size: 0.62rem;
+}
+
+.arrow {
+  color: rgba(255, 255, 255, 0.25);
+  flex-shrink: 0;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.project:hover .arrow {
+  color: var(--light-cyan);
+  transform: translateX(2px);
+}
