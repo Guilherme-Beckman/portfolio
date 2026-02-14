@@ -22,7 +22,6 @@
     "faculdadeLocal": "IFMS Corumbá, MS",
     "aws": "AWS re/Start"
   },
-
   "Experience": {
     "ifms": "IFMS - LIADS",
     "onsite": "Presencial",
@@ -211,6 +210,10 @@
     "EcoCarona": {
       "title": "Eco-Carona",
       "description": "Uma plataforma full-stack de caronas sustentáveis construída com Go e Next.js. Possui gerenciamento de usuários e veículos com operações CRUD, validação de formulários e stack Dockerizada com PostgreSQL + Go + Next.js."
+    },
+    "Actus": {
+      "title": "ACTUS",
+      "description": "Sistema integrado de escrituração contábil para validação de documentos, gestão de entidades e detecção de inconsistências para auditoria e conferência."
     }
   },
   "NavProject": {
@@ -430,6 +433,41 @@
         "nextjsUI": "Frontend Next.js 15 com Shadcn UI e validação de formulários",
         "dockerRelease": "Release Docker",
         "fullStackDocker": "Deploy full-stack com Docker (v1.1)"
+      }
+    },
+    "Actus": {
+      "title": "ACTUS",
+      "subtitle": "Sistema de Gestão Contábil",
+      "description": "ACTUS é um sistema integrado de gestão contábil projetado para a representação fiel da realidade operacional. Ele realiza o registro de documentos em múltiplos formatos (PDF, Excel, CSV), gestão de entidades empresariais com perfis fiscais completos, validação baseada em CSV com mais de 284 regras contábeis e detecção automatizada de inconsistências — tudo respaldado por dashboards analíticos em tempo real com geração de relatórios em PDF.",
+      "features": "Processamento de documentos em múltiplos formatos (PDF, Excel, CSV) com parsing automático; Gestão de empresas com cadastro em 7 etapas (perfis fiscal, operacional e contábil); Motor de regras CSV com mais de 284 regras de validação contábil; Verificação de documentos com detecção de inconsistências por severidade (Erro, Alerta, Info); Importação de Plano de Contas suportando mais de 1.800 registros; Dashboard analítico com cards de KPI e gráficos interativos; Geração e exportação de relatórios em PDF; Controle de acesso baseado em papéis com autenticação JWT; Upload de arquivos com arrastar e soltar com classificação por tipo/origem",
+      "demo": {
+        "login": "Página de Login",
+        "dashboard": "Dashboard",
+        "createCompany": "Cadastro de Empresa",
+        "uploadDocument": "Upload de Documento",
+        "documentFilled": "Envio de Documento",
+        "chartOfAccounts": "Importação de Plano de Contas",
+        "verification": "Verificação de Documento",
+        "analytics": "Relatórios e Análises",
+        "userManagement": "Gerenciamento de Usuários",
+        "deployBuild": "Build de Deploy",
+        "deployProduction": "Ambiente de Produção"
+      },
+      "statistics": {
+        "totalCommits": "Total de Commits",
+        "validationRules": "Regras de Validação",
+        "dbMigrations": "Migrações de Banco",
+        "documentTypes": "Tipos de Documento"
+      },
+      "timeline": {
+        "projectStart": "Início do Projeto",
+        "projectStartDesc": "Setup inicial do Spring Boot com autenticação, gestão de usuários e migrações de banco de dados",
+        "coreFeatures": "Funcionalidades Principais",
+        "coreFeaturesDesc": "Arquitetura de processamento de documentos, processamento de PDF, gestão de empresas e suporte multi-formato",
+        "rulesEngine": "Motor de Regras e Validação",
+        "rulesEngineDesc": "Motor de regras CSV com mais de 284 regras, validação multi-estratégia e relatórios em PDF",
+        "releaseV1": "Release v1.01",
+        "releaseV1Desc": "Máscara de inscrição federal, melhorias de UI, verificação de relatórios e deploy em produção"
       }
     }
   },

@@ -42,7 +42,6 @@
       "tools": "Development Tools"
     }
   },
-
   "SkillsData": {
     "angular": {
       "description": "Framework for building modern SPAs with TypeScript."
@@ -211,6 +210,10 @@
     "EcoCarona": {
       "title": "Eco-Carona",
       "description": "A full-stack carpooling platform built with Go and Next.js. Features user and vehicle management with CRUD operations, form validation, and a Dockerized PostgreSQL + Go + Next.js stack."
+    },
+    "Actus": {
+      "title": "ACTUS",
+      "description": "Integrated accounting system for document validation, entity management, and inconsistency detection supporting audit and verification."
     }
   },
   "ProjectCard": {
@@ -248,7 +251,6 @@
         "visaoGeralAplicacao": "Overview",
         "buscandoCoisas": "Searching"
       },
-
       "statistics": {
         "activeUsers": "Active Users",
         "uptime": "Uptime",
@@ -431,6 +433,41 @@
         "nextjsUI": "Next.js 15 frontend with Shadcn UI and form validation",
         "dockerRelease": "Docker Release",
         "fullStackDocker": "Full-stack Dockerized deployment (v1.1)"
+      }
+    },
+    "Actus": {
+      "title": "ACTUS",
+      "subtitle": "Accounting Management System",
+      "description": "ACTUS is an integrated accounting management system designed for faithful representation of operational reality. It handles multi-format document recording (PDF, Excel, CSV), company entity management with comprehensive fiscal profiles, CSV-driven validation with 284+ accounting rules, and automated inconsistency detection — all backed by real-time analytics dashboards with PDF report generation.",
+      "features": "Multi-format document processing (PDF, Excel, CSV) with automatic parsing; Company management with 7-step registration (fiscal, operational, accounting profiles); CSV-driven rules engine with 284+ accounting validation rules; Document verification with severity-based inconsistency detection (Error, Warning, Info); Chart of Accounts import supporting 1,800+ records; Analytics dashboard with KPI cards and interactive charts; PDF report generation and export; Role-based access control with JWT authentication; Drag-and-drop file upload with type/origin classification",
+      "demo": {
+        "login": "Login Page",
+        "dashboard": "Dashboard",
+        "createCompany": "Company Registration",
+        "uploadDocument": "Document Upload",
+        "documentFilled": "Document Submission",
+        "chartOfAccounts": "Chart of Accounts Import",
+        "verification": "Document Verification",
+        "analytics": "Analytics & Reports",
+        "userManagement": "User Management",
+        "deployBuild": "Deployment Build",
+        "deployProduction": "Production Environment"
+      },
+      "statistics": {
+        "totalCommits": "Total Commits",
+        "validationRules": "Validation Rules",
+        "dbMigrations": "Database Migrations",
+        "documentTypes": "Document Types"
+      },
+      "timeline": {
+        "projectStart": "Project Start",
+        "projectStartDesc": "Initial Spring Boot setup with authentication, user management, and database migrations",
+        "coreFeatures": "Core Features",
+        "coreFeaturesDesc": "Document processor architecture, PDF processing, company management, and multi-format support",
+        "rulesEngine": "Rules Engine & Validation",
+        "rulesEngineDesc": "CSV-driven rules engine with 284+ rules, multi-strategy validation, and PDF reporting",
+        "releaseV1": "Release v1.01",
+        "releaseV1Desc": "Federal inscription masking, UI improvements, report checking, and production deployment"
       }
     }
   },
