@@ -478,7 +478,7 @@ export default function <ComponentName>() {
 
 ### Listing Card Entry Template
 
-Add inside the `<div className={styles.projectsContainer}>` in `portfolio/src/app/projects/page.tsx`:
+Add as the **first child** inside `<div className={styles.projectsContainer}>` in `portfolio/src/app/projects/page.tsx` — new projects must always appear at the top of the list.
 
 ```tsx
 <div className={styles.projectCard}>
@@ -497,7 +497,9 @@ Add inside the `<div className={styles.projectsContainer}>` in `portfolio/src/ap
 </div>
 ```
 
-**Note:** `SlideIn` direction alternates between `fromX={-50}` (odd cards, slide from left) and `fromX={50}` (even cards, slide from right).
+**Placement rule:** New projects are always inserted at the **top** of the projects container, pushing existing cards down.
+
+**SlideIn rule:** After inserting, re-check the `fromX` values for **all** cards top-to-bottom so they strictly alternate: the 1st card uses `fromX={-50}`, 2nd uses `fromX={50}`, 3rd uses `fromX={-50}`, and so on. Adjust any existing cards whose direction changed due to the insertion.
 
 ---
 
