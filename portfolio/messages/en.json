@@ -439,7 +439,7 @@
       "title": "ACTUS",
       "subtitle": "Accounting Management System",
       "description": "ACTUS is an integrated accounting management system designed for faithful representation of operational reality. It handles multi-format document recording (PDF, Excel, CSV), company entity management with comprehensive fiscal profiles, CSV-driven validation with 284+ accounting rules, and automated inconsistency detection — all backed by real-time analytics dashboards with PDF report generation.",
-      "features": "Multi-format document processing (PDF, Excel, CSV) with automatic parsing; Company management with 7-step registration (fiscal, operational, accounting profiles); CSV-driven rules engine with 284+ accounting validation rules; Document verification with severity-based inconsistency detection (Error, Warning, Info); Chart of Accounts import supporting 1,800+ records; Analytics dashboard with KPI cards and interactive charts; PDF report generation and export; Role-based access control with JWT authentication; Drag-and-drop file upload with type/origin classification",
+      "features": "Multi-format document processing (PDF, Excel, CSV); 7-step company registration with fiscal and accounting profiles; CSV-based rules engine (284+ validation rules); Severity-based inconsistency detection; Chart of Accounts import (1,800+ records); Analytics dashboard with KPIs and charts; PDF report export; JWT role-based access control; Drag-and-drop file upload with classification",
       "demo": {
         "login": "Login Page",
         "dashboard": "Dashboard",

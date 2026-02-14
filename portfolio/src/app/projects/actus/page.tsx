@@ -4,7 +4,9 @@ import { useTranslations } from "next-intl";
 export default function ActusPage() {
   const t = useTranslations("ProjectPage.Actus");
   const featuresRaw = t("features", { default: "" });
-  const features = featuresRaw ? featuresRaw.split(";").map((f) => f.trim()) : [];
+  const features = featuresRaw
+    ? featuresRaw.split(";").map((f) => f.trim())
+    : [];
 
   return (
     <div>
@@ -13,7 +15,7 @@ export default function ActusPage() {
           gitHubUrl: "https://github.com/ACAOX/ACTUS",
         }}
         mainImageProps={{
-          url: "https://guilherme-beckman.github.io/portfolio-assets/actus/images/homepage.png",
+          url: "https://guilherme-beckman.github.io/portfolio-assets/actus/images/logo.png",
           alt: t("title"),
         }}
         title={t("title")}
@@ -27,26 +29,44 @@ export default function ActusPage() {
         features={features}
         technicalSpecifications={{
           frontend: [
-            { name: "Angular 20", iconUrl: "/icons/skills/angular-svgrepo-com.svg" },
+            {
+              name: "Angular 20",
+              iconUrl: "/icons/skills/angular-svgrepo-com.svg",
+            },
             { name: "TypeScript", iconUrl: "/icons/skills/typescript.svg" },
             { name: "Chart.js", iconUrl: "" },
             { name: "HTML5", iconUrl: "/icons/skills/html-5-svgrepo-com.svg" },
             { name: "CSS3", iconUrl: "/icons/skills/css-3-svgrepo-com.svg" },
           ],
           backend: [
-            { name: "Spring Boot 4", iconUrl: "/icons/skills/spring-svgrepo-com.svg" },
+            {
+              name: "Spring Boot 4",
+              iconUrl: "/icons/skills/spring-svgrepo-com.svg",
+            },
             { name: "Java 21", iconUrl: "/icons/skills/java-svgrepo-com.svg" },
-            { name: "Spring Security", iconUrl: "/icons/skills/spring-svgrepo-com.svg" },
-            { name: "Spring Data JDBC", iconUrl: "/icons/skills/spring-svgrepo-com.svg" },
+            {
+              name: "Spring Security",
+              iconUrl: "/icons/skills/spring-svgrepo-com.svg",
+            },
+            {
+              name: "Spring Data JDBC",
+              iconUrl: "/icons/skills/spring-svgrepo-com.svg",
+            },
             { name: "Apache PDFBox", iconUrl: "" },
           ],
           database: [
-            { name: "PostgreSQL", iconUrl: "/icons/skills/postgresql-svgrepo-com.svg" },
+            {
+              name: "PostgreSQL",
+              iconUrl: "/icons/skills/postgresql-svgrepo-com.svg",
+            },
             { name: "Flyway", iconUrl: "" },
           ],
           authentication: [
             { name: "JWT", iconUrl: "" },
-            { name: "Spring Security", iconUrl: "/icons/skills/spring-svgrepo-com.svg" },
+            {
+              name: "Spring Security",
+              iconUrl: "/icons/skills/spring-svgrepo-com.svg",
+            },
           ],
           hosting: [
             { name: "Docker", iconUrl: "/icons/skills/docker-svgrepo-com.svg" },

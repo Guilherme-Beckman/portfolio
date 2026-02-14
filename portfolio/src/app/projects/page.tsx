@@ -17,14 +17,26 @@ export default function Projects() {
             <ProjectCard
               title={t("Actus.title")}
               description={t("Actus.description")}
-              image="https://guilherme-beckman.github.io/portfolio-assets/actus/images/homepage.png"
+              image="https://guilherme-beckman.github.io/portfolio-assets/actus/images/logo.png"
               tags={[
-                { name: "Angular", icon: "/icons/skills/angular-svgrepo-com.svg" },
-                { name: "Spring Boot", icon: "/icons/skills/spring-svgrepo-com.svg" },
-                { name: "PostgreSQL", icon: "/icons/skills/postgresql-svgrepo-com.svg" },
+                {
+                  name: "Angular",
+                  icon: "/icons/skills/angular-svgrepo-com.svg",
+                },
+                {
+                  name: "Spring Boot",
+                  icon: "/icons/skills/spring-svgrepo-com.svg",
+                },
+                {
+                  name: "PostgreSQL",
+                  icon: "/icons/skills/postgresql-svgrepo-com.svg",
+                },
                 { name: "Java", icon: "/icons/skills/java-svgrepo-com.svg" },
                 { name: "TypeScript", icon: "/icons/skills/typescript.svg" },
-                { name: "Docker", icon: "/icons/skills/docker-svgrepo-com.svg" },
+                {
+                  name: "Docker",
+                  icon: "/icons/skills/docker-svgrepo-com.svg",
+                },
               ]}
               demoLink="projects/actus"
               codeLink="https://github.com/ACAOX/ACTUS"

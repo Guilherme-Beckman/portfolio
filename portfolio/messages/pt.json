@@ -439,7 +439,7 @@
       "title": "ACTUS",
       "subtitle": "Sistema de Gestão Contábil",
       "description": "ACTUS é um sistema integrado de gestão contábil projetado para a representação fiel da realidade operacional. Ele realiza o registro de documentos em múltiplos formatos (PDF, Excel, CSV), gestão de entidades empresariais com perfis fiscais completos, validação baseada em CSV com mais de 284 regras contábeis e detecção automatizada de inconsistências — tudo respaldado por dashboards analíticos em tempo real com geração de relatórios em PDF.",
-      "features": "Processamento de documentos em múltiplos formatos (PDF, Excel, CSV) com parsing automático; Gestão de empresas com cadastro em 7 etapas (perfis fiscal, operacional e contábil); Motor de regras CSV com mais de 284 regras de validação contábil; Verificação de documentos com detecção de inconsistências por severidade (Erro, Alerta, Info); Importação de Plano de Contas suportando mais de 1.800 registros; Dashboard analítico com cards de KPI e gráficos interativos; Geração e exportação de relatórios em PDF; Controle de acesso baseado em papéis com autenticação JWT; Upload de arquivos com arrastar e soltar com classificação por tipo/origem",
+      "features": "Processamento multi-formato (PDF, Excel, CSV); Cadastro de empresas em 7 etapas com perfis fiscal e contábil; Motor de regras CSV (284+ validações); Detecção de inconsistências por severidade; Importação de Plano de Contas (1.800+ registros); Dashboard com KPIs e gráficos; Exportação de relatórios em PDF; Controle de acesso com JWT; Upload drag-and-drop com classificação",
       "demo": {
         "login": "Página de Login",
         "dashboard": "Dashboard",
