@@ -207,6 +207,10 @@
     "FaceRecognition": {
       "title": "Sistema de Reconhecimento Facial",
       "description": "Sistema de reconhecimento facial desenvolvido em Python utilizando a biblioteca face_recognition. Captura imagens de câmera, processa e armazena os rostos no banco de dados PostgreSQL. Arquitetura baseada em microserviços com módulos em Python (reconhecimento), Java (segurança) e Golang (auditoria). Projeto em andamento, atualmente na fase de planejamento, com prazo de um ano para desenvolvimento."
+    },
+    "EcoCarona": {
+      "title": "Eco-Carona",
+      "description": "Uma plataforma full-stack de caronas sustentáveis construída com Go e Next.js. Possui gerenciamento de usuários e veículos com operações CRUD, validação de formulários e stack Dockerizada com PostgreSQL + Go + Next.js."
     }
   },
   "NavProject": {
@@ -396,6 +400,36 @@
       },
       "demo": {
         "systemArchitecture": "Arquitetura do Sistema"
+      }
+    },
+    "EcoCarona": {
+      "title": "Eco-Carona",
+      "subtitle": "Plataforma de Caronas Sustentáveis",
+      "description": "Eco-Carona é uma aplicação full-stack projetada para promover caronas sustentáveis conectando motoristas e passageiros. Construída com backend em Go usando Gin e GORM, e frontend em Next.js 15 com TypeScript, TailwindCSS e componentes Shadcn UI. A aplicação possui gerenciamento completo de usuários e veículos com arquitetura limpa em camadas.",
+      "features": "Gerenciamento de usuários com validação de CPF; Cadastro de veículos com especificações detalhadas; Tabelas de dados interativas com edição/exclusão; Validação de formulários com Zod e React Hook Form; API RESTful com Go e Gin; Gerenciamento de turnos/horários; Deploy full-stack com Docker; Design responsivo com TailwindCSS",
+      "demo": {
+        "usersTable": "Tabela de Usuários",
+        "createUserForm": "Formulário de Criação de Usuário",
+        "usersTableData": "Gerenciamento de Usuários",
+        "carsTableData": "Gerenciamento de Carros",
+        "backendControllers": "Controladores do Backend",
+        "backendArchitecture": "Arquitetura do Backend"
+      },
+      "statistics": {
+        "commits": "Total de Commits",
+        "apiEndpoints": "Endpoints da API",
+        "developmentTime": "Tempo de Desenvolvimento",
+        "status": "Status"
+      },
+      "timeline": {
+        "projectStart": "Início do Projeto",
+        "backendSetup": "Configuração do backend com Go, Gin, GORM e PostgreSQL",
+        "backendDev": "Desenvolvimento do Backend",
+        "apiImplementation": "Implementação da API REST para usuários e carros",
+        "frontendDev": "Desenvolvimento do Frontend",
+        "nextjsUI": "Frontend Next.js 15 com Shadcn UI e validação de formulários",
+        "dockerRelease": "Release Docker",
+        "fullStackDocker": "Deploy full-stack com Docker (v1.1)"
       }
     }
   },

@@ -207,6 +207,10 @@
     "FaceRecognition": {
       "title": "Facial Recognition System",
       "description": "Facial recognition system developed in Python using the face_recognition library. Captures images from a camera, processes them, and stores faces in a PostgreSQL database. Microservices-based architecture with modules in Python (recognition), Java (security), and Golang (auditing). Project currently in planning phase, with a one-year development timeline."
+    },
+    "EcoCarona": {
+      "title": "Eco-Carona",
+      "description": "A full-stack carpooling platform built with Go and Next.js. Features user and vehicle management with CRUD operations, form validation, and a Dockerized PostgreSQL + Go + Next.js stack."
     }
   },
   "ProjectCard": {
@@ -397,6 +401,36 @@
       },
       "demo": {
         "systemArchitecture": "System Architecture"
+      }
+    },
+    "EcoCarona": {
+      "title": "Eco-Carona",
+      "subtitle": "Sustainable Carpooling Platform",
+      "description": "Eco-Carona is a full-stack web application designed to promote sustainable carpooling by connecting drivers and passengers. Built with a Go backend using Gin and GORM, and a Next.js 15 frontend with TypeScript, TailwindCSS, and Shadcn UI components. The application features complete user and vehicle management with a clean layered architecture.",
+      "features": "User management with CPF validation; Vehicle registration with detailed specs; Interactive data tables with edit/delete; Form validation with Zod and React Hook Form; RESTful API with Go and Gin; Shift/schedule management; Dockerized full-stack deployment; Responsive design with TailwindCSS",
+      "demo": {
+        "usersTable": "Users Table",
+        "createUserForm": "Create User Form",
+        "usersTableData": "Users Management",
+        "carsTableData": "Cars Management",
+        "backendControllers": "Backend Controllers",
+        "backendArchitecture": "Backend Architecture"
+      },
+      "statistics": {
+        "commits": "Total Commits",
+        "apiEndpoints": "API Endpoints",
+        "developmentTime": "Development Time",
+        "status": "Status"
+      },
+      "timeline": {
+        "projectStart": "Project Start",
+        "backendSetup": "Backend setup with Go, Gin, GORM, and PostgreSQL",
+        "backendDev": "Backend Development",
+        "apiImplementation": "REST API implementation for users and cars",
+        "frontendDev": "Frontend Development",
+        "nextjsUI": "Next.js 15 frontend with Shadcn UI and form validation",
+        "dockerRelease": "Docker Release",
+        "fullStackDocker": "Full-stack Dockerized deployment (v1.1)"
       }
     }
   },
