@@ -15,6 +15,33 @@ export default function Projects() {
         <div className={styles.projectCard}>
           <SlideIn fromX={-50}>
             <ProjectCard
+              title={t("EcoCarona.title")}
+              description={t("EcoCarona.description")}
+              image="/icons/skills/golang-svgrepo-com.svg"
+              tags={[
+                { name: "Go", icon: "/icons/skills/golang-svgrepo-com.svg" },
+                {
+                  name: "Next.js",
+                  icon: "/icons/skills/nextjs-fill-svgrepo-com.svg",
+                },
+                { name: "TypeScript", icon: "/icons/skills/typescript.svg" },
+                {
+                  name: "PostgreSQL",
+                  icon: "/icons/skills/postgresql-svgrepo-com.svg",
+                },
+                {
+                  name: "Docker",
+                  icon: "/icons/skills/docker-svgrepo-com.svg",
+                },
+              ]}
+              demoLink="projects/eco-carona"
+              codeLink="https://github.com/Guilherme-Beckman/eco-carona"
+            />
+          </SlideIn>
+        </div>
+        <div className={styles.projectCard}>
+          <SlideIn fromX={-50}>
+            <ProjectCard
               title={t("FaceRecognition.title")}
               description={t("FaceRecognition.description")}
               image="/icons/skills/web-cam-svgrepo-com.svg"
@@ -237,33 +264,6 @@ export default function Projects() {
               ]}
               demoLink="projects/order-manager"
               codeLink="https://github.com/Guilherme-Beckman/order-manager"
-            />
-          </SlideIn>
-        </div>
-        <div className={styles.projectCard}>
-          <SlideIn fromX={-50}>
-            <ProjectCard
-              title={t("EcoCarona.title")}
-              description={t("EcoCarona.description")}
-              image="/icons/skills/golang-svgrepo-com.svg"
-              tags={[
-                { name: "Go", icon: "/icons/skills/golang-svgrepo-com.svg" },
-                {
-                  name: "Next.js",
-                  icon: "/icons/skills/nextjs-fill-svgrepo-com.svg",
-                },
-                { name: "TypeScript", icon: "/icons/skills/typescript.svg" },
-                {
-                  name: "PostgreSQL",
-                  icon: "/icons/skills/postgresql-svgrepo-com.svg",
-                },
-                {
-                  name: "Docker",
-                  icon: "/icons/skills/docker-svgrepo-com.svg",
-                },
-              ]}
-              demoLink="projects/eco-carona"
-              codeLink="https://github.com/Guilherme-Beckman/eco-carona"
             />
           </SlideIn>
         </div>
