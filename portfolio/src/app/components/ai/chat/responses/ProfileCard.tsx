@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./ProfileCard.module.css";
 
-const SKILLS = ["React", "Next.js", "TypeScript", "Docker", "AWS"];
+const SKILLS = ["Java", "Spring Boot", "Angular", "Docker", "AWS", "Python", "AI Tools"];
 
 export function ProfileCard() {
   return (
@@ -17,8 +17,8 @@ export function ProfileCard() {
       <p className={styles.role}>FullStack Developer</p>
       <p className={styles.location}>Corumba, MS, Brazil</p>
       <p className={styles.bio}>
-        Passionate about crafting interactive and performant web experiences with
-        modern technologies.
+        Software Developer focused on Java Backend, microservices, cloud, and
+        infrastructure. Currently at ACAOX Contabilidade and IFMS.
       </p>
       <div className={styles.tags}>
         {SKILLS.map((skill) => (
