@@ -15,6 +15,97 @@ export default function Projects() {
         <div className={styles.projectCard}>
           <SlideIn fromX={-50}>
             <ProjectCard
+              title={t("Actus.title")}
+              description={t("Actus.description")}
+              image="https://guilherme-beckman.github.io/portfolio-assets/actus/images/logo.png"
+              tags={[
+                {
+                  name: "Angular",
+                  icon: "/icons/skills/angular-svgrepo-com.svg",
+                },
+                {
+                  name: "Spring Boot",
+                  icon: "/icons/skills/spring-svgrepo-com.svg",
+                },
+                {
+                  name: "PostgreSQL",
+                  icon: "/icons/skills/postgresql-svgrepo-com.svg",
+                },
+                { name: "Java", icon: "/icons/skills/java-svgrepo-com.svg" },
+                { name: "TypeScript", icon: "/icons/skills/typescript.svg" },
+                {
+                  name: "Docker",
+                  icon: "/icons/skills/docker-svgrepo-com.svg",
+                },
+              ]}
+              demoLink="projects/actus"
+              codeLink="https://github.com/ACAOX/ACTUS"
+            />
+          </SlideIn>
+        </div>
+        <div className={styles.projectCard}>
+          <SlideIn fromX={50}>
+            <ProjectCard
+              title={t("AiRuleGenerator.title")}
+              description={t("AiRuleGenerator.description")}
+              image="/icons/skills/python-svgrepo-com.svg"
+              tags={[
+                {
+                  name: "Python",
+                  icon: "/icons/skills/python-svgrepo-com.svg",
+                },
+                {
+                  name: "RAG",
+                  icon: "/icons/skills/ai-svgrepo-com.svg",
+                },
+                {
+                  name: "Google Gemini",
+                  icon: "/icons/skills/google-gemini-icon.svg",
+                },
+                {
+                  name: "ChromaDB",
+                  icon: "/icons/skills/database-data-base-svgrepo-com.svg",
+                },
+                {
+                  name: "pandas",
+                  icon: "/icons/skills/Pandas.svg",
+                },
+              ]}
+              demoLink="projects/ai-rule-generator"
+              codeLink="https://github.com/ACAOX/gerador-regras"
+            />
+          </SlideIn>
+        </div>
+        <div className={styles.projectCard}>
+          <SlideIn fromX={-50}>
+            <ProjectCard
+              title={t("EcoCarona.title")}
+              description={t("EcoCarona.description")}
+              image="/icons/skills/golang-svgrepo-com.svg"
+              tags={[
+                { name: "Go", icon: "/icons/skills/golang-svgrepo-com.svg" },
+                {
+                  name: "Next.js",
+                  icon: "/icons/skills/nextjs-fill-svgrepo-com.svg",
+                },
+                { name: "TypeScript", icon: "/icons/skills/typescript.svg" },
+                {
+                  name: "PostgreSQL",
+                  icon: "/icons/skills/postgresql-svgrepo-com.svg",
+                },
+                {
+                  name: "Docker",
+                  icon: "/icons/skills/docker-svgrepo-com.svg",
+                },
+              ]}
+              demoLink="projects/eco-carona"
+              codeLink="https://github.com/Guilherme-Beckman/eco-carona"
+            />
+          </SlideIn>
+        </div>
+        <div className={styles.projectCard}>
+          <SlideIn fromX={50}>
+            <ProjectCard
               title={t("FaceRecognition.title")}
               description={t("FaceRecognition.description")}
               image="/icons/skills/web-cam-svgrepo-com.svg"
@@ -55,7 +146,7 @@ export default function Projects() {
         </div>
 
         <div className={styles.projectCard}>
-          <SlideIn fromX={50}>
+          <SlideIn fromX={-50}>
             <ProjectCard
               title={t("IoTSchoolBell.title")}
               description={t("IoTSchoolBell.description")}
@@ -93,7 +184,7 @@ export default function Projects() {
           </SlideIn>
         </div>
         <div className={styles.projectCard}>
-          <SlideIn fromX={-50}>
+          <SlideIn fromX={50}>
             <ProjectCard
               title={t("LiadsServer.title")}
               description={t("LiadsServer.description")}
@@ -134,7 +225,7 @@ export default function Projects() {
           </SlideIn>
         </div>
         <div className={styles.projectCard}>
-          <SlideIn fromX={50}>
+          <SlideIn fromX={-50}>
             <ProjectCard
               title={t("MySell.title")}
               description={t("MySell.description")}
@@ -160,7 +251,7 @@ export default function Projects() {
           </SlideIn>
         </div>
         <div className={styles.projectCard}>
-          <SlideIn fromX={-50}>
+          <SlideIn fromX={50}>
             <ProjectCard
               title={t("BirdPantanal.title")}
               description={t("BirdPantanal.description")}
@@ -193,7 +284,7 @@ export default function Projects() {
           </SlideIn>
         </div>
         <div className={styles.projectCard}>
-          <SlideIn fromX={50}>
+          <SlideIn fromX={-50}>
             <ProjectCard
               title={t("OrderManager.title")}
               description={t("OrderManager.description")}
