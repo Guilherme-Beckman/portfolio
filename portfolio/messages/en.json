@@ -23,6 +23,9 @@
     "aws": "AWS re/Start"
   },
   "Experience": {
+    "acaox": "ACAOX Contabilidade",
+    "backendEngineer": "FullStack Developer",
+    "acaoxDescription": "Led the development of two systems: ACTUS, a full-stack accounting validation platform built with Java 21, Spring Boot 4, and Angular 20, featuring a CSV-driven rules engine with 284+ validation rules, multi-format document processing (PDF, Excel, CSV), real-time analytics dashboards, and JWT-based role-based access control; and an AI-powered rule generator using RAG architecture with Google Gemini 2.0 Flash and ChromaDB, automating the creation of structured accounting rules from Brazilian CPC pronouncements. Managed 36 database migrations via Flyway on PostgreSQL across 296+ commits and deployed to production using Docker containers.",
     "ifms": "IFMS - LIADS",
     "onsite": "Onsite",
     "fullstackInfra": "FullStack / Infra",
@@ -42,7 +45,6 @@
       "tools": "Development Tools"
     }
   },
-
   "SkillsData": {
     "angular": {
       "description": "Framework for building modern SPAs with TypeScript."
@@ -207,6 +209,18 @@
     "FaceRecognition": {
       "title": "Facial Recognition System",
       "description": "Facial recognition system developed in Python using the face_recognition library. Captures images from a camera, processes them, and stores faces in a PostgreSQL database. Microservices-based architecture with modules in Python (recognition), Java (security), and Golang (auditing). Project currently in planning phase, with a one-year development timeline."
+    },
+    "EcoCarona": {
+      "title": "Eco-Carona",
+      "description": "A full-stack carpooling platform built with Go and Next.js. Features user and vehicle management with CRUD operations, form validation, and a Dockerized PostgreSQL + Go + Next.js stack."
+    },
+    "Actus": {
+      "title": "ACTUS",
+      "description": "Integrated accounting validation platform built from scratch with Java 21, Spring Boot 4, and Angular 20. Features a CSV-driven rules engine with 284+ validation rules, multi-format document processing, real-time analytics dashboards, and automated PDF report generation for audit and compliance."
+    },
+    "AiRuleGenerator": {
+      "title": "AI Accounting Rule Generator",
+      "description": "AI-powered system using RAG architecture with Google Gemini 2.0 Flash and ChromaDB to automatically generate structured accounting validation rules from Brazilian CPC pronouncements. Produces 200–300 validated rules per execution at near-zero cost."
     }
   },
   "ProjectCard": {
@@ -244,7 +258,6 @@
         "visaoGeralAplicacao": "Overview",
         "buscandoCoisas": "Searching"
       },
-
       "statistics": {
         "activeUsers": "Active Users",
         "uptime": "Uptime",
@@ -397,6 +410,91 @@
       },
       "demo": {
         "systemArchitecture": "System Architecture"
+      }
+    },
+    "EcoCarona": {
+      "title": "Eco-Carona",
+      "subtitle": "Sustainable Carpooling Platform",
+      "description": "Eco-Carona is a full-stack web application designed to promote sustainable carpooling by connecting drivers and passengers. Built with a Go backend using Gin and GORM, and a Next.js 15 frontend with TypeScript, TailwindCSS, and Shadcn UI components. The application features complete user and vehicle management with a clean layered architecture.",
+      "features": "User management with CPF validation; Vehicle registration with detailed specs; Interactive data tables with edit/delete; Form validation with Zod and React Hook Form; RESTful API with Go and Gin; Shift/schedule management; Dockerized full-stack deployment; Responsive design with TailwindCSS",
+      "demo": {
+        "usersTable": "Users Table",
+        "createUserForm": "Create User Form",
+        "usersTableData": "Users Management",
+        "carsTableData": "Cars Management",
+        "backendControllers": "Backend Controllers",
+        "backendArchitecture": "Backend Architecture"
+      },
+      "statistics": {
+        "commits": "Total Commits",
+        "apiEndpoints": "API Endpoints",
+        "developmentTime": "Development Time",
+        "status": "Status"
+      },
+      "timeline": {
+        "projectStart": "Project Start",
+        "backendSetup": "Backend setup with Go, Gin, GORM, and PostgreSQL",
+        "backendDev": "Backend Development",
+        "apiImplementation": "REST API implementation for users and cars",
+        "frontendDev": "Frontend Development",
+        "nextjsUI": "Next.js 15 frontend with Shadcn UI and form validation",
+        "dockerRelease": "Docker Release",
+        "fullStackDocker": "Full-stack Dockerized deployment (v1.1)"
+      }
+    },
+    "Actus": {
+      "title": "ACTUS",
+      "subtitle": "Accounting Validation & Compliance Platform",
+      "description": "ACTUS is an integrated accounting management system I designed and built from the ground up at ACAOX Contabilidade. The platform addresses a fundamental challenge in accounting operations: ensuring faithful representation of operational reality through automated document validation and inconsistency detection. It processes multi-format accounting documents — PDF, Excel, and CSV — and applies a structured rules engine with over 284 validation rules to detect errors, warnings, and alerts across balance sheets and general ledgers. Each rule is categorized by severity level and mapped to specific account classifications, enabling auditors to focus on high-impact issues first. The rules engine is driven by CSV configuration files rather than hardcoded logic, making it possible for domain experts to add, modify, or disable rules without code changes. I chose Spring Data JDBC over JPA deliberately — the validation workload is read-heavy and batch-oriented, where raw SQL performance and explicit query control outweigh the convenience of ORM abstractions.",
+      "features": "Multi-format document processing (PDF, Excel, CSV); 7-step company registration with fiscal and accounting profiles; CSV-based rules engine (284+ validation rules); Severity-based inconsistency detection; Chart of Accounts import (1,800+ records); Analytics dashboard with KPIs and charts; PDF report export; JWT role-based access control; Drag-and-drop file upload with classification",
+      "demo": {
+        "login": "Login Page",
+        "dashboard": "Dashboard",
+        "createCompany": "Company Registration",
+        "uploadDocument": "Document Upload",
+        "documentFilled": "Document Submission",
+        "chartOfAccounts": "Chart of Accounts Import",
+        "verification": "Document Verification",
+        "analytics": "Analytics & Reports",
+        "userManagement": "User Management",
+        "deployBuild": "Deployment Build",
+        "deployProduction": "Production Environment"
+      },
+      "statistics": {
+        "totalCommits": "Total Commits",
+        "validationRules": "Validation Rules",
+        "dbMigrations": "Database Migrations",
+        "documentTypes": "Document Types"
+      },
+      "timeline": {
+        "projectStart": "Project Start",
+        "projectStartDesc": "Initial Spring Boot setup with authentication, user management, and database migrations",
+        "coreFeatures": "Core Features",
+        "coreFeaturesDesc": "Document processor architecture, PDF processing, company management, and multi-format support",
+        "rulesEngine": "Rules Engine & Validation",
+        "rulesEngineDesc": "CSV-driven rules engine with 284+ rules, multi-strategy validation, and PDF reporting",
+        "releaseV1": "Release v1.01",
+        "releaseV1Desc": "Federal inscription masking, UI improvements, report checking, and production deployment"
+      }
+    },
+    "AiRuleGenerator": {
+      "title": "AI Accounting Rule Generator",
+      "subtitle": "RAG-Powered Accounting Rule Generation System",
+      "description": "Building the rules engine for ACTUS surfaced a natural question: could we automate the creation of validation rules themselves? I developed a standalone AI-powered system that generates structured accounting rules using Retrieval-Augmented Generation (RAG), combining domain-specific knowledge from Brazilian CPC accounting pronouncements with the reasoning capabilities of large language models. The system produces 200–300 validated rules per execution in a structured CSV format, ready to be consumed directly by the ACTUS rules engine. Each rule includes account classification codes (with wildcard support), validation logic, severity levels, configurable parameters, and regulatory justification. The pipeline consists of three sequential stages: automated CPC pronouncement collection, semantic vectorization with ChromaDB, and structured rule generation via Google Gemini 2.0 Flash. I initially built the system on Anthropic's Claude API but migrated to Gemini for cost efficiency — the free tier covers full pipeline executions at zero cost. The architecture is designed for extensibility: account categories, truth sources, and LLM backends are all configurable via YAML.",
+      "features": "RAG with ChromaDB and sentence-transformers; CPC pronouncement collection via pdfplumber; Semantic chunking with configurable overlap; Prompt engineering with domain context injection; YAML-configurable generation pipeline; Zero-cost execution on Gemini free tier; ACTUS-compatible CSV output; Pluggable LLM backends (Gemini, Claude, GPT)",
+      "statistics": {
+        "rulesPerExecution": "Rules per Execution",
+        "cpcPronouncementsIndexed": "CPC Pronouncements Indexed",
+        "costPerRun": "Cost per Run",
+        "llmBackends": "Supported LLM Backends"
+      },
+      "timeline": {
+        "ragSetup": "RAG Infrastructure",
+        "ragSetupDesc": "ChromaDB vector store setup, sentence-transformer embeddings, and CPC document ingestion pipeline",
+        "ruleGeneration": "Rule Generation Pipeline",
+        "ruleGenerationDesc": "Prompt engineering, structured CSV output, and integration with ACTUS rules engine format",
+        "optimization": "Cost Optimization",
+        "optimizationDesc": "Migration from Claude API to Google Gemini 2.0 Flash free tier for zero-cost pipeline execution"
       }
     }
   },
