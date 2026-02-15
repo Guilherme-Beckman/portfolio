@@ -15,8 +15,28 @@ import pythonIcon from "public/icons/skills/python-svgrepo-com.svg";
 import opencvIcon from "public/icons/skills/opencv-svgrepo-com.svg";
 import postgresIcon from "public/icons/skills/postgresql-svgrepo-com.svg";
 import facialRecIcon from "public/icons/skills/face-id-svgrepo-com.svg";
+import javaIcon from "public/icons/skills/java-svgrepo-com.svg";
+import springIcon from "public/icons/skills/spring-svgrepo-com.svg";
+import angularIcon from "public/icons/skills/angular-svgrepo-com.svg";
 const experiencesData = [
-   {
+  {
+    companieNameKey: "acaox",
+    modelKey: "onsite",
+    period: "DEC 2025 - Present",
+    local: "Corumbá, MS, Brazil",
+    roleKey: "backendEngineer",
+    descriptionKey: "acaoxDescription",
+    usedSkills: [
+      { name: "Java 21", pathIcon: javaIcon },
+      { name: "Spring Boot", pathIcon: springIcon },
+      { name: "Angular", pathIcon: angularIcon },
+      { name: "TypeScript", pathIcon: typeScriptIcon },
+      { name: "PostgreSQL", pathIcon: postgresIcon },
+      { name: "Docker", pathIcon: dockerIcon },
+      { name: "Python", pathIcon: pythonIcon },
+    ],
+  },
+  {
     companieNameKey: "ifmsFacial",
     modelKey: "research",
     period: "SEP 2025 - AUG 2026",

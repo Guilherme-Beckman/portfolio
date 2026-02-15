@@ -23,6 +23,9 @@
     "aws": "AWS re/Start"
   },
   "Experience": {
+    "acaox": "ACAOX Contabilidade",
+    "backendEngineer": "Desenvolvedor FullStack",
+    "acaoxDescription": "Liderei o desenvolvimento de dois sistemas: ACTUS, uma plataforma full-stack de validação contábil construída com Java 21, Spring Boot 4 e Angular 20, com motor de regras CSV com mais de 284 regras de validação, processamento multi-formato de documentos (PDF, Excel, CSV), dashboards analíticos em tempo real e controle de acesso baseado em JWT; e um gerador de regras com IA usando arquitetura RAG com Google Gemini 2.0 Flash e ChromaDB, automatizando a criação de regras contábeis estruturadas a partir dos pronunciamentos CPC brasileiros. Gerenciei 36 migrações de banco via Flyway no PostgreSQL em mais de 296 commits e realizei deploy em produção usando contêineres Docker.",
     "ifms": "IFMS - LIADS",
     "onsite": "Presencial",
     "fullstackInfra": "FullStack / Infra",
@@ -213,7 +216,11 @@
     },
     "Actus": {
       "title": "ACTUS",
-      "description": "Sistema integrado de escrituração contábil para validação de documentos, gestão de entidades e detecção de inconsistências para auditoria e conferência."
+      "description": "Plataforma integrada de validação contábil construída do zero com Java 21, Spring Boot 4 e Angular 20. Possui motor de regras CSV com mais de 284 regras de validação, processamento multi-formato de documentos, dashboards analíticos em tempo real e geração automatizada de relatórios PDF para auditoria e compliance."
+    },
+    "AiRuleGenerator": {
+      "title": "Gerador de Regras Contábeis com IA",
+      "description": "Sistema com IA usando arquitetura RAG com Google Gemini 2.0 Flash e ChromaDB para gerar automaticamente regras de validação contábil estruturadas a partir dos pronunciamentos CPC brasileiros. Produz 200–300 regras validadas por execução a custo quase zero."
     }
   },
   "NavProject": {
@@ -437,8 +444,8 @@
     },
     "Actus": {
       "title": "ACTUS",
-      "subtitle": "Sistema de Gestão Contábil",
-      "description": "ACTUS é um sistema integrado de gestão contábil projetado para a representação fiel da realidade operacional. Ele realiza o registro de documentos em múltiplos formatos (PDF, Excel, CSV), gestão de entidades empresariais com perfis fiscais completos, validação baseada em CSV com mais de 284 regras contábeis e detecção automatizada de inconsistências — tudo respaldado por dashboards analíticos em tempo real com geração de relatórios em PDF.",
+      "subtitle": "Plataforma de Validação e Compliance Contábil",
+      "description": "ACTUS é um sistema integrado de gestão contábil que projetei e construí do zero na ACAOX Contabilidade. A plataforma aborda um desafio fundamental nas operações contábeis: garantir a representação fiel da realidade operacional por meio de validação automatizada de documentos e detecção de inconsistências. Processa documentos contábeis em múltiplos formatos — PDF, Excel e CSV — e aplica um motor de regras estruturado com mais de 284 regras de validação para detectar erros, avisos e alertas em balanços patrimoniais e razões contábeis. Cada regra é categorizada por nível de severidade e mapeada para classificações de contas específicas, permitindo que auditores priorizem questões de alto impacto. O motor de regras é alimentado por arquivos de configuração CSV em vez de lógica hardcoded, possibilitando que especialistas do domínio adicionem, modifiquem ou desabilitem regras sem alterações no código. Escolhi Spring Data JDBC ao invés de JPA deliberadamente — a carga de trabalho de validação é intensiva em leitura e orientada a lotes, onde o desempenho de SQL bruto e o controle explícito de queries superam a conveniência das abstrações ORM.",
       "features": "Processamento multi-formato (PDF, Excel, CSV); Cadastro de empresas em 7 etapas com perfis fiscal e contábil; Motor de regras CSV (284+ validações); Detecção de inconsistências por severidade; Importação de Plano de Contas (1.800+ registros); Dashboard com KPIs e gráficos; Exportação de relatórios em PDF; Controle de acesso com JWT; Upload drag-and-drop com classificação",
       "demo": {
         "login": "Página de Login",
@@ -468,6 +475,26 @@
         "rulesEngineDesc": "Motor de regras CSV com mais de 284 regras, validação multi-estratégia e relatórios em PDF",
         "releaseV1": "Release v1.01",
         "releaseV1Desc": "Máscara de inscrição federal, melhorias de UI, verificação de relatórios e deploy em produção"
+      }
+    },
+    "AiRuleGenerator": {
+      "title": "Gerador de Regras Contábeis com IA",
+      "subtitle": "Sistema de Geração de Regras com RAG",
+      "description": "Construir o motor de regras do ACTUS levantou uma questão natural: poderíamos automatizar a criação das próprias regras de validação? Desenvolvi um sistema standalone com IA que gera regras contábeis estruturadas usando Retrieval-Augmented Generation (RAG), combinando conhecimento específico do domínio dos pronunciamentos CPC brasileiros com as capacidades de raciocínio de modelos de linguagem de grande porte. O sistema produz 200–300 regras validadas por execução em formato CSV estruturado, prontas para serem consumidas diretamente pelo motor de regras do ACTUS. Cada regra inclui códigos de classificação de contas (com suporte a wildcard), lógica de validação, níveis de severidade, parâmetros configuráveis e justificativa regulatória. O pipeline consiste em três estágios sequenciais: coleta automatizada de pronunciamentos CPC, vetorização semântica com ChromaDB e geração estruturada de regras via Google Gemini 2.0 Flash. Inicialmente construí o sistema na API do Claude da Anthropic, mas migrei para o Gemini por eficiência de custo — o tier gratuito cobre execuções completas do pipeline a custo zero. A arquitetura foi projetada para extensibilidade: categorias de contas, fontes de verdade e backends de LLM são todos configuráveis via YAML.",
+      "features": "RAG com ChromaDB e sentence-transformers; Coleta de pronunciamentos CPC via pdfplumber; Chunking semântico com overlap configurável; Engenharia de prompts com injeção de contexto; Pipeline de geração configurável via YAML; Execução a custo zero no tier gratuito do Gemini; Saída CSV compatível com ACTUS; Backends de LLM plugáveis (Gemini, Claude, GPT)",
+      "statistics": {
+        "rulesPerExecution": "Regras por Execução",
+        "cpcPronouncementsIndexed": "Pronunciamentos CPC Indexados",
+        "costPerRun": "Custo por Execução",
+        "llmBackends": "Backends de LLM Suportados"
+      },
+      "timeline": {
+        "ragSetup": "Infraestrutura RAG",
+        "ragSetupDesc": "Setup do ChromaDB como vector store, embeddings sentence-transformer e pipeline de ingestão de documentos CPC",
+        "ruleGeneration": "Pipeline de Geração de Regras",
+        "ruleGenerationDesc": "Engenharia de prompts, saída CSV estruturada e integração com formato do motor de regras ACTUS",
+        "optimization": "Otimização de Custos",
+        "optimizationDesc": "Migração da API do Claude para o tier gratuito do Google Gemini 2.0 Flash para execução do pipeline a custo zero"
       }
     }
   },
